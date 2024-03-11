@@ -1,88 +1,111 @@
-import React from "react";
-import { Link } from "react-router-dom";
-
+import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import "./Navbar.css";
+import logo from "../asserts/navbar/logo.png";
 
-import logo from"../asserts/navbar/logo.png";
+function Navbar() {
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
-const Navbar = () => {
+  const toggleNavbar = () => {
+    setIsNavbarOpen(!isNavbarOpen);
+  };
+
+  const closeNavbar = () => {
+    setIsNavbarOpen(false);
+  };
+
   return (
     <>
       <nav
-        className="navbar navbar-expand-lg "
+        className="navbar navbar-expand-lg"
         style={{
           fontFamily: "Arial, Helvetica, sans-serif",
           backgroundColor: "black",
         }}
       >
         <div className="container-fluid">
-        <img
-                  src={logo}
-                  className="blackpic"
-                  alt=""
-                  
-                />
+          <img src={logo} className="blackpic" alt="" />
           <button
-            className="navbar-toggler"
+            className={`navbar-toggler ${isNavbarOpen ? "" : "collapsed"}`}
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            onClick={toggleNavbar}
+            aria-expanded={isNavbarOpen ? "true" : "false"}
           >
-            <span className="spans">☰</span>
+            <span className="spans box">☰</span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul
-              className="navbar-nav ms-auto "
-              style={{ fontFamily: "Arial, Helvetica, sans-serif" }}
-            >
+
+          <div
+            className={`collapse navbar-collapse ${isNavbarOpen ? "show" : ""}`}
+            id="navbarSupportedContent"
+          >
+            <ul className="navbar-nav nav-links ms-auto">
               <li className="nav-item mx-3">
-                <Link to="/" className="nav-link active" aria-current="page">
+                <Link
+                  to="/"
+                  className="nav-link active"
+                  aria-current="page"
+                  onClick={closeNavbar}
+                >
                   Wedo
                 </Link>
               </li>
               <li className="nav-item mx-3">
-                <Link to="/Service" className=" nav-link active">
+                <Link
+                  to="/Service"
+                  className="nav-link active"
+                  onClick={closeNavbar}
+                >
                   Service
                 </Link>
               </li>
               <li className="nav-item dropdown mx-3">
                 <a
-                  className="nav-link dropdown"
+                  className="nav-link dropdown-toggle"
+                  href="#"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  onClick={closeNavbar}
                 >
                   Strategy
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <Link to="/BS" className="dropdown-item">
+                    <Link
+                      to="/BS"
+                      className="dropdown-item"
+                      onClick={closeNavbar}
+                    >
                       Business Strategy
                     </Link>
                   </li>
                   <li>
-                    <Link to="/Marketingstrategy" className="dropdown-item">
+                    <Link
+                      to="/Marketingstrategy"
+                      className="dropdown-item"
+                      onClick={closeNavbar}
+                    >
                       Marketing Strategy
                     </Link>
                   </li>
-
                   <li>
-                    <Link to="/Operationalstrategy" className="dropdown-item">
+                    <Link
+                      to="/Operationalstrategy"
+                      className="dropdown-item"
+                      onClick={closeNavbar}
+                    >
                       Operational Strategy
                     </Link>
                   </li>
                 </ul>
               </li>
-
               <li className="nav-item mx-3">
                 <Link
                   to="/Clients"
                   className="nav-link active"
                   aria-current="page"
+                  onClick={closeNavbar}
                 >
                   Clients
                 </Link>
@@ -90,10 +113,9 @@ const Navbar = () => {
               <li className="nav-item mx-3">
                 <Link
                   to="/Firstpage"
-                  className=" nav-link active"
-                  href="#"
-                  tabIndex={-1}
+                  className="nav-link active"
                   aria-disabled="true"
+                  onClick={closeNavbar}
                 >
                   Work
                 </Link>
@@ -104,6 +126,6 @@ const Navbar = () => {
       </nav>
     </>
   );
-};
+}
 
 export default Navbar;

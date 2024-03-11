@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import { Link as ScrollLink } from "react-scroll";
 import facebook from "../asserts/footer/facebook.png";
 import linkedin from "../asserts/footer/linkedin.png";
 import twitter from "../asserts/footer/twitter.png";
@@ -8,15 +8,14 @@ import instagram from "../asserts/footer/instagram.png";
 import WhatsApp from "../asserts/footer/whatsapp.png";
 import YouTube from "../asserts/footer/youtube.png";
 
-
-import logo from"../asserts/footer/logo.png";
+import logo from "../asserts/footer/logo.png";
 import "../footer/Footer.css"; // Import your CSS file
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <div>
-      <footer> 
+      <footer>
         <div className=" footer1">
           <div className="row">
             <div className="col">
@@ -31,41 +30,48 @@ const Footer = () => {
             <div className="col">
               <h3>Services</h3>
               <div className="links">
-                <a href="#">Web Development</a>
-                <a href="#">App Development</a>
-                <a href="#">Digital marketing</a>
-                <a href="#">Corporate Video</a>
-                <a href="#">Business Development</a>
+                <Link to="/Service">
+
+                  <a href="#Webdevelopment">Web Development</a> </Link>
+                  
+                <a href="#Appdevelopment">App Development</a>
+                <a href="#DIGITALMARKETING">Digital marketing</a>
+                <a href="#CorporateVideo">Corporate Video</a>
+                <a href="#BUSINESSDEVELOPMENT">Business Development</a>  
+
+{/* <Link to="#Webdevelopment">Web Development</Link>
+      
+      <div className="Service-page" id="Webdevelopment"></div> */}
+       
+
               </div>
             </div>
 
             <div className="col">
               <h3 className="Links1">Links</h3>
               <div className="links">
-                <Link to="/Home" className="links-a">
+                <Link to="/" className="links-a">
                   We do
                 </Link>
                 <Link to="/Service" className="links-a">
-                 Service
+                  Service
                 </Link>
 
                 <Link to="/BS" className="links-a">
-                Businessstrategy
+                  Businessstrategy
                 </Link>
                 <Link to="/Marketingstrategy" className="links-a">
-                Marketingstrategy
+                  Marketingstrategy
                 </Link>
                 <Link to="/Operationalstrategy" className="links-a">
                   Operationalstrategy
                 </Link>
                 <Link to="/Clients" className="links-a">
-                 Clients
+                  Clients
                 </Link>
                 <Link to="/Firstpage" className="links-a">
-                 Works
+                  Works
                 </Link>
-
-                
               </div>
             </div>
 
@@ -122,6 +128,7 @@ const Footer = () => {
         </p>
       </div>
     </div>
+   
   );
 };
 

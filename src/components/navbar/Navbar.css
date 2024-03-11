@@ -8,7 +8,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.dropdown-item:hover{
+.dropdown-item:hover {
   background-color: black;
   background: linear-gradient(45deg, #ff0506, #ff0506, #ff0506, #c142423d);
 
@@ -17,7 +17,7 @@
 }
 .navbar-nav .nav-link.active {
   font-size: 20px;
-  font-family: "Arial", "Helvetica";
+  font-family: "Urbanist", sans-serif;
   color: rgb(255, 255, 255);
   background: linear-gradient(45deg, #ff0506, #ff0506, #ff0506, #c142423d);
 
@@ -33,16 +33,12 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(0 0 10px #ff0506);
-  font-family: "Arial", "Helvetica";
-  
+  font-family: "Urbanist", sans-serif;
 }
 
 /* hover ul li */
-.navbar-nav li:hover .nav-link {
-  font-size: 22px; /* Adjust the font size as needed */
-}
-
-
+/* .navbar-nav li:hover .nav-link {
+  font-size: 17px; /* Adjust the font size as needed */
 
 .nav-link:focus,
 .nav-link:hover {
@@ -52,7 +48,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(0 0 10px #ff0506);
-  
 }
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
@@ -78,44 +73,41 @@
 } */
 .dropdown-item {
   background-color: black;
-  
-  
 }
 .nav-item {
   background-color: black;
-  
 }
 
 /* strategy hover */
-.nav-item:hover{
+/* .nav-item:hover{
   font-size: 70px;
  
-}
+} */
 .dropdown-menu {
   background-color: black;
   color: white;
-  
 }
 .dropdown-item {
   color: #ff1a12;
-  font-family: "Arial", "Helvetica";
+  font-family: "Urbanist", sans-serif;
   font-size: 17px;
- 
 }
 
-.spans{
+.spans {
   color: #ff0506;
- 
+  transition: 0.3s;
 }
-.navbar-nav{
+.spans .box {
+  transition: 0.2s;
+}
+.navbar-nav {
   margin-right: 5%;
-  
 }
-.nav-item{
+.nav-item {
   font-size: 20px;
-  font-family: "Arial", "Helvetica";
+  font-family: "Urbanist", sans-serif;
 }
-.blackpic{
+.blackpic {
   width: 80px;
   height: 40px;
   padding-left: 18px;

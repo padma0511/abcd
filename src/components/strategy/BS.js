@@ -8,6 +8,12 @@ import "aos/dist/aos.css";
 import "../strategy/Strategy.css";
 import { useEffect } from "react";
 
+
+
+{/* <body class="page">
+  <h1 class="text page__text" data-text="Hello">Hello</h1>
+</body> */}
+
 const BS = () => {
   useEffect(() => {
     AOS.init({ once: true }); // Initialize AOS with options
@@ -15,10 +21,11 @@ const BS = () => {
 
   return (
     <>
-      <div className="story ">
+      <div className="story " id="Businessstrategy">
         <div className="topbanner">
           <div className="top">
             <div className=" head">
+              
               <h1
                 className="bs-headline"
                 data-aos-delay="500"
@@ -51,14 +58,22 @@ const BS = () => {
           <div className="head1">
             <div className="row">
               <div className="col-lg-6">
-                <h3
-                  className="business-sh"
+                <div className="">
+            
+                  <h4 data-text="PROBLEMIDENFICATION"data-aos-delay="500"
+                  data-aos-duration="1000"
+                  data-aos="fade-up-right">PROBLEMIDENFICATION</h4>
+ 
+                </div>
+
+                <img
+                  src={PBimg}
+                  className="pb1"
+                  alt="pb"
                   data-aos-delay="500"
                   data-aos-duration="1000"
-                  data-aos="fade-up-right"
-                >
-                  PROBLEM IDENFICATION
-                </h3>
+                  data-aos="fade-up-left"
+                />
 
                 <p
                   className="business-para"
@@ -89,7 +104,7 @@ const BS = () => {
             </div>
           </div>
 
-          <div className="head2 ">
+          <div className="headdd2 ">
             <div className="row">
               <div className="col-lg-6">
                 <img
@@ -103,19 +118,30 @@ const BS = () => {
               </div>
 
               <div className=" col-lg-6">
-                <h5
-                  className="business-sh1"
-                  data-aos-delay="500"
+              <div className="">
+            {/* <h3 class="animate-charcter" data-aos-delay="500"
                   data-aos-duration="1000"
-                  data-aos="fade-up-right"
-                >
-                  TREND ALIGNING
-                </h5>
+                  data-aos="fade-left"> TREND ALIGNING</h3> */}
+                   <h4 data-text="TREND ALIGNING"data-aos-delay="500"
+                  data-aos-duration="1000"
+                  data-aos="fade-left">TREND ALIGNING</h4>
+ 
+ 
+                </div>
+
+                { <img
+                src={Trend}
+                className="align1"
+                alt="pb"
+                data-aos-delay="500"
+                data-aos-duration="1000"
+                data-aos="fade-up-right"
+              /> }
                 <p
                   className="business-para1"
                   data-aos-delay="500"
                   data-aos-duration="1000"
-                  data-aos="fade-up-right"
+                  data-aos="fade-left"
                 >
                   We improve the service based on what customers want and what's
                   popular in the market.At Trend Aligning, we continuously
@@ -135,17 +161,28 @@ const BS = () => {
             </div>
           </div>
 
-          <div className="head3 ">
+          <div className="headd3 ">
             <div className="row">
               <div className="col-lg-6">
-                <h5
-                  className="business-sh2"
-                  data-aos-delay="500"
+              <div className="">
+            {/* <h3 class="animate-charcter" data-aos-delay="500"
                   data-aos-duration="1000"
-                  data-aos="fade-up-right"
-                >
-                  SWOT ANALYSIS
-                </h5>
+                  data-aos="fade-up-right"> SWOT ANALYSIS</h3> */}
+                   <h4 data-text="SWOT ANALYSIS"data-aos-delay="500"
+                  data-aos-duration="1000"
+                  data-aos="fade-up-right">SWOT ANALYSIS</h4>
+ 
+ 
+                </div>
+
+                <img
+                    src={Swot}
+                    className="Swots"
+                    alt="pb"
+                    data-aos-delay="500"
+                    data-aos-duration="1000"
+                    data-aos="fade-up-right"
+                  />
 
                 <p
                   className="business-para2"

@@ -2,7 +2,7 @@
 
 /* work logo page start  */
 
-.bggg{
+.bggg {
   /* background-image: url("../components/asserts/red.jpg"); */
   background-image: url("../components/asserts/video/IMG_AAA.jpg");
 
@@ -11,12 +11,11 @@
 
   width: 100%;
   min-height: 550px;
-  
+
   background-size: cover;
 
   -webkit-animation: background-anim-example-10 90s linear infinite;
   animation: background-anim-example-10 80s linear infinite;
-  
 }
 @media screen and (max-width: 925px) {
   .work1 {
@@ -44,11 +43,8 @@
   /* background-color: black; */
   margin-top: -19px;
   border: 1px solid;
-   padding: 40px;
-   /* padding-left: 20px; */
-  
-  
-  
+  padding: 40px;
+  /* padding-left: 20px; */
 }
 
 .btn-dark {
@@ -58,22 +54,17 @@
   background: #ff0506;
   background: linear-gradient(45deg, #ff0506, #c142423d);
   /* color: rgb(0, 0, 0); */
-  background: linear-gradient(45deg, #ff0506, #ff0506, #ff0506, #c142423d);
+  background: linear-gradient(45deg, #ff0506, #ff0506, #ff0506,  #c142423d);
   margin-top: 30px;
   outline: none;
   border: none;
   font-family: "Arial", "Helvetica";
   /* border: 6px solid rgb(230, 36, 36); */
-  
+
   /* -webkit-box-shadow: 1px 1px 10px 0px rgba(237, 41, 41, 0.65);
 -moz-box-shadow: 1px 1px 10px 0px rgb(234, 18, 18);
 box-shadow: 1px 1px 10px 0px rgb(255, 15, 15); */
- margin-right: 10px;
- 
-
- 
- 
-
+  margin-right: 10px;
 }
 
 /* .work1{
@@ -115,7 +106,7 @@ box-shadow: 1px 1px 10px 0px rgb(255, 15, 15); */
   text-decoration: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 980px) {
   .phone ul li {
     display: none;
     text-decoration: none;
@@ -137,7 +128,6 @@ box-shadow: 1px 1px 10px 0px rgb(255, 15, 15); */
     color: rgb(255, 255, 255);
     text-decoration: none;
     /* background-color: black; */
-
   }
 }
 
@@ -229,7 +219,6 @@ box-shadow: 1px 1px 10px 0px rgb(255, 15, 15); */
 /* work page banners  start*/
 .work {
   /* background-color: black; */
-  
 }
 /* .btn-dark {
   width: 250px;
@@ -240,7 +229,6 @@ box-shadow: 1px 1px 10px 0px rgb(255, 15, 15); */
   outline: none;
   border: none;
 } */
-
 
 @media (max-width: 767px) {
   .work1 {
@@ -324,7 +312,6 @@ box-shadow: 1px 1px 10px 0px rgb(255, 15, 15); */
   border: none;
 } */
 
-
 @media (max-width: 767px) {
   .work1 {
     display: none;
@@ -338,29 +325,24 @@ box-shadow: 1px 1px 10px 0px rgb(255, 15, 15); */
   }
 }
 
-
 .loading {
   padding-top: 30px;
 }
- .glow-on-hover {
- 
+.glow-on-hover {
   border: none;
   outline: none;
   color: #020101;
-  
+
   position: relative;
   z-index: 0;
- 
- }
+}
 
 .glow-on-hover:before {
-  content: '';
-  
+  content: "";
 
-  
   position: absolute;
   top: -2px;
-  left:-2px;
+  left: -2px;
   background-size: 400%;
   z-index: -1;
   filter: blur(5px);
@@ -368,12 +350,11 @@ box-shadow: 1px 1px 10px 0px rgb(255, 15, 15); */
   height: calc(100% + 4px);
   animation: glowing 20s linear infinite;
   opacity: 0;
-  transition: opacity .3s ease-in-out;
-  
+  transition: opacity 0.3s ease-in-out;
 }
 
 .glow-on-hover:active {
-  color: #000
+  color: #000;
 }
 
 .glow-on-hover:active:after {
@@ -387,26 +368,27 @@ box-shadow: 1px 1px 10px 0px rgb(255, 15, 15); */
 
 .glow-on-hover:after {
   z-index: -1;
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   background: #ffffff;
-  
+
   left: 0;
   top: 0;
-  
 }
 
 @keyframes glowing {
-  0% { background-position: 0 0; }
-  50% { background-position: 400% 0; }
-  100% { background-position: 0 0; }
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
-.btn-dark :hover{
+.btn-dark :hover {
   background-color: bisque;
 }
-
-
-
-

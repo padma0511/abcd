@@ -3,6 +3,7 @@ import { HashLink as Link } from "react-router-hash-link";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ScrollToTop from "./components/ScroolToTop";
 
 import Wedo from "./components/home/Wedo";
 import Service from "./components/service/service";
@@ -27,6 +28,7 @@ const App = () => {
   return (
     <div className="app">
       <Router>
+        <ScrollToTop />
         {<Navbar />}
         {/* {<Home />} */}
         <Routes>

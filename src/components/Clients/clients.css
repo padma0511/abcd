@@ -11,7 +11,7 @@ body {
 .client-page-top1 {
   width: 100%;
   min-height: 400px;
-  background-image: url("../asserts/client/clientbg.jpg"); 
+  background-image: url("../asserts/client/client-bg.jpg");
   background-size: cover;
 }
 
@@ -44,7 +44,7 @@ body {
 }
 @media (max-width: 591px) {
   .client-page-top1 {
-    margin-top: 40%;
+    margin-top: 20%;
   }
   .client-titile {
     padding-left: 50px;
@@ -361,6 +361,13 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.img-clientpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 @media (max-width: 1000px) {
   .img-clientpage {

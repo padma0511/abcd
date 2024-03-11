@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import appdevelopment from "../asserts/service/app dev.png";
 
-import ServiceHeadImage from"../asserts/service/Service_SBG.png";
+import ServiceHeadImage from "../asserts/service/Service_SBG.png";
 import "../service/service.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -62,7 +62,8 @@ const Service = () => {
   }, [i, offset, forwards, skipCount]);
 
   return (
-    <div className="Service-page">
+    <div className="">
+    <div className="Service-page" id="Webdevelopment">
       <div className="service-page-top1">
         <div className="row ">
           <div className="col">
@@ -91,30 +92,35 @@ const Service = () => {
           </div>
         </div>
       </div>
+      </div>
 
       <div className="container service-top2">
         <h1 className="container-title">SERVICES</h1>
 
         <div className="gradient-cards ">
           <div
+            id="Appdevelopment"
             data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="2000"
           >
             <Card
               title="APP DEVELOPMENT"
+              id="Appdevelopment"
               description="Mobile app development company, we support our client through mobile app’s provided that are seo friendly and efficient. Our client’s business growth get increased."
               icon={<img src={appdevelopment} width="100" height="100" />}
               gradientColor="bg-green-box"
             />
           </div>
           <div
+            id="Seo"
             data-aos="flip-right"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="2000"
           >
             <Card
               title=" SEARCH ENGINE OPTIMIZATION."
+              id=""
               description="Mobile app development company, we support our client through mobile app’s provided that are seo friendly and efficient. Our client’s business growth get increased.."
               icon={<img src={appdevelopment} width="100" height="100" />}
               gradientColor="bg-white-box"
@@ -122,11 +128,13 @@ const Service = () => {
           </div>
 
           <div
+            id="webdevelopment"
             data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="2000"
           >
             <Card
+              id="webdevelopment"
               title="WEB DEVELOPMENT"
               description="Mobile app development company, we support our client through mobile app’s provided that are seo friendly and efficient. Our client’s business growth get increased..
             "
@@ -136,6 +144,7 @@ const Service = () => {
           </div>
 
           <div
+            id="DIGITALMARKETING"
             data-aos="flip-right"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="2000"
@@ -148,6 +157,7 @@ const Service = () => {
             />
           </div>
           <div
+            id="CorporateVideo"
             data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="2000"
@@ -160,6 +170,7 @@ const Service = () => {
             />
           </div>
           <div
+            id="BUSINESSDEVELOPMENT"
             data-aos="flip-right"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="2000"
@@ -177,4 +188,4 @@ const Service = () => {
   );
 };
 
-export default Service;
+export default Service;

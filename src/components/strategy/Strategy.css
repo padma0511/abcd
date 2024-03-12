@@ -5,29 +5,27 @@
 .story {
   /* padding-top: 100px;  */
   /* padding-right: 30px; */
- /* padding-left: 30px;   */ 
- 
-  
-  /* background-color: black; */
- color: #ffffff;
+  /* padding-left: 30px;   */
 
- background-color: black;
- 
+  /* background-color: black; */
+  color: #ffffff;
+
+  background-color: black;
 }
-.top{
+.top {
   padding-top: 70px;
 }
 
 .topbanner {
   /* background-attachment: fixed;   */
-  
+
   background-image: url("../asserts/business/gif.jpg");
   background-repeat: no-repeat;
   background-position: center;
 
   width: 100%;
   min-height: 550px;
-  
+
   background-size: cover;
 
   -webkit-animation: background-anim-example-10 15s linear infinite;
@@ -35,8 +33,8 @@
   /* padding-top: 60px; */
   /* padding-right: 50px; */
 
-   padding-right: 30px; 
- padding-left: 30px;   
+  padding-right: 30px;
+  padding-left: 30px;
 }
 @-webkit-keyframes background-anim-example-10 {
   0% {
@@ -61,29 +59,24 @@
     background-position: 0% 0%;
   }
 }
-.head{
- padding-top: 40px;
-} 
+.head {
+  padding-top: 40px;
+}
 .business {
   padding-top: 70px;
-  padding-right: 30px; 
- padding-left: 30px; 
- 
- 
- 
- 
+  padding-right: 30px;
+  padding-left: 30px;
 }
 .bs-headline {
   /* text-shadow: 1px 1px 1px hwb(0 7% 23%);    
   */
   line-height: 1.2;
 
- font-family: "Urbanist", sans-serif;
+  font-family: "Urbanist", sans-serif;
   /* font-weight: 800; */
   /* font-size: 35px; 
    padding-top: 40px; */
   color: #ffffff;
-  
 }
 
 /* business page para */
@@ -91,14 +84,13 @@
 .bus-para {
   margin-top: 30px;
   line-height: 1.75;
-padding-right: 40px;
- font-family: "Urbanist", sans-serif;
+  padding-right: 40px;
+  font-family: "Urbanist", sans-serif;
   font-size: 23px;
   font-weight: 400;
   color: #d9d9d9;
   line-height: 38px;
 }
-
 
 .head {
   padding-top: 20px;
@@ -131,17 +123,24 @@ padding-right: 40px;
 .business-para {
   width: 90%;
   font-size: 18px;
- font-family: "Urbanist", sans-serif;
+  font-family: "Urbanist", sans-serif;
   color: #d9d9d9;
   line-height: 30px;
   padding-top: 5px;
 }
-
+.bbusiness-para {
+  width: 90%;
+  font-size: 18px;
+  font-family: "Urbanist", sans-serif;
+  color: #d9d9d9;
+  line-height: 30px;
+  padding-top: 5px;
+}
 .pb {
   width: 450px;
   height: 350px;
-  margin-left:18%;
-   /* margin-top: 20px;  */
+  margin-left: 18%;
+  /* margin-top: 20px;  */
   margin-bottom: 90px;
   filter: drop-shadow(0 0 10px #ad2020);
   /* margin-top: -20px; */
@@ -149,7 +148,7 @@ padding-right: 40px;
 }
 .business-sh1 {
   color: #d9d9d9;
- font-family: "Urbanist", sans-serif;
+  font-family: "Urbanist", sans-serif;
   font-size: 25px;
   padding-top: 70px;
   background: linear-gradient(
@@ -173,9 +172,9 @@ padding-right: 40px;
 .business-para1 {
   width: 90%;
   font-size: 18px;
- font-family: "Urbanist", sans-serif;
+  font-family: "Urbanist", sans-serif;
   color: #d9d9d9;
-  line-height:  30px;
+  line-height: 30px;
   /* padding-top: 70px; */
   padding-top: 5px;
 }
@@ -186,7 +185,7 @@ padding-right: 40px;
 }
 .business-sh2 {
   color: #d9d9d9;
- font-family: "Urbanist", sans-serif;
+  font-family: "Urbanist", sans-serif;
   font-size: 25px;
   /* margin-top: 100px; */
   background: linear-gradient(
@@ -212,14 +211,14 @@ padding-right: 40px;
 .business-para2 {
   width: 90%;
   font-size: 18px;
- font-family: "Urbanist", sans-serif;
+  font-family: "Urbanist", sans-serif;
   color: #d9d9d9;
   line-height: 30px;
   /* margin-top: 200px; */
   /* padding-top: 5px; */
   /* padding-top: 120px;   */
 }
-@media screen and (max-width: 500px) and (max-width: 700px){
+@media screen and (max-width: 500px) and (max-width: 700px) {
   .pb1 {
     /* Adjust styles for smaller screens */
     width: 100%; /* Example adjustment */
@@ -233,24 +232,22 @@ padding-right: 40px;
 @media (max-width: 768px) {
   .bus-para {
     font-size: 17px; /* Adjust font size for smaller screens */
-     /* Adjust padding for smaller screens */
+    /* Adjust padding for smaller screens */
     line-height: 32px;
     padding-right: 15px;
-
   }
 }
 
-
-@media screen and (max-width: 380px) and (max-width: 600px) and (max-width: 500px){
+@media screen and (max-width: 380px) and (max-width: 600px) and (max-width: 500px) {
   /* Styles to apply when screen width is 600px or less (typical for mobile screens) */
 
   .head {
     padding-top: 70px;
   }
-  
+
   .bs-headline {
     color: #d9d9d9;
-   font-family: "Urbanist", sans-serif;
+    font-family: "Urbanist", sans-serif;
     font-size: 20px;
     margin-top: -50px;
     /* filter: drop-shadow(0 0 10px #ff0c0c); 
@@ -260,7 +257,6 @@ padding-right: 40px;
      -webkit-text-fill-color: transparent; */
   }
 
-  
   /* .business-sh {
     filter: drop-shadow(none);
     background: linear-gradient(45deg, #ff0506, #ff0506, #ff0506, #c142423d);
@@ -270,74 +266,54 @@ padding-right: 40px;
     font-size: 20px;
   } */
 
-   /* .business-para {
+  /* .business-para {
     font-size: 17px; /* Adjust font size for smaller screens */
-    /* line-height: 29px;
+  /* line-height: 29px;
     width: 110%;
    font-family: "Urbanist", sans-serif; */
-    .business-para {
-      width: 100%;
-      font-size: 17px;
-     font-family: "Urbanist", sans-serif;
-      color: #d9d9d9;
-      line-height: 30px;
-      padding-top: 5px;
-    }
-    
-    /* Responsive Styles */
-    @media (max-width: 768px) {
-      .business-para {
-        font-size: 16px; /* Adjust font size for smaller screens */
-        line-height: 26px; /* Adjust line height for smaller screens */
-        margin-top: -50px;
-      }
-    }
-    
-  
-    .pb {
-      /* Adjust styles for smaller screens */
-      width: 100%; /* Example adjustment */
-      height: auto; /* Example adjustment */
-      margin-left: 0; /* Example adjustment */
-      margin-bottom: 50px; /* Example adjustment */
-      margin-top: 0; /* Example adjustment */
-    }
-  
-  /* .business-sh1 {
-    margin-top: 36px;
-    filter: drop-shadow(none);
-    background: linear-gradient(45deg, #ff0506, #ff0506, #ff0506, #c142423d);
+  .business-para {
+    width: 100%;
+    font-size: 17px;
+    font-family: "Urbanist", sans-serif;
+    color: #d9d9d9;
+    line-height: 30px;
+    padding-top: 5px;
+  }
 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 20px;
-  } */
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .business-para {
+      font-size: 16px; /* Adjust font size for smaller screens */
+      line-height: 26px; /* Adjust line height for smaller screens */
+      margin-top: -50px;
+    }
+  }
+
+  .pb {
+    /* Adjust styles for smaller screens */
+    width: 100%; /* Example adjustment */
+    height: auto; /* Example adjustment */
+    margin-left: 0; /* Example adjustment */
+    margin-bottom: 50px; /* Example adjustment */
+    margin-top: 0; /* Example adjustment */
+  }
+
+  .bbusiness-para {
+    width: 100%;
+    font-size: 17px;
+    font-family: "Urbanist", sans-serif;
+    color: #d9d9d9;
+    line-height: 26px;
+    padding-top: 5px;
+  }
   .business-para1 {
-    /* font-size: 17px; 
-    line-height: 29px;
-    width: 110%;
-   font-family: "Urbanist", sans-serif; */
-     /* width: 100%;
-      font-size: 17px;
-     font-family: "Urbanist", sans-serif;
-      color: #d9d9d9;
-      line-height: 30px;
-      padding-top: 5px; */
-     font-family: "Urbanist", sans-serif;
+    font-family: "Urbanist", sans-serif;
     font-size: 16px; /* Adjust font size for smaller screens */
     line-height: 26px;
     padding-top: 26px;
     width: 100%;
-
   }
   .business-sh2 {
-    /* margin-top: 200px; */
-    /* filter: drop-shadow(none); 
-     background: linear-gradient(45deg, #ff0506, #ff0506, #ff0506,#c142423d);
- 
-     -webkit-background-clip: text;  */
-    /* -webkit-text-fill-color: transparent;
-     font-size: 20px; */
     padding-top: 4px;
     /* margin-top: 50px; */
     margin-top: 36px;
@@ -349,12 +325,7 @@ padding-right: 40px;
     font-size: 20px;
   }
   .business-para2 {
-    /* font-size: 17px; /* Adjust font size for smaller screens */
-    /* line-height: 29px;
-    width: 110%;
-   font-family: "Urbanist", sans-serif;  */
-    /* margin-top: -30px;  */
-   font-family: "Urbanist", sans-serif;
+    font-family: "Urbanist", sans-serif;
     font-size: 16px; /* Adjust font size for smaller screens */
     line-height: 26px;
     padding-top: 5px;
@@ -401,8 +372,8 @@ padding-right: 40px;
   filter: drop-shadow(0 0 20px #ff0c0c);
   /* margin-top: -90px; */
   /* padding-right: 30px; */
-  
-  margin-left:18%;
+
+  margin-left: 18%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -419,25 +390,22 @@ padding-right: 40px;
   }
 }
 
-
-
 /* Default styles for smaller screens */
 
 /* Example media query for desktop screens */
 
-
 /* business page end */
 
 /* MARKETING PAGE START */
-/* MARKETING PAGE START */
+/* MARKETING PAGE START */
 
 @media (min-width: 768px) {
   .pb1 {
     display: none;
   }
 }
-@media (max-width:600px){
-  .pb{
+@media (max-width: 600px) {
+  .pb {
     display: none;
   }
 }
@@ -446,8 +414,8 @@ padding-right: 40px;
     display: none;
   }
 }
-@media (max-width:600px){
-  .align{
+@media (max-width: 600px) {
+  .align {
     display: none;
   }
 }
@@ -456,148 +424,111 @@ padding-right: 40px;
     display: none;
   }
 }
- @media (max-width:600px){
-  .Swotone{
+@media (max-width: 600px) {
+  .Swotone {
     display: none;
   }
-} 
-@media (max-width:600px){
-  .head3{
+}
+@media (max-width: 600px) {
+  .head3 {
     margin-top: -20px;
   }
-} 
+}
 
-
-@media (max-width:600px){
-  .business{
-   margin-top: -90px;
+@media (max-width: 600px) {
+  .business {
+    margin-top: -90px;
   }
-} 
+}
 
 @media screen and (max-width: 768px) {
-
-  .head1{
+  .head1 {
     margin-top: 90px;
-    }
-  .headdd2{
-  margin-top:  80px;
   }
-  .headd3{
-   margin-top: 40px;
-   padding-top: 60px;
-  
-    }
-  
-    
+  .headdd2 {
+    margin-top: 80px;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- h4{
-  font-size: 25px;
-  color: #333;
-  -webkit-text-stroke: 0.1vw rgb(0, 0, 0);
-  text-transform: uppercase;
-  position: relative;
-  font-family: Arial, Helvetica;
- }
- h4::before{
-  content: attr(data-text);
-  position: absolute;
-  width: 0;
-  height:   100%;
-  color: hsl(0, 89%, 47%);
-  left: 0;
-  top: 0;
-  -webkit-text-stroke: 0vw #333;
-  overflow: hidden;
-  animation:ani 4s linear infinite;
-  
- 
-  
- }
- @keyframes ani {
-  0%, 10%, 100%{
-  
-    width:0;
-     text-shadow: 0 0 20px rgb(127, 126, 126); 
+  .headd3 {
+    margin-top: 40px;
+    padding-top: 60px;
   }
+}
 
-  50%, 70%{
-    width:100%;
-    text-shadow: 0 0 20px rgb(127, 126, 126); 
-  }
-  
- }
- @media screen and (max-width: 768px) {
-  h4{
-    font-size: 20px;
-    color: #333;
-    -webkit-text-stroke: 0.1vw rgb(0, 0, 0);
+/* text  2nd hover */
+
+a {
+  text-decoration: none;
+  color: #9ca0b1;
+}
+
+.wrapper {
+  h3 {
+    color: #fff;
+    font-size: 24px;
     text-transform: uppercase;
-    position: relative;
-    font-family: Arial, Helvetica;
-   }
-   h4::before{
-    content: attr(data-text);
-    position: absolute;
-    width: 0;
-    height:   100%;
-    color: hsl(0, 89%, 47%);
-    left: 0;
-    top: 0;
-    -webkit-text-stroke: 0vw #333;
-    overflow: hidden;
-    animation:ani 4s linear infinite;
-    
-   
-    
-   }
-   @keyframes ani {
-    0%, 10%, 100%{
-    
-      width:0;
-       text-shadow: 0 0 20px rgb(127, 126, 126); 
-    }
-  
-    50%, 70%{
-      width:100%;
-      text-shadow: 0 0 20px rgb(127, 126, 126); 
-    }
-    
-   }
 
- }
+    font-family: "Urbanist", sans-serif;
+    background: linear-gradient(to right, #ff2929 50%, #000000 40%);
+    background-size: auto auto;
+    background-clip: border-box;
 
-/* marketing css */
-/* @media screen and (max-width: 768px) {
-  .Swotoneee{
- width:  90%; 
-margin-left:18%;
-  } */
-  
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 1.5s linear infinite;
+    display: inline-block;
+    background-size: 200% 100%;
+    animation: backgroundShift 4s ease-in-out infinite alternate;
+  }
+}
+
+/* Keyframe animation */
+@keyframes backgroundShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  a {
+    text-decoration: none;
+    color: #9ca0b1;
+  }
+
+  .wrapper {
+    h3 {
+      color: #fff;
+      font-size: 20px;
+      text-transform: uppercase;
+
+      font-family: "Urbanist", sans-serif;
+      background: linear-gradient(to right, #ff2929 50%, #000000 40%);
+      background-size: auto auto;
+      background-clip: border-box;
+
+      color: #fff;
+      background-clip: text;
+      text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 1.5s linear infinite;
+      display: inline-block;
+      background-size: 200% 100%;
+      animation: backgroundShift 4s ease-in-out infinite alternate;
+    }
+  }
+
+  /* Keyframe animation */
+  @keyframes backgroundShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+}

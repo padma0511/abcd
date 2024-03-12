@@ -1,18 +1,18 @@
 import React from "react";
-import PBimg from"../asserts/business/PBimg.png";
-import Trend from"../asserts/business/Trend.png";
-import Swot from"../asserts/business/Swot.png";
+import PBimg from "../asserts/business/PBimg.png";
+import Trend from "../asserts/business/Trend.png";
+import Swot from "../asserts/business/Swot.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../strategy/Strategy.css";
 import { useEffect } from "react";
 
-
-
-{/* <body class="page">
+{
+  /* <body class="page">
   <h1 class="text page__text" data-text="Hello">Hello</h1>
-</body> */}
+</body> */
+}
 
 const BS = () => {
   useEffect(() => {
@@ -25,7 +25,6 @@ const BS = () => {
         <div className="topbanner">
           <div className="top">
             <div className=" head">
-              
               <h1
                 className="bs-headline"
                 data-aos-delay="500"
@@ -59,11 +58,20 @@ const BS = () => {
             <div className="row">
               <div className="col-lg-6">
                 <div className="">
-            
-                  <h4 data-text="PROBLEMIDENFICATION"data-aos-delay="500"
-                  data-aos-duration="1000"
-                  data-aos="fade-up-right">PROBLEMIDENFICATION</h4>
- 
+                  {/* 
+                  <h4 data-text="PROBLEM " data-aos-delay="500"
+                    data-aos-duration="1000"
+                    data-aos="fade-up-right">PROBLEM <span data-text="IDEFICATION "
+                    >IDEFICATION</span></h4> */}
+
+                  <div
+                    class="wrapper "
+                    data-aos-delay="500"
+                    data-aos-duration="1000"
+                    data-aos="fade-up-right"
+                  >
+                    <h3>PROBLEM IDEFICATION</h3>
+                  </div>
                 </div>
 
                 <img
@@ -118,25 +126,27 @@ const BS = () => {
               </div>
 
               <div className=" col-lg-6">
-              <div className="">
-            {/* <h3 class="animate-charcter" data-aos-delay="500"
-                  data-aos-duration="1000"
-                  data-aos="fade-left"> TREND ALIGNING</h3> */}
-                   <h4 data-text="TREND ALIGNING"data-aos-delay="500"
-                  data-aos-duration="1000"
-                  data-aos="fade-left">TREND ALIGNING</h4>
- 
- 
+                <div className="">
+                  <div
+                    class="wrapper "
+                    data-aos-delay="500"
+                    data-aos-duration="1000"
+                    data-aos="fade-up-right"
+                  >
+                    <h3>TREND ALIGNING</h3>
+                  </div>
                 </div>
 
-                { <img
-                src={Trend}
-                className="align1"
-                alt="pb"
-                data-aos-delay="500"
-                data-aos-duration="1000"
-                data-aos="fade-up-right"
-              /> }
+                {
+                  <img
+                    src={Trend}
+                    className="align1"
+                    alt="pb"
+                    data-aos-delay="500"
+                    data-aos-duration="1000"
+                    data-aos="fade-up-right"
+                  />
+                }
                 <p
                   className="business-para1"
                   data-aos-delay="500"
@@ -164,25 +174,29 @@ const BS = () => {
           <div className="headd3 ">
             <div className="row">
               <div className="col-lg-6">
-              <div className="">
-            {/* <h3 class="animate-charcter" data-aos-delay="500"
+                <div className="">
+                  {/* <h3 class="animate-charcter" data-aos-delay="500"
                   data-aos-duration="1000"
                   data-aos="fade-up-right"> SWOT ANALYSIS</h3> */}
-                   <h4 data-text="SWOT ANALYSIS"data-aos-delay="500"
-                  data-aos-duration="1000"
-                  data-aos="fade-up-right">SWOT ANALYSIS</h4>
- 
- 
-                </div>
 
-                <img
-                    src={Swot}
-                    className="Swots"
-                    alt="pb"
+                  <div
+                    class="wrapper "
                     data-aos-delay="500"
                     data-aos-duration="1000"
                     data-aos="fade-up-right"
-                  />
+                  >
+                    <h3>SWOT ANALYSIS</h3>
+                  </div>
+                </div>
+
+                <img
+                  src={Swot}
+                  className="Swots"
+                  alt="pb"
+                  data-aos-delay="500"
+                  data-aos-duration="1000"
+                  data-aos="fade-up-right"
+                />
 
                 <p
                   className="business-para2"

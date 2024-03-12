@@ -1,20 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 // import firstimage from "../asserts/360_F_265578022_3NbVGd1OZntLK46hjmv8EUisNYA3SqiM-removebg-preview-transformed.png";
 // import secondimage from "../asserts/360_F_365420014_xjsSDkKzrhq4gr9GFzP6S97H7MJyNI5B-removebg-preview.png";
 // import thirdimage from "../asserts/images-removebg-preview-YoS47PuGp-transformed.png";
 
-
-
-import firstimage from"../asserts/client/360-company.png";
-import secondimage from"../asserts/client/360-triangle.png";
-import thirdimage from"../asserts/client/slack img.png";
-import clientimage from"../asserts/client/clientimage.png";
-import cardimage from"../asserts/client/girlimg.jpg";
-
-
-
-
-
+import firstimage from "../asserts/client/360-company.png";
+import secondimage from "../asserts/client/360-triangle.png";
+import thirdimage from "../asserts/client/slack img.png";
+import clientimage from "../asserts/client/clientimage.png";
+import cardimage from "../asserts/client/girlimg.jpg";
 
 import "react-html5video/dist/styles.css";
 import AOS from "aos";
@@ -23,8 +16,14 @@ import "aos/dist/aos.css";
 import "../Clients/clients.css";
 
 function ImageGallery() {
+  const [position, setPosition] = useState(1);
+  function moveToNextCard() {
+    setPosition((prevPosition) => (prevPosition % 5) + 1);
+  }
   useEffect(() => {
     AOS.init();
+    const interval = setInterval(moveToNextCard, 5000); // Move every 5 seconds
+    return () => clearInterval(interval);
   }, []);
   return (
     <div className="client-page">
@@ -55,16 +54,18 @@ function ImageGallery() {
             </div>
           </div>
           <div className="col-lg-6">
-            { <img
-              src={clientimage}
-              className="client-head-image"
-              data-aos="fade-right"
-              data-aos-offset="300"
-              data-aos-duration="1500"
-              data-aos-easing="ease-in-sine"
-              width="70%"
-              alt="Service"
-            /> }
+            {
+              <img
+                src={clientimage}
+                className="client-head-image"
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-sine"
+                width="70%"
+                alt="Service"
+              />
+            }
           </div>
         </div>
       </div>
@@ -331,15 +332,15 @@ function ImageGallery() {
           <div class="grid-item ">
             {" "}
             <div className="client-top3-gaayu">
-              <input type="radio" name="position" checked />
-              <input type="radio" name="position" />
-              <input type="radio" name="position" />
-              <input type="radio" name="position" />
-              <input type="radio" name="position" />
+              <input type="radio" name="position" checked={position === 1} />
+              <input type="radio" name="position" checked={position === 2} />
+              <input type="radio" name="position" checked={position === 3} />
+              <input type="radio" name="position" checked={position === 4} />
+              <input type="radio" name="position" checked={position === 5} />
               <div id="carousel">
                 <div class="item">
                   <div className="c">
-                    { <img src={cardimage} alt="John" className="card-image" /> }
+                    {<img src={cardimage} alt="John" className="card-image" />}
 
                     <h1 className="client-name">John Doe</h1>
                     <p className="client-title">CEO & Founder, Example</p>
@@ -352,7 +353,7 @@ function ImageGallery() {
                 </div>
                 <div class="item">
                   <div className="c">
-                    { <img src={cardimage} alt="John" className="card-image" /> }
+                    {<img src={cardimage} alt="John" className="card-image" />}
 
                     <h1 className="client-name">John Doe</h1>
                     <p className="client-title">CEO & Founder, Example</p>
@@ -365,7 +366,7 @@ function ImageGallery() {
                 </div>
                 <div class="item">
                   <div className="c">
-                    { <img src={cardimage} alt="John" className="card-image" /> }
+                    {<img src={cardimage} alt="John" className="card-image" />}
 
                     <h1 className="client-name">John Doe</h1>
                     <p className="client-title">CEO & Founder, Example</p>
@@ -378,7 +379,7 @@ function ImageGallery() {
                 </div>
                 <div class="item">
                   <div className="c">
-                    {<img src={cardimage} alt="John" className="card-image" /> }
+                    {<img src={cardimage} alt="John" className="card-image" />}
 
                     <h1 className="client-name">John Doe</h1>
                     <p className="client-title">CEO & Founder, Example</p>
@@ -391,7 +392,7 @@ function ImageGallery() {
                 </div>
                 <div class="item">
                   <div className="c">
-                    { <img src={cardimage} alt="John" className="card-image" /> }
+                    {<img src={cardimage} alt="John" className="card-image" />}
 
                     <h1 className="client-name">John Doe</h1>
                     <p className="client-title">CEO & Founder, Example</p>
@@ -430,4 +431,4 @@ function ImageGallery() {
   );
 }
 
-export default ImageGallery;
+export default ImageGallery;

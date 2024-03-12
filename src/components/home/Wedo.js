@@ -7,6 +7,7 @@ import digitalInovation from "../asserts/home/INOVATE.png";
 import homeclient1 from "../asserts/home/h-client1.png";
 import homeclient2 from "../asserts/home/h-client2.png";
 import homeclient3 from "../asserts/home/h-client3.png";
+
 import "../home/Wedo.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -138,11 +139,12 @@ function Wedo() {
         <div className="but-home-explore">
           <a
             href="#"
-            className="btn btn-5"
-            data-aos="fade-up-left"
-            data-aos-duration="4000"
+            className="btn btn-6"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
           >
-            CONTACT US
+            Explore More
           </a>
         </div>
       </div>
@@ -150,9 +152,11 @@ function Wedo() {
       <div className="top3-home-client">
         <div className="client head-home">
           <h1
-            className="slider-head"
+            className="slider-head fadein"
             data-aos="zoom-in-up"
-            data-aos-duration="5000"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
           >
             OUR CLIENTS
           </h1>

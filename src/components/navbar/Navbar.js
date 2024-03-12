@@ -26,7 +26,7 @@ function Navbar() {
         <div className="container-fluid">
           <img src={logo} className="blackpic" alt="" />
           <button
-            className={`navbar-toggler ${isNavbarOpen ? "" : "collapsed"}`}
+            className={`navbar-toggler ${isNavbarOpen ? "" : "collapsed"}`} // Enclose the template literal in backticks
             type="button"
             onClick={toggleNavbar}
             aria-expanded={isNavbarOpen ? "true" : "false"}
@@ -38,6 +38,8 @@ function Navbar() {
             className={`collapse navbar-collapse ${isNavbarOpen ? "show" : ""}`}
             id="navbarSupportedContent"
           >
+            {" "}
+            {/* Enclose the template literal in backticks */}
             <ul className="navbar-nav nav-links ms-auto">
               <li className="nav-item mx-3">
                 <Link
@@ -52,7 +54,7 @@ function Navbar() {
               <li className="nav-item mx-3">
                 <Link
                   to="/Service"
-                  className="nav-link active"
+                  className=" nav-link active"
                   onClick={closeNavbar}
                 >
                   Service
@@ -60,17 +62,19 @@ function Navbar() {
               </li>
               <li className="nav-item dropdown mx-3">
                 <a
-                  className="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle" // Changed from "dropdown" to "dropdown-toggle"
                   href="#"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-                  onClick={closeNavbar}
                 >
                   Strategy
                 </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul
+                  className="dropdown-menu nav-links"
+                  aria-labelledby="navbarDropdown"
+                >
                   <li>
                     <Link
                       to="/BS"

@@ -16,7 +16,7 @@ body {
 }
 
 .client-titile {
-  padding-left: 50px;
+  padding-left: 20px;
   /* margin-top: -40px; */
   /* padding-top: 10px;  */
   color: #fff;
@@ -32,7 +32,7 @@ body {
   font-size: 17px;
 
   margin-top: 20px;
-  padding-left: 50px;
+  padding-left: 20px;
   font-family: "Arial", "Helvetica";
 }
 
@@ -47,10 +47,10 @@ body {
     margin-top: 20%;
   }
   .client-titile {
-    padding-left: 50px;
+    padding-left: 20px;
   }
   .client-about {
-    padding-left: 50px;
+    padding-left: 20px;
   }
 }
 @media (max-width: 991px) {
@@ -181,7 +181,7 @@ body {
   margin-right: auto;
 }
 .client-head2 {
-  padding-left: 50px;
+  padding-left: 20px;
   /* margin-top: -40px; */
   /* padding-top: 10px;  */
   color: #fff;
@@ -196,7 +196,7 @@ body {
   line-height: 1.75;
   font-size: 17px;
 
-  padding-left: 50px;
+  padding-left: 20px;
   font-family: "Arial", "Helvetica";
 }
 .img-client-head h1 {
@@ -212,7 +212,7 @@ body {
 }
 
 .client-titile {
-  padding-left: 50px;
+  padding-left: 20px;
   /* margin-top: -40px; */
   /* padding-top: 10px;  */
   color: #fff;
@@ -228,7 +228,7 @@ body {
   font-size: 17px;
 
   margin-top: 20px;
-  padding-left: 50px;
+  padding-left: 20px;
   font-family: "Arial", "Helvetica";
 }
 
@@ -237,10 +237,10 @@ body {
     margin-top: 40%;
   } */
   .client-titile {
-    padding-left: 50px;
+    padding-left: 20px;
   }
   .client-about {
-    padding-left: 50px;
+    padding-left: 20px;
   }
 }
 @media (max-width: 991px) {
@@ -457,7 +457,7 @@ body {
   line-height: 1.75;
   font-size: 17px;
 
-  padding-left: 50px;
+  padding-left: 20px;
   font-family: "Arial", "Helvetica";
 }
 .img-client-head h1 {
@@ -473,7 +473,7 @@ body {
 }
 
 .client-head2 {
-  padding-top: 80px;
+  padding-top: 20px;
 }
 
 .client-top3-gaayu {

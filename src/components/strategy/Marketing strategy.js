@@ -1,15 +1,12 @@
 import React from "react";
 
-
-import Lead from"../asserts/marketing/lead.png";
-import Generation from"../asserts/marketing/generation.png";
+import Lead from "../asserts/marketing/lead.png";
+import Generation from "../asserts/marketing/generation.png";
 import web from "../asserts/marketing/web.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../strategy/Strategy.css";
 import { useEffect } from "react";
-
-
 
 const Marketingstrategy = () => {
   useEffect(() => {
@@ -18,18 +15,17 @@ const Marketingstrategy = () => {
 
   return (
     <>
-    <div className="story " id="Marketing strategy">
+      <div className="story " id="Marketing strategy">
         <div className="topbanner">
           <div className="top">
             <div className=" head">
-              
               <h1
                 className="bs-headline"
                 data-aos-delay="500"
                 data-aos-duration="1000"
                 data-aos="fade-up"
               >
-               MARKETING STRATEGY
+                MARKETING STRATEGY
               </h1>
 
               <div className=" ">
@@ -39,13 +35,12 @@ const Marketingstrategy = () => {
                   data-aos-duration="1000"
                   data-aos="fade-up"
                 >
-                    We focus on helping businesses present their goods and
+                  We focus on helping businesses present their goods and
                   services to the public in an efficient manner. By applying
                   strategic marketing techniques, we raise their profile among
                   their target audience by using strategies such as social media
                   campaigns, advertising campaigns, and online presence
                   improvements.
-
                 </h5>
               </div>
             </div>
@@ -57,11 +52,14 @@ const Marketingstrategy = () => {
             <div className="row">
               <div className="col-lg-6">
                 <div className="">
-            
-                  <h4 data-text="SOCIAL MEDIA PROMOTION"data-aos-delay="500"
-                  data-aos-duration="1000"
-                  data-aos="fade-up-right">"SOCIAL MEDIA PROMOTION</h4>
- 
+                  <div
+                    class="wrapper "
+                    data-aos-delay="500"
+                    data-aos-duration="1000"
+                    data-aos="fade-up-right"
+                  >
+                    <h3>SOCIAL MEDIA PROMOTION</h3>
+                  </div>
                 </div>
 
                 <img
@@ -74,12 +72,11 @@ const Marketingstrategy = () => {
                 />
 
                 <p
-                  className="business-para"
+                  className="bbusiness-para"
                   data-aos-delay="500"
                   data-aos-duration="1000"
                   data-aos="fade-up-right"
                 >
-                  
                   Our social media strategy goes beyond mere promotion. It's
                   about creating meaningful connections. By utilizing
                   eye-catching posters and engaging videos supplemented with
@@ -89,7 +86,6 @@ const Marketingstrategy = () => {
                   that we not only attract attention but also foster genuine
                   engagement, building lasting relationships with our audience
                   and driving impactful results for your brand.
-
                 </p>
               </div>
               <div className=" col-lg-6 ">
@@ -119,33 +115,38 @@ const Marketingstrategy = () => {
               </div>
 
               <div className=" col-lg-6">
-              <div className="">
-            {/* <h3 class="animate-charcter" data-aos-delay="500"
+                <div className="">
+                  {/* <h3 class="animate-charcter" data-aos-delay="500"
                   data-aos-duration="1000"
                   data-aos="fade-left"> TREND ALIGNING</h3> */}
-                   <h4 data-text=" LEAD GENERATION
-"data-aos-delay="500"
-                  data-aos-duration="1000"
-                  data-aos="fade-left"> LEAD GENERATION</h4>
- 
- 
+
+                  <div
+                    class="wrapper "
+                    data-aos-delay="500"
+                    data-aos-duration="1000"
+                    data-aos="fade-leftt"
+                  >
+                    <h3>LEAD GENERATION</h3>
+                  </div>
                 </div>
 
-                { <img
-                src={Generation}
-                className="align1"
-                alt="pb"
-                data-aos-delay="500"
-                data-aos-duration="1000"
-                data-aos="fade-up-right"
-              /> }
+                {
+                  <img
+                    src={Generation}
+                    className="align1"
+                    alt="pb"
+                    data-aos-delay="500"
+                    data-aos-duration="1000"
+                    data-aos="fade-up-right"
+                  />
+                }
                 <p
                   className="business-para1"
                   data-aos-delay="500"
                   data-aos-duration="1000"
                   data-aos="fade-left"
                 >
-                 Our lead generation strategy harnesses the power of social
+                  Our lead generation strategy harnesses the power of social
                   media platforms to drive product sales and capture valuable
                   customer data simultaneously. By leveraging engaging content
                   and targeted campaigns, we attract potential customers and
@@ -153,7 +154,6 @@ const Marketingstrategy = () => {
                   essential contact information. This proactive approach ensures
                   not only immediate sales but also lays the groundwork for
                   long-term customer relationships and ongoing engagement.
-
                 </p>
               </div>
               <img
@@ -170,25 +170,29 @@ const Marketingstrategy = () => {
           <div className="headd3 ">
             <div className="row">
               <div className="col-lg-6">
-              <div className="">
-            {/* <h3 class="animate-charcter" data-aos-delay="500"
+                <div className="">
+                  {/* <h3 class="animate-charcter" data-aos-delay="500"
                   data-aos-duration="1000"
                   data-aos="fade-up-right"> SWOT ANALYSIS</h3> */}
-                   <h4 data-text="WEBSITE"data-aos-delay="500"
-                  data-aos-duration="1000"
-                  data-aos="fade-up-right">WEBSITE</h4>
- 
- 
-                </div>
 
-                <img
-                    src={web}
-                    className="Swots"
-                    alt="pb"
+                  <div
+                    class="wrapper "
                     data-aos-delay="500"
                     data-aos-duration="1000"
                     data-aos="fade-up-right"
-                  />
+                  >
+                    <h3>WEBSITE</h3>
+                  </div>
+                </div>
+
+                <img
+                  src={web}
+                  className="Swots"
+                  alt="pb"
+                  data-aos-delay="500"
+                  data-aos-duration="1000"
+                  data-aos="fade-up-right"
+                />
 
                 <p
                   className="business-para2"
@@ -196,7 +200,7 @@ const Marketingstrategy = () => {
                   data-aos-duration="1000"
                   data-aos="fade-up-right"
                 >
-                    Our team designs captivating websites with interactive and
+                  Our team designs captivating websites with interactive and
                   detailed product descriptions, strategically crafted to
                   enhance sales. By providing comprehensive insights into our
                   offerings, our website drives customer engagement and
@@ -204,8 +208,6 @@ const Marketingstrategy = () => {
                   ensures that potential buyers are fully informed and motivated
                   to make confident purchasing choices, ultimately boosting
                   product sales and maximizing profitability.
-
-
                 </p>
               </div>
               <div className=" col-lg-6">

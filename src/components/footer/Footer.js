@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link as ScrollLink } from "react-scroll";
+
 import facebook from "../asserts/footer/facebook.png";
 import linkedin from "../asserts/footer/linkedin.png";
 import twitter from "../asserts/footer/twitter.png";
@@ -10,7 +11,6 @@ import YouTube from "../asserts/footer/youtube.png";
 
 import logo from "../asserts/footer/logo.png";
 import "../footer/Footer.css"; // Import your CSS file
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -30,20 +30,23 @@ const Footer = () => {
             <div className="col">
               <h3>Services</h3>
               <div className="links">
-                <Link to="/Service">
-
-                  <a href="#Webdevelopment">Web Development</a> </Link>
-                  
-                <a href="#Appdevelopment">App Development</a>
-                <a href="#DIGITALMARKETING">Digital marketing</a>
-                <a href="#CorporateVideo">Corporate Video</a>
-                <a href="#BUSINESSDEVELOPMENT">Business Development</a>  
-
-{/* <Link to="#Webdevelopment">Web Development</Link>
-      
-      <div className="Service-page" id="Webdevelopment"></div> */}
-       
-
+                <ul class="links-list list-unstyled">
+                  <li>
+                    <Link to="/Service">Web Development</Link>
+                  </li>
+                  <li>
+                    <Link to="/Service">App Development</Link>
+                  </li>
+                  <li>
+                    <Link to="/Service">Digital Marketing</Link>
+                  </li>
+                  <li>
+                    <Link to="/Service">Corporate video</Link>
+                  </li>
+                  <li>
+                    <Link to="/Service">Business development</Link>
+                  </li>
+                </ul>
               </div>
             </div>
 
@@ -128,7 +131,6 @@ const Footer = () => {
         </p>
       </div>
     </div>
-   
   );
 };
 

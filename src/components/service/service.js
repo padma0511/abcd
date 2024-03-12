@@ -63,35 +63,62 @@ const Service = () => {
 
   return (
     <div className="">
-    <div className="Service-page" id="Webdevelopment">
-      <div className="service-page-top1">
-        <div className="row ">
-          <div className="col">
-            <div className="service-head1">
-              <h1 className="service-titile">WE ARE PROVIDE</h1>
-              <br />
-              <h1 className="console-container">
-                <span id="text"> {part}</span>
-                {/* <div className="console-underscore">&#95;</div> */}
-              </h1>
+      <div className="Service-page" id="Webdevelopment">
+        <div className="service-page-top1">
+          <div className="row ">
+            <div className="col">
+              <div className="service-head1">
+                {/* <h1 className="service-titile">
+                  WE ARE PROVIDE <br />
+                  <span></span>
+                </h1>
+                <br />
+                <h1 className="console-container">
+                  <span id="text"> {part}</span>
+                  <div className="console-underscore">&#95;</div>
+                </h1> */}
+                <h1 className="service-titile">
+                  WE ARE PROVIDE
+                  <div>
+                    <ul class="flip5">
+                      <li>Oh My!</li>
+                      <li>Swoosh</li>
+                      <li>Cool</li>
+                      <li>Squirrel</li>
+                      <li>Rad</li>
+                    </ul>
+                  </div>
+                </h1>
+                {/* <h4 class="wordCarousel">
+                  Word swipe animation:
+                  <div>
+                    <ul class="flip5">
+                      <li>Oh My!</li>
+                      <li>Swoosh</li>
+                      <li>Cool</li>
+                      <li>Squirrel</li>
+                      <li>Rad</li>
+                    </ul>
+                  </div>
+                </h4> */}
+              </div>
+              <div className="service-head1">
+                <p className="service-about">
+                  Explore our comprehensive solutions, meticulously tailored to
+                  fulfill your unique requirements and exceed your expectations.
+                </p>
+              </div>
             </div>
-            <div className="service-head1">
-              <p className="service-about">
-                Explore our comprehensive solutions, meticulously tailored to
-                fulfill your unique requirements and exceed your expectations.
-              </p>
+            <div className="col">
+              <img
+                src={ServiceHeadImage}
+                className="Service-head-image"
+                width="70%"
+                alt="Service"
+              />
             </div>
-          </div>
-          <div className="col">
-            <img
-              src={ServiceHeadImage}
-              className="Service-head-image"
-              width="70%"
-              alt="Service"
-            />
           </div>
         </div>
-      </div>
       </div>
 
       <div className="container service-top2">

@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import firstimage from "../asserts/360_F_265578022_3NbVGd1OZntLK46hjmv8EUisNYA3SqiM-removebg-preview-transformed.png";
-// import secondimage from "../asserts/360_F_365420014_xjsSDkKzrhq4gr9GFzP6S97H7MJyNI5B-removebg-preview.png";
-// import thirdimage from "../asserts/images-removebg-preview-YoS47PuGp-transformed.png";
 
 import firstimage from "../asserts/client/360-company.png";
 import secondimage from "../asserts/client/360-triangle.png";
@@ -12,7 +9,7 @@ import cardimage from "../asserts/client/girlimg.jpg";
 import "react-html5video/dist/styles.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-// import forthimage from "../asserts/luxury-royal-wing-letter-hd-crest-gold-color-logo-victory-logo-crest-logo-wing-logo-logo-template-vector-removebg-preview-transformed.png";
+
 import "../Clients/clients.css";
 
 function ImageGallery() {
@@ -20,6 +17,32 @@ function ImageGallery() {
   function moveToNextCard() {
     setPosition((prevPosition) => (prevPosition % 5) + 1);
   }
+  const [touchStartX, setTouchStartX] = useState(0);
+  const [touchEndX, setTouchEndX] = useState(0);
+  const handleTouchStart = (event) => {
+    setTouchStartX(event.touches[0].clientX);
+  };
+
+  const handleTouchEnd = (event) => {
+    setTouchEndX(event.changedTouches[0].clientX);
+    handleGesture();
+  };
+
+  const handleGesture = () => {
+    const deltaX = touchEndX - touchStartX;
+    if (deltaX > 0) {
+      // Swipe right
+      handleManualScroll(position - 1);
+    } else if (deltaX < 0) {
+      // Swipe left
+      handleManualScroll(position + 1);
+    }
+  };
+
+  const handleManualScroll = (newPosition) => {
+    document.documentElement.style.setProperty("--position", newPosition);
+    setPosition(newPosition);
+  };
   useEffect(() => {
     AOS.init();
     const interval = setInterval(moveToNextCard, 5000); // Move every 5 seconds
@@ -331,12 +354,41 @@ function ImageGallery() {
           </div>
           <div class="grid-item ">
             {" "}
-            <div className="client-top3-gaayu">
-              <input type="radio" name="position" checked={position === 1} />
-              <input type="radio" name="position" checked={position === 2} />
-              <input type="radio" name="position" checked={position === 3} />
-              <input type="radio" name="position" checked={position === 4} />
-              <input type="radio" name="position" checked={position === 5} />
+            <div
+              className="client-top3-gaayu"
+              onTouchStart={handleTouchStart}
+              onTouchEnd={handleTouchEnd}
+            >
+              <input
+                type="radio"
+                name="position"
+                checked={position === 1}
+                onChange={() => handleManualScroll(1)}
+              />
+              <input
+                type="radio"
+                name="position"
+                checked={position === 2}
+                onChange={() => handleManualScroll(2)}
+              />
+              <input
+                type="radio"
+                name="position"
+                checked={position === 3}
+                onChange={() => handleManualScroll(3)}
+              />
+              <input
+                type="radio"
+                name="position"
+                checked={position === 4}
+                onChange={() => handleManualScroll(4)}
+              />
+              <input
+                type="radio"
+                name="position"
+                checked={position === 5}
+                onChange={() => handleManualScroll(5)}
+              />
               <div id="carousel">
                 <div class="item">
                   <div className="c">

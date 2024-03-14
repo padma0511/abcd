@@ -124,7 +124,7 @@ const Marketingstrategy = () => {
                     class="wrapper "
                     data-aos-delay="500"
                     data-aos-duration="1000"
-                    data-aos="fade-leftt"
+                    data-aos="fade-left"
                   >
                     <h3>LEAD GENERATION</h3>
                   </div>

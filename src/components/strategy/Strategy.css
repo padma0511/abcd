@@ -76,7 +76,9 @@
   /* font-weight: 800; */
   /* font-size: 35px; 
    padding-top: 40px; */
-  color: #ffffff;
+
+  color: #fff;
+  text-shadow: 2px 2px 4px #680303;
 }
 
 /* business page para */
@@ -468,7 +470,7 @@ a {
     text-transform: uppercase;
 
     font-family: "Urbanist", sans-serif;
-    background: linear-gradient(to right, #ff2929 50%, #000000 40%);
+    background: linear-gradient(to right, #ff2929 50%, #000000 35%);
     background-size: auto auto;
     background-clip: border-box;
 
@@ -506,7 +508,7 @@ a {
       text-transform: uppercase;
 
       font-family: "Urbanist", sans-serif;
-      background: linear-gradient(to right, #ff2929 50%, #000000 40%);
+      background: linear-gradient(to right, #ff2929 50%, #000000 35%);
       background-size: auto auto;
       background-clip: border-box;
 

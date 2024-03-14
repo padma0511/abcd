@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import firstimage from "../asserts/home/360-company.png";
 import secondimage from "../asserts/home/360-triangle.png";
 import thirdimage from "../asserts/home/slack img.png";
@@ -11,6 +12,7 @@ import homeclient3 from "../asserts/home/h-client3.png";
 import "../home/Wedo.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 
 function Wedo() {
   useEffect(() => {
@@ -76,7 +78,13 @@ function Wedo() {
             business growth.
           </p>
           <div className="but-home">
-            <a href="#" className="btn btn-5">
+            <a
+              href="#"
+              className="btn btn-5"
+              data-aos="zoom-in-left"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
               CONTACT US
             </a>
           </div>
@@ -119,7 +127,7 @@ function Wedo() {
 
       <div className="top-3">
         <div className="top-3-content">
-          <h1 className="top-3-title">OUR LATEST WORKS</h1>
+          <h1 className="top-3-title fadein">OUR LATEST WORKS</h1>
         </div>
         <section className="gallery">
           {images.map((image, index) => (
@@ -137,29 +145,21 @@ function Wedo() {
         </section>
 
         <div className="but-home-explore">
-          <a
-            href="#"
-            className="btn btn-6"
-            data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-duration="1500"
+          <Link
+            to="/Firstpage"
+            className="btn btn-6 "
+            data-aos="fade-left"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
           >
             Explore More
-          </a>
+          </Link>
         </div>
       </div>
 
       <div className="top3-home-client">
         <div className="client head-home">
-          <h1
-            className="slider-head fadein"
-            data-aos="zoom-in-up"
-            data-aos-easing="ease-in-back"
-            data-aos-delay="300"
-            data-aos-offset="0"
-          >
-            OUR CLIENTS
-          </h1>
+          <h1 className="slider-head fadein">OUR CLIENTS</h1>
         </div>
         <div className="slider">
           <div className="slide-track">
@@ -214,6 +214,7 @@ function Wedo() {
           </div>
         </div>
       </div>
+      
     </div>
   );
 }

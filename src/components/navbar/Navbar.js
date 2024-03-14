@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { NavLink, useLocation } from "react-router-dom"; // Import NavLink from react-router-dom instead of Link
 import "./Navbar.css";
 import logo from "../asserts/navbar/logo.png";
 
 function Navbar() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+  const location = useLocation();
 
   const toggleNavbar = () => {
     setIsNavbarOpen(!isNavbarOpen);
@@ -17,7 +18,7 @@ function Navbar() {
   return (
     <>
       <nav
-        className="navbar navbar-expand-lg"
+        className="navbar navbar-expand-lg nav-bar1"
         style={{
           fontFamily: "Arial, Helvetica, sans-serif",
           backgroundColor: "black",
@@ -26,7 +27,7 @@ function Navbar() {
         <div className="container-fluid">
           <img src={logo} className="blackpic" alt="" />
           <button
-            className={`navbar-toggler ${isNavbarOpen ? "" : "collapsed"}`} // Enclose the template literal in backticks
+            className={`navbar-toggler ${isNavbarOpen ? "" : "collapsed"}`}
             type="button"
             onClick={toggleNavbar}
             aria-expanded={isNavbarOpen ? "true" : "false"}
@@ -38,31 +39,43 @@ function Navbar() {
             className={`collapse navbar-collapse ${isNavbarOpen ? "show" : ""}`}
             id="navbarSupportedContent"
           >
-            {" "}
-            {/* Enclose the template literal in backticks */}
             <ul className="navbar-nav nav-links ms-auto">
-              <li className="nav-item mx-3">
-                <Link
-                  to="/"
-                  className="nav-link active"
-                  aria-current="page"
+              <li
+                className={`nav-item mx-3 ${
+                  location.pathname === "/" ? "active" : ""
+                }`}
+              >
+                <NavLink
+                  exact
+                  to="/" // Add exact prop to match only exact paths
+                  className="nav-link"
+                  activeClassName="active" // Apply 'active' class when the link is active
                   onClick={closeNavbar}
                 >
                   Wedo
-                </Link>
+                </NavLink>
               </li>
-              <li className="nav-item mx-3">
-                <Link
+              <li
+                className={`nav-item mx-3 ${
+                  location.pathname === "/Service" ? "active" : ""
+                }`}
+              >
+                <NavLink
                   to="/Service"
-                  className=" nav-link active"
+                  className="nav-link"
+                  activeClassName="active"
                   onClick={closeNavbar}
                 >
                   Service
-                </Link>
+                </NavLink>
               </li>
-              <li className="nav-item dropdown mx-3">
+              <li
+                className={`nav-item dropdown mx-3 ${
+                  location.pathname.startsWith("/Strategy") ? "active" : ""
+                }`}
+              >
                 <a
-                  className="nav-link dropdown-toggle" // Changed from "dropdown" to "dropdown-toggle"
+                  className="nav-link dropdown-toggle"
                   href="#"
                   id="navbarDropdown"
                   role="button"
@@ -75,54 +88,79 @@ function Navbar() {
                   className="dropdown-menu nav-links"
                   aria-labelledby="navbarDropdown"
                 >
-                  <li>
-                    <Link
+                  <li
+                    className={`nav-item mx-3 ${
+                      location.pathname === "/BS" ? "active" : ""
+                    }`}
+                  >
+                    <NavLink
                       to="/BS"
                       className="dropdown-item"
+                      activeClassName="active"
                       onClick={closeNavbar}
                     >
                       Business Strategy
-                    </Link>
+                    </NavLink>
                   </li>
-                  <li>
-                    <Link
+                  <li
+                    className={`nav-item mx-3 ${
+                      location.pathname === "/Marketingstrategy" ? "active" : ""
+                    }`}
+                  >
+                    <NavLink
                       to="/Marketingstrategy"
                       className="dropdown-item"
+                      activeClassName="active"
                       onClick={closeNavbar}
                     >
                       Marketing Strategy
-                    </Link>
+                    </NavLink>
                   </li>
-                  <li>
-                    <Link
+                  <li
+                    className={`nav-item mx-3 ${
+                      location.pathname === "/Operationalstrategy"
+                        ? "active"
+                        : ""
+                    }`}
+                  >
+                    <NavLink
                       to="/Operationalstrategy"
                       className="dropdown-item"
+                      activeClassName="active"
                       onClick={closeNavbar}
                     >
                       Operational Strategy
-                    </Link>
+                    </NavLink>
                   </li>
                 </ul>
               </li>
-              <li className="nav-item mx-3">
-                <Link
+              <li
+                className={`nav-item mx-3 ${
+                  location.pathname === "/Clients" ? "active" : ""
+                }`}
+              >
+                <NavLink
                   to="/Clients"
-                  className="nav-link active"
-                  aria-current="page"
+                  className="nav-link"
+                  activeClassName="active"
                   onClick={closeNavbar}
                 >
                   Clients
-                </Link>
+                </NavLink>
               </li>
-              <li className="nav-item mx-3">
-                <Link
+              <li
+                className={`nav-item mx-3 ${
+                  location.pathname === "/Firstpage" ? "active" : ""
+                }`}
+              >
+                <NavLink
                   to="/Firstpage"
-                  className="nav-link active"
-                  aria-disabled="true"
+                  className="nav-link"
+                  activeClassName="active"
                   onClick={closeNavbar}
                 >
                   Work
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>

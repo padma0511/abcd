@@ -17,8 +17,7 @@ body {
 
 .client-titile {
   padding-left: 20px;
-  /* margin-top: -40px; */
-  /* padding-top: 10px;  */
+
   color: #fff;
   text-shadow: 2px 2px 4px #680303;
   max-width: 780px;
@@ -44,7 +43,7 @@ body {
 }
 @media (max-width: 591px) {
   .client-page-top1 {
-    margin-top: 20%;
+    /* margin-top: 20%; */
   }
   .client-titile {
     padding-left: 20px;
@@ -54,16 +53,10 @@ body {
   }
 }
 @media (max-width: 991px) {
+  .client-titile {
+    padding-top: 40px;
+  }
 }
-/* h1 {
-  color: #fefae0;
-  font-family: Amita;
-  margin: 20px auto;
-  width: 450px;
-  font-size: 3rem;
-  text-align: center;
-  /* border-bottom: 10px double #bc6c25; 
-} */
 
 .galery-image1 {
   width: 200px;
@@ -83,15 +76,6 @@ body {
   filter: none;
 }
 
-/* footer {
-  background-color: #bc6c25;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  min-width: 100vw;
-} */
 .image-galery-1 {
   display: flex;
   flex-wrap: wrap;
@@ -101,11 +85,6 @@ body {
 .container .image-galery {
   padding-top: 20px;
 }
-
-/* .pic-ctn {
-  width: 100vw;
-  height: 200px;
-} */
 
 @keyframes display {
   0% {
@@ -182,8 +161,7 @@ body {
 }
 .client-head2 {
   padding-left: 20px;
-  /* margin-top: -40px; */
-  /* padding-top: 10px;  */
+
   color: #fff;
   text-shadow: 2px 2px 4px #680303;
   max-width: 780px;
@@ -213,8 +191,7 @@ body {
 
 .client-titile {
   padding-left: 20px;
-  /* margin-top: -40px; */
-  /* padding-top: 10px;  */
+
   color: #fff;
   text-shadow: 2px 2px 4px #680303;
   max-width: 780px;
@@ -233,9 +210,6 @@ body {
 }
 
 @media (max-width: 591px) {
-  /* .client-page-top1 {
-    margin-top: 40%;
-  } */
   .client-titile {
     padding-left: 20px;
   }
@@ -244,16 +218,10 @@ body {
   }
 }
 @media (max-width: 991px) {
+  .client-about {
+    padding-right: 20px;
+  }
 }
-/* h1 {
-  color: #fefae0;
-  font-family: Amita;
-  margin: 20px auto;
-  width: 450px;
-  font-size: 3rem;
-  text-align: center;
-  /* border-bottom: 10px double #bc6c25; 
-} */
 
 .galery-image1:hover {
   border: 5px solid #fff;
@@ -264,16 +232,6 @@ body {
   filter: none;
 }
 
-/* footer {
-  background-color: #bc6c25;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  min-width: 100vw;
-} */
-
 .image-galery-1 {
   display: flex;
   flex-wrap: wrap;
@@ -283,11 +241,6 @@ body {
 .container .image-galery {
   padding-top: 20px;
 }
-
-/* .pic-ctn {
-  width: 100vw;
-  height: 200px;
-} */
 
 @keyframes display {
   0% {

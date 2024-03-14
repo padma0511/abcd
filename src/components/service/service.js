@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { ReactTyped } from "react-typed";
+import { TypeAnimation } from "react-type-animation";
 import appdevelopment from "../asserts/service/app dev.png";
 
 import ServiceHeadImage from "../asserts/service/Service_SBG.png";
@@ -13,53 +15,20 @@ const Card = ({ title, description, icon, gradientColor }) => (
   </div>
 );
 
-const words = [
-  "WEB DEVELOPMENT",
-  "APP DEVELOPMENT",
-  "DIGITAL MARKETING",
-  "CORPORATE VIDEO",
-  "BUSINESS DEVELOPMENT",
-];
-const skipDelay = 15;
-const speed = 70;
 const Service = () => {
-  const [i, setI] = useState(0);
-  const [offset, setOffset] = useState(0);
-  const [forwards, setForwards] = useState(true);
-  const [skipCount, setSkipCount] = useState(0);
-  const [part, setPart] = useState("");
-
+  // const { texts } = useTypewriter({
+  //   words: [
+  //     "App Development",
+  //     "Web Development",
+  //     "Digital Marketing",
+  //     "Corporate Video",
+  //     "Busniess Development",
+  //   ],
+  //   loop: {},
+  // });
   useEffect(() => {
     AOS.init();
-    const interval = setInterval(() => {
-      if (forwards) {
-        if (offset >= words[i].length) {
-          setSkipCount((prevCount) => prevCount + 1);
-          if (skipCount === skipDelay) {
-            setForwards(false);
-            setSkipCount(0);
-          }
-        }
-      } else {
-        if (offset === 0) {
-          setForwards(true);
-          setI((prevI) => (prevI + 1) % words.length);
-          setOffset(0);
-        }
-      }
-      const newPart = words[i].substr(0, offset);
-      if (skipCount === 0) {
-        if (forwards) {
-          setOffset((prevOffset) => prevOffset + 1);
-        } else {
-          setOffset((prevOffset) => prevOffset - 1);
-        }
-      }
-      setPart(newPart);
-    }, speed);
-
-    return () => clearInterval(interval);
-  }, [i, offset, forwards, skipCount]);
+  }, []);
 
   return (
     <div className="">
@@ -69,38 +38,52 @@ const Service = () => {
             <div className="col">
               <div className="service-head1">
                 {/* <h1 className="service-titile">
-                  WE ARE PROVIDE <br />
-                  <span></span>
+                  WE ARE PROVIDE
+                  <span style={{ color: "white" }}>{texts}</span>
+                  <Cursor />
+                </h1> */}
+                {/* <h1 className="service-titile">
+                  <TypeAnimation
+                    sequence={[
+                      "WE ARE PROVIDE APP DEVELOPMENT",
+                      1000,
+                      "WE ARE PROVIDE WEB DEVELOPMENT",
+                      1000,
+                      "WE ARE PROVIDE DIGITAL MARKETING",
+                      1000,
+                      "WE ARE PROVIDE CORPORATE VIDEO",
+                      1000,
+                      "WE ARE PROVIDE BUSINESS DEVELOPMENT",
+                      1000,
+                    ]}
+                    speed={50}
+                    repeat={Infinity}
+                  />
+                </h1> */}
+
+                <h1 className="service-titile">
+                  WE ARE PROVIDE <br /> <h4> </h4>
+                  <ReactTyped
+                    strings={[
+                      "APP DEVELOPMENT",
+                      "WEB DEVELOPMENT",
+                      "DIGITAL MARKETING",
+                      "CORPORATE VIDEO",
+                      "BUSINESS DEVELOPMENT",
+                    ]}
+                    typeSpeed={100}
+                    loop
+                    backSpeed={20}
+                    cursorChar="|"
+                    showCursor={true}
+                  />
                 </h1>
+
                 <br />
-                <h1 className="console-container">
+                {/* <h1 className="console-container">
                   <span id="text"> {part}</span>
                   <div className="console-underscore">&#95;</div>
                 </h1> */}
-                <h1 className="service-titile">
-                  WE ARE PROVIDE
-                  <div>
-                    <ul class="flip5">
-                      <li>Oh My!</li>
-                      <li>Swoosh</li>
-                      <li>Cool</li>
-                      <li>Squirrel</li>
-                      <li>Rad</li>
-                    </ul>
-                  </div>
-                </h1>
-                {/* <h4 class="wordCarousel">
-                  Word swipe animation:
-                  <div>
-                    <ul class="flip5">
-                      <li>Oh My!</li>
-                      <li>Swoosh</li>
-                      <li>Cool</li>
-                      <li>Squirrel</li>
-                      <li>Rad</li>
-                    </ul>
-                  </div>
-                </h4> */}
               </div>
               <div className="service-head1">
                 <p className="service-about">

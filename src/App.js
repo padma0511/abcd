@@ -47,6 +47,7 @@ const App = () => {
         </Routes>
 
         <Footer />
+        
       </Router>
     </div>
   );

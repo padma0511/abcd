@@ -1,12 +1,19 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import pic1 from "../asserts/firstpage/pic1.jpeg";
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
+import pic1 from "../asserts/firstpage/pic1.jpeg";
 import Logoo from "../asserts/firstpage/logoo.jpeg";
-import logooo from "../asserts/firstpage/logooo.jpg";
+import logooo from "../asserts/firstpage/no.jpg";
 import logoooo from "../asserts/firstpage/logooooo.jpg";
 
 const Firstpage = () => {
+  const [activeButton, setActiveButton] = useState("");
+  const location = useLocation();
+
+  const handleButtonClick = (buttonName) => {
+    setActiveButton(buttonName);
+  };
+
   return (
     <>
       <div className="bggg">
@@ -18,7 +25,7 @@ const Firstpage = () => {
               </Link>
             </li>
             <li>
-              <Link to="/Secondpage " className="gaaayu">
+              <Link to="/Secondpage" className="gaaayu">
                 BANNERS
               </Link>
             </li>
@@ -30,25 +37,62 @@ const Firstpage = () => {
           </ul>
         </div>
 
-        <div className="work">
-          <div className=" container-fluid ">
-            <div className=" row">
-              <div className="col-lg-4 work1">
+        <div className="work ">
+          <div className="container-fluid ">
+            <div className="row">
+              <div className="col-lg-2 work1 top1">
                 <Link to="/Firstpage">
-                  <button className="btn-dark glow-on-hover">LOGO</button>
+                  <button
+                    className={
+                      location.pathname === "/Firstpage"
+                        ? "btn-dark glow-on-click active"
+                        : "btn-dark glow-on-click"
+                    }
+                    onClick={() => handleButtonClick("LOGO")}
+                  >
+                    LOGO
+                  </button>
                 </Link>
                 <Link to="/Secondpage">
-                  <button className="btn-dark glow-on-hover">BANNERS</button>
+                  <button
+                    className={
+                      location.pathname === "/Secondpage"
+                        ? "btn-dark glow-on-click active"
+                        : "btn-dark glow-on-click"
+                    }
+                    onClick={() => handleButtonClick("BANNERS")}
+                  >
+                    BANNERS
+                  </button>
                 </Link>
                 <Link to="/Videos">
-                  <button className="btn-dark glow-on-hover">VIDEOS</button>
+                  <button
+                    className={
+                      location.pathname === "/Videos"
+                        ? "btn-dark glow-on-click active"
+                        : "btn-dark glow-on-click"
+                    }
+                    onClick={() => handleButtonClick("VIDEOS")}
+                  >
+                    VIDEOS
+                  </button>
                 </Link>
               </div>
-              <div className="col-lg-8 ">
-                <img src={pic1} className="lll" />
-                <img src={Logoo} className="www" />
-                <img src={logooo} className="llll" />
-                <img src={logoooo} className="wwww" />
+              <div className="col-lg-10 topp1">
+                <div className="row">
+                  <div className="col-md-3">
+                    <img src={pic1} className="lll" />
+                    <img src={Logoo} className="www" />
+                  </div>
+                  <div className="col-md-3 non">
+                    <img src={logooo} className="llllw" />
+                    <img src={logooo} className="wwwwl" />
+                  </div>
+                  <div className="col-md-3 mon">
+                    <img src={pic1} className="lll" />
+                    <img src={Logoo} className="www" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>

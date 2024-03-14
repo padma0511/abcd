@@ -1,13 +1,18 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import ban1 from "../asserts/secondpage/ban1.jpg";
 import ban2 from "../asserts/secondpage/ban2.jpg";
 
-import ban3 from "../asserts/secondpage/ban3.jpg";
-import ban4 from "../asserts/secondpage/ban4.jpg";
-
 const Secondpage = () => {
+  const [activeButton, setActiveButton] = useState(null);
+  const location = useLocation();
+
+  // Function to handle button click
+  const handleButtonClick = (buttonId) => {
+    setActiveButton(buttonId);
+  };
+
   return (
     <>
       <div className="bggg">
@@ -19,7 +24,7 @@ const Secondpage = () => {
               </Link>
             </li>
             <li>
-              <Link to="/Secondpage " className="gaaayu">
+              <Link to="/Secondpage" className="gaaayu">
                 BANNERS
               </Link>
             </li>
@@ -31,25 +36,66 @@ const Secondpage = () => {
           </ul>
         </div>
 
-        <div className="work">
-          <div className=" container-fluid ">
-            <div className=" row">
-              <div className="col-lg-4 work1">
+        <div className="work ">
+          <div className="container-fluid ">
+            <div className="row">
+              <div className="col-lg-2 work1 top2">
                 <Link to="/Firstpage">
-                  <button className="btn-dark glow-on-hover">LOGO</button>
+                  <button
+                    className={
+                      location.pathname === "/Firstpage"
+                        ? "btn-dark glow-on-click active"
+                        : "btn-dark glow-on-click"
+                    }
+                    onClick={() => handleButtonClick(1)}
+                  >
+                    LOGO
+                  </button>
                 </Link>
                 <Link to="/Secondpage">
-                  <button className="btn-dark glow-on-hover">BANNERS</button>
+                  <button
+                    className={
+                      location.pathname === "/Secondpage"
+                        ? "btn-dark glow-on-click active"
+                        : "btn-dark glow-on-click"
+                    }
+                    onClick={() => handleButtonClick(2)}
+                  >
+                    BANNERS
+                  </button>
                 </Link>
                 <Link to="/Videos">
-                  <button className="btn-dark glow-on-hover">VIDEOS</button>
+                  <button
+                    className={
+                      location.pathname === "/Videos"
+                        ? "btn-dark glow-on-click active"
+                        : "btn-dark glow-on-click"
+                    }
+                    onClick={() => handleButtonClick(3)}
+                  >
+                    VIDEOS
+                  </button>
                 </Link>
               </div>
-              <div className="col-lg-8 ">
-                <img src={ban1} className="lll" />
-                <img src={ban2} className="www" />
-                <img src={ban3} className="llll" />
-                <img src={ban4} className="wwww" />
+              <div className="col-lg-10 topp2">
+                <div className="row  ban-home">
+                  <div className="col-md-6 ">
+                    <img src={ban1} alt="" className="img-fluid ban-image" />
+                  </div>
+                  <br />
+                  <div className="col-md-6 ">
+                    <img src={ban2} alt="" className="img-fluid ban-image" />
+                  </div>
+                </div>
+                <div className="row ban-home ">
+                  <div className="col-md-6">
+                    <img src={ban1} alt="" className="img-fluid ban-image" />
+                  </div>
+                  <br />
+                  <div className="col-md-6 ">
+                    <img src={ban2} alt="" className="img-fluid ban-image mm" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>

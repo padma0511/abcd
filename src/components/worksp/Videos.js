@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import ReactPlayer from "react-player";
+// import Moving from "../moving/Moving";
 
 const VIDEO_PATH =
   "https://www.youtube.com/embed/28Rto9JjTCA?si=VC09FW8uiAAJU6Wp";
@@ -15,28 +16,46 @@ const Videos = () => {
 
   return (
     <>
-      <div className="bggg">
+      <div className="bggg ui">
         <div className="phone">
           <ul className="list-unstyled">
             <li>
-              <Link to="/Firstpage" className="gaaayu">
+              <Link
+                to="/Firstpage"
+                className="gaaayu"
+                style={{
+                  fontFamily: "'Poppins', sans-serif",
+                }}
+              >
                 LOGO
               </Link>
             </li>
             <li>
-              <Link to="/Secondpage" className="gaaayu">
+              <Link
+                to="/Secondpage"
+                className="gaaayu"
+                style={{
+                  fontFamily: "'Poppins', sans-serif",
+                }}
+              >
                 BANNERS
               </Link>
             </li>
             <li>
-              <Link to="/Videos" className="gaaayu">
+              <Link
+                to="/Videos"
+                className="gaaayu"
+                style={{
+                  fontFamily: "'Poppins', sans-serif",
+                }}
+              >
                 VIDEOS
               </Link>
             </li>
           </ul>
         </div>
 
-        <div className="work">
+        <div className="work run">
           <div className="container-fluid">
             <div className="row">
               <div className="col-lg-2 work1 top3">
@@ -48,6 +67,9 @@ const Videos = () => {
                         : "btn-dark glow-on-clickr"
                     }
                     onClick={() => handleButtonClick("LOGO")}
+                    style={{
+                      fontFamily: "'Poppins', sans-serif",
+                    }}
                   >
                     LOGO
                   </button>
@@ -60,6 +82,9 @@ const Videos = () => {
                         : "btn-dark glow-on-click"
                     }
                     onClick={() => handleButtonClick("BANNERS")}
+                    style={{
+                      fontFamily: "'Poppins', sans-serif",
+                    }}
                   >
                     BANNERS
                   </button>
@@ -72,6 +97,9 @@ const Videos = () => {
                         : "btn-dark glow-on-click"
                     }
                     onClick={() => handleButtonClick("VIDEOS")}
+                    style={{
+                      fontFamily: "'Poppins', sans-serif",
+                    }}
                   >
                     VIDEOS
                   </button>

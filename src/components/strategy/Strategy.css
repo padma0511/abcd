@@ -1,536 +1,483 @@
-/*  business Analysis page */
-
-/* title */
-
-.story {
-  /* padding-top: 100px;  */
-  /* padding-right: 30px; */
-  /* padding-left: 30px;   */
-
-  /* background-color: black; */
-  color: #ffffff;
-
-  background-color: black;
-}
-.top {
-  padding-top: 70px;
-}
-
-.topbanner {
-  /* background-attachment: fixed;   */
-
-  background-image: url("../asserts/business/gif.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-
-  width: 100%;
-  min-height: 550px;
-
-  background-size: cover;
-
-  -webkit-animation: background-anim-example-10 15s linear infinite;
-  animation: background-anim-example-10 15s linear infinite;
-  /* padding-top: 60px; */
-  /* padding-right: 50px; */
-
-  padding-right: 30px;
-  padding-left: 30px;
-}
-@-webkit-keyframes background-anim-example-10 {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
-}
-
-@keyframes background-anim-example-10 {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
-}
-.head {
-  padding-top: 40px;
-}
-.business {
-  padding-top: 70px;
-  padding-right: 30px;
-  padding-left: 30px;
-}
-.bs-headline {
-  /* text-shadow: 1px 1px 1px hwb(0 7% 23%);    
-  */
-  line-height: 1.2;
-
-  font-family: "Urbanist", sans-serif;
-  /* font-weight: 800; */
-  /* font-size: 35px; 
-   padding-top: 40px; */
-
-  color: #fff;
-  text-shadow: 2px 2px 4px #680303;
-}
-
-/* business page para */
-
-.bus-para {
-  margin-top: 30px;
-  line-height: 1.75;
-  padding-right: 40px;
-  font-family: "Urbanist", sans-serif;
-  font-size: 23px;
-  font-weight: 400;
-  color: #d9d9d9;
-  line-height: 38px;
-}
-
-.head {
-  padding-top: 20px;
-}
-
-/* subtitle */
-
-/* .business-sh {
-  color: #d9d9d9;
- font-family: "Urbanist", sans-serif;
-  font-size: 25px;
-  background: linear-gradient(
-    45deg,
-    #ff0506,
-    #ff0506,
-    #ff0506,
-    #ff0506,
-    #c142423d,
-    #c142423d,
-    #c142423d,
-    #c142423d
-  );
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 10px #ff0506);
-} */
-
-/* subtitle-para */
-.business-para {
-  width: 90%;
-  font-size: 18px;
-  font-family: "Urbanist", sans-serif;
-  color: #d9d9d9;
-  line-height: 30px;
-  padding-top: 5px;
-}
-.bbusiness-para {
-  width: 90%;
-  font-size: 18px;
-  font-family: "Urbanist", sans-serif;
-  color: #d9d9d9;
-  line-height: 30px;
-  padding-top: 5px;
-}
-.pb {
-  width: 450px;
-  height: 350px;
-  margin-left: 18%;
-  /* margin-top: 20px;  */
-  margin-bottom: 90px;
-  filter: drop-shadow(0 0 10px #ad2020);
-  /* margin-top: -20px; */
-  margin-top: 80px;
-}
-.business-sh1 {
-  color: #d9d9d9;
-  font-family: "Urbanist", sans-serif;
-  font-size: 25px;
-  padding-top: 70px;
-  background: linear-gradient(
-    45deg,
-    #ff0506,
-    #ff0506,
-    #ff0506,
-    #c142423d,
-    #c142423d,
-    #c142423d,
-    #c142423d,
-    #c142423d
-  );
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 10px #ff0506);
-}
-
-/* subtitle-para */
-.business-para1 {
-  width: 90%;
-  font-size: 18px;
-  font-family: "Urbanist", sans-serif;
-  color: #d9d9d9;
-  line-height: 30px;
-  /* padding-top: 70px; */
-  padding-top: 5px;
-}
-.business-para-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.business-sh2 {
-  color: #d9d9d9;
-  font-family: "Urbanist", sans-serif;
-  font-size: 25px;
-  /* margin-top: 100px; */
-  background: linear-gradient(
-    45deg,
-    #ff0506,
-    #ff0506,
-    #ff0506,
-    #c142423d,
-    #c142423d,
-    #c142423d,
-    #c142423d,
-    #c142423d
-  );
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 10px #ff0506);
-  padding-top: 40px;
-  margin-top: 120px;
-}
-
-/* subtitle-para */
-.business-para2 {
-  width: 90%;
-  font-size: 18px;
-  font-family: "Urbanist", sans-serif;
-  color: #d9d9d9;
-  line-height: 30px;
-  /* margin-top: 200px; */
-  /* padding-top: 5px; */
-  /* padding-top: 120px;   */
-}
-@media screen and (max-width: 500px) and (max-width: 700px) {
-  .pb1 {
-    /* Adjust styles for smaller screens */
-    width: 100%; /* Example adjustment */
-    height: auto; /* Example adjustment */
-    margin-left: 0; /* Example adjustment */
-    margin-bottom: 50px; /* Example adjustment */
-    margin-top: 0; /* Example adjustment */
-    padding-top: 5px;
-  }
-}
-@media (max-width: 768px) {
-  .bus-para {
-    font-size: 17px; /* Adjust font size for smaller screens */
-    /* Adjust padding for smaller screens */
-    line-height: 32px;
-    padding-right: 15px;
-  }
-}
-
-@media screen and (max-width: 380px) and (max-width: 600px) and (max-width: 500px) {
-  /* Styles to apply when screen width is 600px or less (typical for mobile screens) */
-
-  .head {
-    padding-top: 70px;
-  }
-
-  .bs-headline {
-    color: #d9d9d9;
-    font-family: "Urbanist", sans-serif;
-    font-size: 20px;
-    margin-top: -50px;
-    /* filter: drop-shadow(0 0 10px #ff0c0c); 
-     background: linear-gradient(45deg, #ff0506, #ff0506, #ff0506,#c142423d);
+/* marketing subheading animation */
+* {
  
-     -webkit-background-clip: text; 
-     -webkit-text-fill-color: transparent; */
-  }
-
-  /* .business-sh {
-    filter: drop-shadow(none);
-    background: linear-gradient(45deg, #ff0506, #ff0506, #ff0506, #c142423d);
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 20px;
-  } */
-
-  /* .business-para {
-    font-size: 17px; /* Adjust font size for smaller screens */
-  /* line-height: 29px;
-    width: 110%;
-   font-family: "Urbanist", sans-serif; */
-  .business-para {
-    width: 100%;
-    font-size: 17px;
-    font-family: "Urbanist", sans-serif;
-    color: #d9d9d9;
-    line-height: 30px;
-    padding-top: 5px;
-  }
-
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .business-para {
-      font-size: 16px; /* Adjust font size for smaller screens */
-      line-height: 26px; /* Adjust line height for smaller screens */
-      margin-top: -50px;
-    }
-  }
-
-  .pb {
-    /* Adjust styles for smaller screens */
-    width: 100%; /* Example adjustment */
-    height: auto; /* Example adjustment */
-    margin-left: 0; /* Example adjustment */
-    margin-bottom: 50px; /* Example adjustment */
-    margin-top: 0; /* Example adjustment */
-  }
-
-  .bbusiness-para {
-    width: 100%;
-    font-size: 17px;
-    font-family: "Urbanist", sans-serif;
-    color: #d9d9d9;
-    line-height: 26px;
-    padding-top: 5px;
-  }
-  .business-para1 {
-    font-family: "Urbanist", sans-serif;
-    font-size: 16px; /* Adjust font size for smaller screens */
-    line-height: 26px;
-    padding-top: 26px;
-    width: 100%;
-  }
-  .business-sh2 {
-    padding-top: 4px;
-    /* margin-top: 50px; */
-    margin-top: 36px;
-    filter: drop-shadow(none);
-    background: linear-gradient(45deg, #ff0506, #ff0506, #ff0506, #c142423d);
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 20px;
-  }
-  .business-para2 {
-    font-family: "Urbanist", sans-serif;
-    font-size: 16px; /* Adjust font size for smaller screens */
-    line-height: 26px;
-    padding-top: 5px;
-    width: 100%;
-  }
-}
-.trend {
-  width: 450px;
-  height: 350px;
-  margin-left: 4%;
-  /* margin-top: -50px; */
-  filter: drop-shadow(0 0 20px #ff0c0c);
-  padding-top: 30px;
+  font-family: 'SuisseIntl', sans-serif !important;
+    
+  
+  
 }
 
-@media only screen and (max-width: 600px) {
-  .align1 {
-    width: 100%;
-    height: auto;
-    margin-left: 0;
 
-    padding-top: 20px;
-    filter: drop-shadow(0 0 20px #ad2020);
-  }
+.is{
+font-weight: 600;
+margin-left: 2%;
+font-size: 28px;
+padding-top: 50px;
+font-family: 'SuisseIntl', sans-serif;
 }
-
-@media (min-width: 768px) {
-  .align {
-    display: none;
-  }
+.at{
+  
+  font-size: 25px;
+  line-height: 34px;
+  max-width: 1000px;
+  margin-left: 2%;
+  padding-top: 15px;
+  font-family: 'SuisseIntl', sans-serif !important;
 }
-@media (max-width: 800px) {
-  .trend {
-    display: none;
-  }
+.read{
+  padding-top: 40px;
+  margin-top: 45px;
+  font-family: 'SuisseIntl', sans-serif !important;
 }
+.PARAA1{
+padding-top: 13px;
+font-family: 'SuisseIntl', sans-serif !important;
 
-.Swotone {
-  width: 500px;
-  height: 350px;
-  /* margin-left: 6%; */
-  /* margin-top: -70px;  */
-  margin-top: 60px;
-  filter: drop-shadow(0 0 20px #ff0c0c);
-  /* margin-top: -90px; */
-  /* padding-right: 30px; */
+font-size: 18px;
 
-  margin-left: 18%;
-}
+color: #747272;
+line-height: 1.5;
+    letter-spacing: -.09px;
+    
 
-@media only screen and (max-width: 600px) {
-  .Swots {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    margin-top: 20px;
-    filter: drop-shadow(0 0 20px #ff0c0c);
-  }
-  .head3 {
-    margin-top: 80px;
-    padding-top: 60px;
-  }
 }
 
-/* Default styles for smaller screens */
 
-/* Example media query for desktop screens */
-
-/* business page end */
-
-/* MARKETING PAGE START */
-/* MARKETING PAGE START */
-
-@media (min-width: 768px) {
-  .pb1 {
-    display: none;
-  }
+.PARAA2{
+  padding-top: 13px;
+  font-size: 18px;
+font-family: 'SuisseIntl', sans-serif !important;
+color: #747272;
+line-height: 1.5;
+    letter-spacing: -.09px;
+  
 }
-@media (max-width: 600px) {
-  .pb {
-    display: none;
-  }
+.PARAA3{
+  padding-top: 13px;
+  font-size: 18px;
+  font-family: 'SuisseIntl', sans-serif !important;
+  color: #747272;
+  line-height: 1.5;
+      letter-spacing: -.09px;
+  
 }
-@media (min-width: 768px) {
-  .align1 {
-    display: none;
-  }
+.sec1{
+  margin-left: 5%;
+  font-family: 'SuisseIntl', sans-serif !important;
+  
 }
-@media (max-width: 600px) {
-  .align {
-    display: none;
-  }
+.problem1{
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -.05px;
+  font-family: 'SuisseIntl', sans-serif !important;
 }
-@media (min-width: 768px) {
-  .Swots {
-    display: none;
-  }
+.problem2{
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -.05px;
+  font-family: 'SuisseIntl', sans-serif !important;
 }
-@media (max-width: 600px) {
-  .Swotone {
-    display: none;
-  }
-}
-@media (max-width: 600px) {
-  .head3 {
-    margin-top: -20px;
-  }
-}
-
-@media (max-width: 600px) {
-  .business {
-    margin-top: -90px;
-  }
+.problem3{
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -.05px;
+  font-family: 'SuisseIntl', sans-serif !important;
 }
 
 @media screen and (max-width: 768px) {
-  .head1 {
-    margin-top: 90px;
-  }
-  .headdd2 {
-    margin-top: 80px;
-  }
-  .headd3 {
-    margin-top: 40px;
-    padding-top: 60px;
-  }
-}
-
-/* text  2nd hover */
-
-a {
-  text-decoration: none;
-  color: #9ca0b1;
-}
-
-.wrapper {
-  h3 {
-    color: #fff;
-    font-size: 24px;
-    text-transform: uppercase;
-
-    font-family: "Urbanist", sans-serif;
-    background: linear-gradient(to right, #ff2929 50%, #000000 35%);
-    background-size: auto auto;
-    background-clip: border-box;
-
-    color: #fff;
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 1.5s linear infinite;
-    display: inline-block;
-    background-size: 200% 100%;
-    animation: backgroundShift 4s ease-in-out infinite alternate;
-  }
-}
-
-/* Keyframe animation */
-@keyframes backgroundShift {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-@media screen and (max-width: 768px) {
-  a {
-    text-decoration: none;
-    color: #9ca0b1;
+  .read {
+    padding-top: 6px; /* Adjust as needed for smaller screens */
+    margin-top: 15px; /* Adjust as needed for smaller screens */
+    
   }
 
-  .wrapper {
-    h3 {
-      color: #fff;
-      font-size: 20px;
-      text-transform: uppercase;
-
-      font-family: "Urbanist", sans-serif;
-      background: linear-gradient(to right, #ff2929 50%, #000000 35%);
-      background-size: auto auto;
-      background-clip: border-box;
-
-      color: #fff;
-      background-clip: text;
-      text-fill-color: transparent;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: textclip 1.5s linear infinite;
-      display: inline-block;
-      background-size: 200% 100%;
-      animation: backgroundShift 4s ease-in-out infinite alternate;
+  @media screen and (max-width: 768px) {
+    .PARAA1,
+    .PARAA2,
+    .PARAA3 {
+      font-size: 19px; /* Adjust font size for smaller screens */
+      font-family: 'SuisseIntl', sans-serif !important;
     }
   }
 
-  /* Keyframe animation */
-  @keyframes backgroundShift {
-    0% {
-      background-position: 0% 50%;
+  .sec1 {
+    margin-left: 2%; /* Adjust as needed for smaller screens */
+    margin-top: 50px;
+    font-size: 19px;
+    font-family: 'SuisseIntl', sans-serif !important;
+  }
+  .problem1{
+    font-size: 18px;
+    font-family: 'SuisseIntl', sans-serif !important;
+   
+  }
+  .problem2{
+    font-size: 19px;
+    font-weight: 600;
+    font-family: 'SuisseIntl', sans-serif !important;
+   
+  }
+  .problem3{
+    font-size: 19px;
+    font-family: 'SuisseIntl', sans-serif !important;
+   
+  }
+}
+
+
+
+.heros {
+    
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  
+  background-size: cover;
+  background-position: center center;
+  box-shadow: inset 0 0 0 3000px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.contents {
+   
+  max-width: 1200px;
+  width: 100%;
+  color: white;
+  margin-inline: auto;
+  
+  font-family: 'SuisseIntl', sans-serif !important;
+  
+  margin-top: 200px;
+ margin-right: 15%;
+  }
+.contents h1 {
+  font-size: 80px;
+  
+  color:#ffdb3b ;
+ 
+  margin-left: 3%;
+  font-weight: 600;
+  
+  
+  font-family: 'SuisseIntl', sans-serif !important;
+  line-height: 1;
+  letter-spacing: -2px;
+  white-space: pre-line;
+}
+
+.contents p {
+  font-size: 24px;
+  margin-left: 3%;
+  max-width: 700px;
+  
+  /* padding-top: 16px; */
+  margin-top: 24px;
+  font-family: 'SuisseIntl', sans-serif !important;
+  
+}
+
+
+
+@media screen and (max-width: 600px) {
+ 
+    
+    
+    .heros {
+     width: 100%;
+      height: 340px;
+      line-height: 25px;
+      font-family: 'SuisseIntl', sans-serif !important;
+       margin-top: -27px; 
+      
     }
-    100% {
-      background-position: 100% 50%;
+    .contents h1 {
+      font-size: 30px;
+      
+      color:#ffdb3b ;
+      margin-top: -130px;
+      
+      
+      padding-right: 10px;
+      padding-left: 10px;
+      line-height: 1.1;
+  letter-spacing: -1px; 
+  font-family: 'SuisseIntl', sans-serif !important;
+
+    }
+    
+    .contents p {
+      font-size: 15px;
+      margin: 15px 0;
+      
+      
+      /* padding-top: 16px; */
+      
+      font-family: 'SuisseIntl', sans-serif !important;
+      margin-top: 29px;
+      
+      
+      padding-right: 17px;
+      padding-left: 20px;
+      
+      
+      
+      
+    }
+   .is{
+      
+      margin-left: 2%;
+      font-size: 24px;
+      padding-top: 50px;
+      font-family: 'SuisseIntl', sans-serif !important;
+      font-weight: 600;
+      }
+      .at{
+        
+        font-size: 16px;
+        line-height: 23px;
+        font-family: 'SuisseIntl', sans-serif !important;
+      }
+    
+  }
+  @media screen and (max-width: 600px) {
+    section .banner{
+      margin-top: 40px;
+      font-family: 'SuisseIntl', sans-serif !important;
     }
   }
+
+/* section 2 marketing page */
+.hero1 {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  /* background-color: black; */
+  background-size: cover;
+  background-position: center center;
+  box-shadow: inset 0 0 0 3000px rgba(0, 0, 0, 0.5);
+  margin-top: 50px;
+
+}
+
+
+
+.contents1s {
+   
+  max-width: 1200px;
+  width: 100%;
+  color: white;
+  margin-inline: auto;
+  
+  font-family: 'SuisseIntl', sans-serif !important;
+  
+  margin-top: 158px;
+ margin-right: 15%;
+  }
+  
+.contents1s h1 {
+  font-size: 80px;
+  
+  color:#ffdb3b ;
+ 
+  
+  font-weight: 600;
+ padding-right: 50px;
+ padding-left: 30px;
+  
+  font-family: 'SuisseIntl', sans-serif !important;
+  line-height: 1;
+  letter-spacing: -2px;
+  white-space: pre-line;
+}
+.contents2s h1 {
+  font-size: 80px;
+  
+  color:#ffffff ;
+ 
+  margin-left: 41%;
+  font-weight: 600;
+ padding-right: 50px;
+ padding-left: 30px;
+  
+  font-family: 'SuisseIntl', sans-serif !important;
+  line-height: 1;
+  letter-spacing: -2px;
+  white-space: pre-line;
+  margin-top: -85px;
+}
+
+.contents23s h1 {
+  margin-left: 44%;
+  font-size: 80px;
+  
+  color:#ffffff ;
+ 
+  font-weight: 600;
+ padding-right: 50px;
+ padding-left: 30px;
+  
+  font-family: 'SuisseIntl', sans-serif !important;
+  line-height: 1;
+  letter-spacing: -2px;
+  white-space: pre-line;
+  margin-top: -85px;
+}
+
+
+
+  
+@media screen and (max-width: 600px) {
+  .contents1 h1 {
+    
+    font-size: 30px;
+      
+    color:#08cad8 ;
+    margin-top: -95px;
+    
+    
+    margin-left: 20%;
+    line-height: 1.1;
+letter-spacing: -1px; 
+
+margin-left: 90%;
+    
+  }
+  .hero1 {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    /* background-color: black; */
+    background-size: cover;
+    background-position: center center;
+    box-shadow: inset 0 0 0 3000px rgba(0, 0, 0, 0.5);
+    
+
+    
+  }
+}
+
+/* yellow banner */
+
+
+@media screen and (max-width: 2000px) {
+  .assist{
+    padding-right: 39px;
+    padding-left: 39px;
+   
+    font-family: 'SuisseIntl', sans-serif !important;
+    font-size: 29px;
+    width: 100%;
+    margin-left: 10%;
+    padding-top: 30px;
+    line-height: 39px;
+    padding-bottom: 30px;
+  }
+  }
+
+
+.yellobanner{
+  background-color: #ffdb3b;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .assist{
+    font-size: 18px;
+    line-height: 25px;
+   
+   padding-top: 20px;
+  width: 110%;
+   
+   margin-left: -4%;
+
+   
+ 
+  }
+  }
+
+
+
+  @media screen and (max-width: 600px) {
+    .contents1s h1{
+      color: #ffdb3b;
+     
+     font-size: 30px;
+     margin-top: -65px;
+     margin-left: 0%;
+     padding-left: 15px;
+     
+    }
+    .contents2s h1{
+      color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    margin-top: -8px;
+    padding-right: 90%;
+    margin-left: 1%;
+
+    
+  }
+  .contents23s h1{
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    margin-top: -8px;
+    padding-right: 90%;
+    margin-left: 1%;
+
+  }
+  .side{
+   
+  }
+  .need{
+    
+  }
+}
+
+.text {
+  /* display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black; */
+  transition: transform 0.3s ease-in-out;
+  font-family: 'SuisseIntl', sans-serif !important;
+  transition: 0.3s ease all;
+}
+
+.text:hover {
+  transform: scale(1.1); /* Zoom in by 10% */
+  color: #d0ad11;
+  font-family: 'SuisseIntl', sans-serif !important;
+  letter-spacing: 0; /* Set letter-spacing to 0 on hover */
+}
+
+
+
+.FONTSS{
+  font-family: 'SuisseIntl', sans-serif !important;
+}
+
+.card * {
+  transition: 0.3s ease all;
+}
+
+.text .focus-content {
+  display: block;
+  padding: 8px 12px;
+}
+
+.text p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.text:hover .PARAA1, .card:focus-within img {
+  margin-top: -80px;
+}
+
+.text:hover h3, .card:focus-within h3 {
+  padding: 8px 12px 0;
 }

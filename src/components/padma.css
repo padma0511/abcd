@@ -6,16 +6,8 @@
   /* background-image: url("../components/asserts/red.jpg"); */
   /* background-image: url("../components/asserts/video/IMG_AAA.jpg"); */
 
-  background-repeat: no-repeat;
-  background-position: center;
-
-  width: 100%;
-  min-height: 550px;
-
-  background-size: cover;
-
-  -webkit-animation: background-anim-example-10 90s linear infinite;
-  animation: background-anim-example-10 80s linear infinite;
+  margin-top: -6%;
+  background-color: #000000;
 }
 @media screen and (max-width: 925px) {
   .work1 {
@@ -44,7 +36,7 @@
   padding: 40px; */
   /* padding-left: 20px; */
   padding-bottom: 30px;
-  padding-top: 70px;
+  padding-top: 10px;
 }
 
 .btn-dark {
@@ -70,11 +62,13 @@
 }
 
 .phone {
-  color: #ffffff;
+  color: #38c39e;
 
   font-size: 40px;
   text-decoration: none;
   font-family: "Arial", "Helvetica";
+  margin-top: 90px;
+  padding-top: 40px;
 }
 
 .phone ul li {
@@ -86,8 +80,9 @@
   padding-top: 130px;
   justify-content: center;
   padding: 5px;
-  padding-left: 50px;
+  padding-left: 30px;
   text-decoration: none;
+  color: #ffdb3b;
 }
 
 @media screen and (min-width: 768px) {
@@ -111,6 +106,7 @@
     padding-top: 10px;
     color: rgb(255, 255, 255);
     text-decoration: none;
+    margin-top: 750px;
     /* background-color: black; */
   }
 }
@@ -136,68 +132,7 @@
   .work1 {
   }
 }
-.lll {
-  width: 350px;
-  height: 300px;
-  padding-top: 30px;
-  padding-right: 20px;
-}
-.www {
-  width: 350px;
-  height: 300px;
-  padding-top: 30px;
-  padding-left: 20px;
-}
 
-@media screen and (max-width: 600px) {
-  .lll {
-    width: 100%;
-    height: auto;
-    padding: 10px;
-  }
-}
-/* Define the initial styles for .www */
-
-/* Add a media query for screens smaller than 768px (typical tablets and phones) */
-@media (max-width: 767px) {
-  .www {
-    width: 100%;
-    height: auto;
-    padding: 10px;
-  }
-}
-
-.llll {
-  width: 350px;
-  height: 300px;
-  padding-top: 50px;
-  padding-right: 20px;
-}
-.wwww {
-  width: 350px;
-  height: 300px;
-  padding-top: 50px;
-  padding-left: 20px;
-}
-@media screen and (max-width: 600px) {
-  .llll {
-    height: 23%;
-    padding: 10px;
-  }
-}
-/* Define the initial styles for .www */
-
-/* Add a media query for screens smaller than 768px (typical tablets and phones) */
-@media (max-width: 767px) {
-  .wwww {
-    height: 23%;
-    padding: 10px;
-  }
-}
-
-/* work page logo design */
-
-/* work page banners  start*/
 .work {
   /* background-color: black; */
 }
@@ -210,18 +145,6 @@
   .work1 {
   }
 }
-.lll {
-  width: 350px;
-  height: 300px;
-  padding-top: 30px;
-  padding-right: 20px;
-}
-.www {
-  width: 350px;
-  height: 300px;
-  padding-top: 30px;
-  padding-left: 20px;
-}
 
 @media (max-width: 800px) {
   .work1 {
@@ -233,72 +156,7 @@
     display: none;
   }
 }
-.lll {
-  width: 350px;
-  height: 300px;
-  padding-top: 30px;
-  padding-right: 20px;
-}
-.www {
-  width: 350px;
-  height: 300px;
-  padding-top: 30px;
-  padding-left: 20px;
-}
 
-@media (max-width: 767px) {
-  .work1 {
-  }
-}
-.lll {
-  width: 350px;
-  height: 300px;
-  padding-top: 30px;
-  padding-right: 20px;
-}
-.www {
-  width: 350px;
-  height: 300px;
-  padding-top: 30px;
-  padding-left: 20px;
-}
-
-@media screen and (max-width: 600px) {
-  .lll {
-    width: 100%;
-    height: auto;
-    padding: 10px;
-  }
-}
-/* Define the initial styles for .www */
-
-/* Add a media query for screens smaller than 768px (typical tablets and phones) */
-@media (max-width: 767px) {
-  .www {
-    height: auto;
-    padding: 10px;
-  }
-}
-
-.llll {
-  width: 350px;
-  height: 300px;
-  padding-top: 50px;
-  padding-right: 20px;
-}
-.wwww {
-  width: 350px;
-  height: 300px;
-  padding-top: 50px;
-  padding-left: 20px;
-}
-@media screen and (max-width: 600px) {
-  .llll {
-    width: 100%;
-    height: 23%;
-    padding: 10px;
-  }
-}
 /* Define the initial styles for .www */
 
 /* Add a media query for screens smaller than 768px (typical tablets and phones) */
@@ -346,83 +204,78 @@
 
 /* banner css */
 
-.bggg {
-  background-image: url("../components/asserts/video/IMG_AAA.jpg");
-
-  background-repeat: no-repeat;
-  background-position: center;
-
-  width: 100%;
-
-  background-size: cover;
-
-  -webkit-animation: background-anim-example-10 90s linear infinite;
-  animation: background-anim-example-10 80s linear infinite;
-}
-
-.lllll {
-  width: 500px;
-  height: 450px;
-}
-.wwwww {
-  width: 500px;
-  height: 450px;
-}
-.noo {
-  margin-top: -50px;
-}
-.mon {
-  margin-right: 10%;
-}
-
 /* Default styles */
 
 /* Media query for screens smaller than 768px (tablets and mobile phones) */
-@media (max-width: 767px) {
-  .lllll,
-  .wwwww {
-    width: 100%;
-    height: auto;
-  }
-
-  .mon {
-    margin-right: 0;
-  }
-}
 
 /* logo page css */
+
 .lll {
-  padding: 10px;
-  margin-left: 4%;
+  width: 350px;
+  height: 240px;
 }
 
 .llllw {
   width: 350px;
-  height: 280px;
-  margin-top: 20px;
+  height: 240px;
 }
 .wwwwl {
   width: 350px;
-  height: 270px;
+  height: 240px;
   margin-top: 34px;
 }
-.non {
-  margin-left: 2%;
+.www {
+  width: 350px;
+  height: 240px;
 }
-/* Media queries for responsiveness */
-@media (max-width: 767px) {
+.mon {
+  padding-right: 30px;
+}
+.non {
+  margin-top: 40px;
+}
+.top7 {
+  margin-right: -80px;
+  padding-right: 90px;
+}
+/*
+ Media queries for responsiveness */
+@media (max-width: 450px) {
   .lll,
   .non {
     margin-left: 0; /* Remove left margin for smaller screens */
   }
+  .run {
+    margin-left: -5%;
+    margin-top: -40px;
+  }
+  .ui {
+    margin-left: 7%;
+  }
 
-  .llllw,
+  .lll {
+    width: 250px;
+    height: 200px;
+    margin-left: 4%;
+    margin-top: 34px;
+  }
+
+  .llllw {
+    width: 250px;
+    height: 200px;
+    margin-left: 5%;
+    margin-top: 34px;
+  }
   .wwwwl {
-    width: calc(
-      100% - 8%
-    ); /* Adjust width to occupy 100% minus 8% space for margins */
-    max-width: 350px; /* Ensure maximum width for smaller screens */
-    margin: 10px 4% 20px; /* Adjust margins */
+    width: 250px;
+    height: 200px;
+    margin-top: 34px;
+    margin-left: 5%;
+  }
+  .www {
+    width: 250px;
+    height: 200px;
+    margin-left: 5%;
   }
 }
 
@@ -445,40 +298,41 @@
   margin-top: 40px;
 }
 .top1 {
-  margin-top: -150px;
+  margin-top: 50px;
 }
 .topp1 {
-  padding-top: 5px;
+  padding-top: 90px;
   padding-bottom: 40px;
 }
 .top2 {
-  margin-top: -90px;
+  margin-top: 60px;
 }
 .topp2 {
-  padding-top: 5px;
+  padding-top: 90px;
   padding-bottom: 40px;
 }
 
 .top3 {
-  margin-top: -180px;
+  margin-top: 60px;
 }
 .topp3 {
   padding-bottom: 40px;
+  padding-top: 70px;
 }
 
-.glow-on-click:active {
+/* .glow-on-click:active {
   /* Styles to apply when the button is clicked (active) */
-  color: #000;
-  /* background-color: rgb(255, 32, 32); */
-}
-.btn-dark.glow-on-click.active {
-  background-color: #d50505;
+/* color: #000; */
+/* background-color: rgb(255, 32, 32); */
+
+/* .btn-dark.glow-on-click.active {
+  background-color:#ffdb3b ;
   color: #000;
   font-size: 23px;
   font-weight: 400;
-}
+} */
 
 /* Define the styles for the inactive buttons */
-.btn-dark.glow-on-click {
+/* .btn-dark.glow-on-click {
   color: #fff;
-}
+} */

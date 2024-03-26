@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import firstimage from "../asserts/client/360-company.png";
 import secondimage from "../asserts/client/360-triangle.png";
 import thirdimage from "../asserts/client/slack img.png";
-import clientimage from "../asserts/client/clientimage.png";
+import clientbg from "../asserts/client/CLIENTBG.jpeg";
 import cardimage from "../asserts/client/girlimg.jpg";
 
 import "react-html5video/dist/styles.css";
@@ -50,48 +50,20 @@ function ImageGallery() {
   }, []);
   return (
     <div className="client-page">
-      <div className="client-page-top1">
-        <div className="row ">
-          <div className="col-lg-6">
-            <div className="client-head1">
-              <h1
-                className="client-titile"
-                data-aos="fade-down"
-                data-aos-easing="linear"
-                data-aos-duration="1500"
-              >
-                Our Clients
-              </h1>
-            </div>
-            <div className="client-head1">
-              <p
-                className="client-about "
-                data-aos="fade-down"
-                data-aos-easing="linear"
-                data-aos-duration="1500"
-              >
-                Our unique offshore delivery model is fueled by our single
-                minded passion to achieve higher levels of client satisfaction
-                through flexible, cost-effective and innovative IT solutions.
-              </p>
-            </div>
-          </div>
-          <div className="col-lg-6">
-            {
-              <img
-                src={clientimage}
-                className="client-head-image"
-                data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-duration="1500"
-                data-aos-easing="ease-in-sine"
-                width="70%"
-                alt="Service"
-              />
-            }
+      <section
+        className="clientbg"
+        style={{
+          backgroundImage: `url(${clientbg})`,
+        }}
+      >
+        <div className="clientHead">
+          <div className="container">
+            <h1 className="clientHead1">
+              CONTACT <span className="client-head-sub">US</span>
+            </h1>
           </div>
         </div>
-      </div>
+      </section>
 
       <div className="container image-galery-1">
         <div className="img-client-head">
@@ -335,8 +307,8 @@ function ImageGallery() {
       </div>
 
       <div className="client1-page">
-        <div class="grid-container">
-          <div class="grid-item  client-head-topic">
+        <div class="grid-container-CLIENT">
+          <div class="grid-item-CLIENT  client-head-topic">
             <h1
               className="client-head2"
               data-aos="zoom-in-right"

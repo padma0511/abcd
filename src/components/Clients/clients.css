@@ -7,6 +7,43 @@ body {
   display: flex;
   flex-direction: column;
 }
+.clientbg {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  /* background-color: black; */
+  background-size: cover;
+  background-position: center center;
+  box-shadow: inset 0 0 0 3000px rgba(0, 0, 0, 0.5);
+}
+.clientHead {
+  color: white;
+  text-align: center;
+  padding-top: 15%;
+}
+.clientHead1 {
+  color: white;
+  text-align: center;
+  font-family: var(--headfont);
+  font-size: 56px;
+  font-weight: 800;
+}
+@media (max-width: 522px) {
+  .clientbg {
+    height: 200px;
+  }
+  .clientHead1 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 302px) {
+  .client-head-sub {
+    padding-right: 50px;
+  }
+}
+.client-head-sub {
+  color: #ff6a3d;
+}
 
 .client-page-top1 {
   width: 100%;
@@ -19,7 +56,7 @@ body {
   padding-left: 20px;
 
   color: #fff;
-  text-shadow: 2px 2px 4px #680303;
+  text-shadow: 2px 2px 4px #ff6a3d;
   max-width: 780px;
 
   line-height: 1.2;
@@ -163,7 +200,7 @@ body {
   padding-left: 20px;
 
   color: #fff;
-  text-shadow: 2px 2px 4px #680303;
+  text-shadow: 2px 2px 4px #ff6a3d;
   max-width: 780px;
 
   line-height: 1.2;
@@ -182,7 +219,7 @@ body {
   padding-bottom: 50px;
   padding-top: 50px;
   color: #fff;
-  text-shadow: 2px 2px 4px #680303;
+  text-shadow: 2px 2px 4px #ff6a3d;
   max-width: 780px;
 
   line-height: 1.2;
@@ -193,7 +230,7 @@ body {
   padding-left: 20px;
 
   color: #fff;
-  text-shadow: 2px 2px 4px #680303;
+  text-shadow: 2px 2px 4px #ff6a3d;
   max-width: 780px;
 
   line-height: 1.2;
@@ -399,7 +436,7 @@ body {
 .client-head2 {
   padding-top: 50px;
   color: #fff;
-  text-shadow: 2px 2px 4px #680303;
+  text-shadow: 2px 2px 4px #ff6a3d;
   /* max-width: 780px; */
 
   line-height: 1.2;
@@ -418,7 +455,7 @@ body {
   padding-bottom: 50px;
   padding-top: 50px;
   color: #fff;
-  text-shadow: 2px 2px 4px #680303;
+  text-shadow: 2px 2px 4px #ff6a3d;
   max-width: 780px;
 
   line-height: 1.2;
@@ -503,7 +540,7 @@ input:nth-of-type(1) {
   grid-row: 2 / 3;
 }
 input:nth-of-type(1):checked ~ div#carousel {
-  --position: 3;
+  --position: 1;
 }
 
 input:nth-of-type(2) {

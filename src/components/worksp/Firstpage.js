@@ -6,6 +6,8 @@ import Logoo from "../asserts/firstpage/logoo.jpeg";
 import logooo from "../asserts/firstpage/no.jpg";
 import logoooo from "../asserts/firstpage/logooooo.jpg";
 
+// import Moving from "../moving/Moving";
+
 const Firstpage = () => {
   const [activeButton, setActiveButton] = useState("");
   const location = useLocation();
@@ -16,8 +18,8 @@ const Firstpage = () => {
 
   return (
     <>
-      <div className="bggg">
-        <div className="phone ">
+      <div className="bggg ">
+        <div className="phone ui">
           <ul className="list-unstyled">
             <li>
               <Link to="/Firstpage" className="gaaayu">
@@ -37,11 +39,11 @@ const Firstpage = () => {
           </ul>
         </div>
 
-        <div className="work ">
+        <div className="work run ">
           <div className="container-fluid ">
             <div className="row">
               <div className="col-lg-2 work1 top1">
-                <Link to="/Firstpage">
+                <Link to="/Firstpage mb-5">
                   <button
                     className={
                       location.pathname === "/Firstpage"
@@ -78,19 +80,19 @@ const Firstpage = () => {
                   </button>
                 </Link>
               </div>
-              <div className="col-lg-10 topp1">
+              <div className="col-lg-10 topp1 top7 p-5">
                 <div className="row">
-                  <div className="col-md-3">
+                  <div className="col-md-4">
                     <img src={pic1} className="lll" />
-                    <img src={Logoo} className="www" />
+                    <img src={Logoo} className="www non" />
                   </div>
-                  <div className="col-md-3 non">
+                  <div className="col-md-4 ">
                     <img src={logooo} className="llllw" />
-                    <img src={logooo} className="wwwwl" />
+                    <img src={logooo} className="wwwwl " />
                   </div>
-                  <div className="col-md-3 mon">
+                  <div className="col-md-4 mon">
                     <img src={pic1} className="lll" />
-                    <img src={Logoo} className="www" />
+                    <img src={Logoo} className="www non" />
                   </div>
                 </div>
               </div>

@@ -1,15 +1,14 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import Navbar from "./components/navbar/Navbar";
-import Footer from "./components/footer/Footer";
+// import Footer from "./components/footer/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Move from "../src/components/move/Move";
 import ScrollToTop from "./components/ScroolToTop";
-
+import Contact from "./components/contact/Contact";
 import Wedo from "./components/home/Wedo";
 import Service from "./components/service/service";
-import BS from "./components/strategy/BS";
-import Marketingstrategy from "./components/strategy/Marketing strategy";
-import Operationalstrategy from "./components/strategy/Operational strategy";
+import Strategy from "./components/strategy/Strategy";
 
 import Clients from "./components/Clients/clients";
 
@@ -30,24 +29,21 @@ const App = () => {
       <Router>
         <ScrollToTop />
         {<Navbar />}
+        {<Move />}
         {/* {<Home />} */}
         <Routes>
           <Route path="/" element={<Wedo />} />
           <Route path="/service" element={<Service />} />
-          <Route path="/BS" element={<BS />} />
-          <Route path="/Marketingstrategy" element={<Marketingstrategy />} />
-          <Route
-            path="/Operationalstrategy"
-            element={<Operationalstrategy />}
-          />
+          <Route path="/Strategy" element={<Strategy />} />
+
+          <Route path="/Contact" element={<Contact />} />
           <Route path="/Clients" element={<Clients />} />
           <Route path="/Firstpage" element={<Firstpage />} />
           <Route path="/Secondpage" element={<Secondpage />} />
           <Route path="/Videos" element={<Videos />} />
         </Routes>
 
-        <Footer />
-        
+        {/* <Footer /> */}
       </Router>
     </div>
   );

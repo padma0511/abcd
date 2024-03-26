@@ -1,201 +1,303 @@
-import React, { useEffect, useState } from "react";
-import { ReactTyped } from "react-typed";
-import { TypeAnimation } from "react-type-animation";
-import appdevelopment from "../asserts/service/app dev.png";
-
-import ServiceHeadImage from "../asserts/service/Service_SBG.png";
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faServicestack } from "@fortawesome/free-brands-svg-icons";
+import background from "../asserts/service/service-bg-1.avif";
 import "../service/service.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
-const Card = ({ title, description, icon, gradientColor }) => (
-  <div className={`container-card ${gradientColor}`}>
-    {icon}
-    <p className="card-title">{title}</p>
-    <p className="card-description">{description}</p>
-  </div>
-);
 
-const Service = () => {
-  // const { texts } = useTypewriter({
-  //   words: [
-  //     "App Development",
-  //     "Web Development",
-  //     "Digital Marketing",
-  //     "Corporate Video",
-  //     "Busniess Development",
-  //   ],
-  //   loop: {},
-  // });
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
+const HeroSection = () => {
   return (
-    <div className="">
-      <div className="Service-page" id="Webdevelopment">
-        <div className="service-page-top1">
-          <div className="row ">
-            <div className="col">
-              <div className="service-head1">
-                {/* <h1 className="service-titile">
-                  WE ARE PROVIDE
-                  <span style={{ color: "white" }}>{texts}</span>
-                  <Cursor />
-                </h1> */}
-                {/* <h1 className="service-titile">
-                  <TypeAnimation
-                    sequence={[
-                      "WE ARE PROVIDE APP DEVELOPMENT",
-                      1000,
-                      "WE ARE PROVIDE WEB DEVELOPMENT",
-                      1000,
-                      "WE ARE PROVIDE DIGITAL MARKETING",
-                      1000,
-                      "WE ARE PROVIDE CORPORATE VIDEO",
-                      1000,
-                      "WE ARE PROVIDE BUSINESS DEVELOPMENT",
-                      1000,
-                    ]}
-                    speed={50}
-                    repeat={Infinity}
-                  />
-                </h1> */}
-
-                <h1 className="service-titile">
-                  WE ARE PROVIDE <br /> <h4> </h4>
-                  <ReactTyped
-                    strings={[
-                      "APP DEVELOPMENT",
-                      "WEB DEVELOPMENT",
-                      "DIGITAL MARKETING",
-                      "CORPORATE VIDEO",
-                      "BUSINESS DEVELOPMENT",
-                    ]}
-                    typeSpeed={100}
-                    loop
-                    backSpeed={20}
-                    cursorChar="|"
-                    showCursor={true}
-                  />
-                </h1>
-
-                <br />
-                {/* <h1 className="console-container">
-                  <span id="text"> {part}</span>
-                  <div className="console-underscore">&#95;</div>
-                </h1> */}
-              </div>
-              <div className="service-head1">
-                <p className="service-about">
-                  Explore our comprehensive solutions, meticulously tailored to
-                  fulfill your unique requirements and exceed your expectations.
-                </p>
-              </div>
-            </div>
-            <div className="col">
-              <img
-                src={ServiceHeadImage}
-                className="Service-head-image"
-                width="70%"
-                alt="Service"
-              />
+    <>
+      <div className="service">
+        <section
+          className="bgimage"
+          style={{
+            backgroundImage: `url(${background})`,
+          }}
+        >
+          <div className="AppHead">
+            <div className="container">
+              <h1 className="AppHead1">
+                APP <span className="app-head-sub">DEVELOPMENT</span>
+              </h1>
             </div>
           </div>
-        </div>
+        </section>
+        {/* <section
+        style={{
+          backgroundColor: "black",
+        }}
+      >
+        <p className="section2-service">
+          App Development services refer to the professional and specialized
+          offerings provided by software development companies or individual
+          developers to create mobile applications for various platforms, such
+          as Android, iOS, and cross-platform environments. These services
+          encompass the entire process of turning app ideas into fully
+          functional and user-friendly applications that cater to specific
+          business needs or target audiences. App Development services refer to
+          the professional and specialized offerings provided by software
+          development companies or individual developers to create mobile
+          applications for various platforms, such as Android, iOS, and
+          cross-platform environments.
+        </p>
+        <p className="section2-service2">
+          App Development services refer to the professional and specialized
+          offerings provided by software development companies or individual
+          developers to create mobile applications for various platforms, such
+          as Android, iOS, and cross-platform environments. These services
+          encompass the entire process of turning app ideas into fully
+          functional and user-friendly applications that cater to specific
+          business needs or target audiences.
+        </p>
+      </section> */}
+        <section className="service-section">
+          <div class="elementorcontent">
+            <h2 class="elementortitle">
+              Service
+              <span style={{ color: "rgb(126,217,87)" }}> Benefits</span>{" "}
+            </h2>
+            <p class="elementordescription">
+              This allows us to create a design strategy that not only sets you
+              apart from the competition but also drives business results. Our
+              design team is adept at using the latest web design technologies
+              and trends to ensure your website is not just a digital
+              placeholder, but a powerful tool for your business.{" "}
+            </p>
+          </div>
+
+          <div class="ele">
+            <div class="ele1">
+              {" "}
+              <div class="elementocontainer">
+                <ul class="elementitems">
+                  <li class="elementoritem">
+                    <span class="elementoricon">
+                      <FontAwesomeIcon
+                        icon={faServicestack}
+                        aria-hidden="true"
+                      />{" "}
+                    </span>
+                    <span class="elementortext">
+                      A unique website that differentiates you from the
+                      competition.
+                    </span>
+                  </li>
+                  <li class="elementoritem">
+                    <span class="elementoricon">
+                      <FontAwesomeIcon
+                        icon={faServicestack}
+                        aria-hidden="true"
+                      />{" "}
+                    </span>
+                    <span class="elementortext">
+                      Improved user experience leading to higher customer
+                      satisfaction.
+                    </span>
+                  </li>
+                  <li class="elementoritem">
+                    <span class="elementoricon">
+                      <FontAwesomeIcon
+                        icon={faServicestack}
+                        aria-hidden="true"
+                      />{" "}
+                    </span>
+                    <span class="elementortext">
+                      Seamless integration with social media platforms for
+                      increased engagement.
+                    </span>
+                  </li>
+                  <li class="elementoritem">
+                    <span class="elementoricon">
+                      <FontAwesomeIcon
+                        icon={faServicestack}
+                        aria-hidden="true"
+                      />{" "}
+                    </span>
+                    <span class="elementortext">
+                      Seamless integration with social media platforms for
+                      increased engagement.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="ele1">
+              {" "}
+              <a class="servicelist">
+                <div className="servicelist-head">
+                  <h1>OUR SERVICES</h1>
+                  <ul className="servicelist-ul">
+                    <li className="servicelist-li">
+                      <span class="elementoricon">
+                        <FontAwesomeIcon
+                          icon={faServicestack}
+                          aria-hidden="true"
+                        />{" "}
+                      </span>
+                      WEB DEVELOPMENT
+                    </li>
+                    <li className="servicelist-li">
+                      {" "}
+                      <span class="elementoricon">
+                        <FontAwesomeIcon
+                          icon={faServicestack}
+                          aria-hidden="true"
+                        />{" "}
+                      </span>
+                      APP DEVELOPMENT
+                    </li>
+                    <li className="servicelist-li">
+                      {" "}
+                      <span class="elementoricon">
+                        <FontAwesomeIcon
+                          icon={faServicestack}
+                          aria-hidden="true"
+                        />{" "}
+                      </span>
+                      DIGITAL MARKETING
+                    </li>
+                    <li className="servicelist-li">
+                      {" "}
+                      <span class="elementoricon">
+                        <FontAwesomeIcon
+                          icon={faServicestack}
+                          aria-hidden="true"
+                        />{" "}
+                      </span>
+                      CORPORATE VIDEO
+                    </li>
+                    <li className="servicelist-li">
+                      {" "}
+                      <span class="elementoricon">
+                        <FontAwesomeIcon
+                          icon={faServicestack}
+                          aria-hidden="true"
+                        />{" "}
+                      </span>
+                      BUSINESS DEVELOPMENT
+                    </li>
+                    <li className="servicelist-li">
+                      {" "}
+                      <span class="elementoricon">
+                        <FontAwesomeIcon
+                          icon={faServicestack}
+                          aria-hidden="true"
+                        />{" "}
+                      </span>
+                      SEARCH ENGINE OPTIMIZATION
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          {/* <div class="elementor-element ">
+          <div class="elementorcontainer">
+            <p>
+              But our job doesn’t end with the launch of your website. We
+              provide ongoing maintenance and support services to ensure your
+              site remains updated, secure, and performing at its best. Be it
+              integrating new features, updating content, or troubleshooting,
+              we’ve got you covered.
+            </p>
+            <p>
+              Let us create a website that not only tells your brand story, but
+              also drives growth and elevates your online presence. Embrace the
+              power of an outstanding web presence with our Web Design
+              Service.&nbsp;
+            </p>{" "}
+          </div>
+        </div> */}
+        </section>
+        <section className="cardservice-image">
+          <div className="container">
+            <div class="cardsservice">
+              <ul class="cards1">
+                <li class="cards__item1">
+                  <div class="cardservice">
+                    <div class="card__content">
+                      <div class="card__title">Flex</div>
+                      <p class="card__text">
+                        This is the shorthand for flex-grow, flex-shrink and
+                        flex-basis combined. The second and third parameters
+                        (flex-shrink and flex-basis) are optional. Default is 0
+                        1 auto.{" "}
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="cards__item1">
+                  <div class="cardservice">
+                    <div class="card__content">
+                      <div class="card__title">Flex Grow</div>
+                      <p class="card__text">
+                        This defines the ability for a flex item to grow if
+                        necessary. It accepts a unitless value that serves as a
+                        proportion. It dictates what amount of the available
+                        space inside the flex container the item should take up.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="cards__item1">
+                  <div class="cardservice">
+                    <div class="card__content">
+                      <div class="card__title">Flex Shrink</div>
+                      <p class="card__text">
+                        This defines the ability for a flex item to shrink if
+                        necessary. Negative numbers are invalid.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="cards__item1">
+                  <div class="cardservice">
+                    <div class="card__content">
+                      <div class="card__title">Flex</div>
+                      <p class="card__text">
+                        This is the shorthand for flex-grow, flex-shrink and
+                        flex-basis combined. The second and third parameters
+                        (flex-shrink and flex-basis) are optional. Default is 0
+                        1 auto.{" "}
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="cards__item1">
+                  <div class="cardservice">
+                    <div class="card__content">
+                      <div class="card__title">Flex Basis</div>
+                      <p class="card__text">
+                        This defines the default size of an element before the
+                        remaining space is distributed. It can be a length (e.g.
+                        20%, 5rem, etc.) or a keyword. The auto keyword means
+                        "look at my width or height property."
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="cards__item1">
+                  <div class="cardservice">
+                    <div class="card__content">
+                      <div class="card__title">Flex Grow</div>
+                      <p class="card__text">
+                        This defines the ability for a flex item to grow if
+                        necessary. It accepts a unitless value that serves as a
+                        proportion. It dictates what amount of the available
+                        space inside the flex container the item should take up.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </div>
-
-      <div className="container service-top2">
-        <h1 className="container-title">SERVICES</h1>
-
-        <div className="gradient-cards ">
-          <div
-            id="Appdevelopment"
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-          >
-            <Card
-              title="APP DEVELOPMENT"
-              id="Appdevelopment"
-              description="Mobile app development company, we support our client through mobile app’s provided that are seo friendly and efficient. Our client’s business growth get increased."
-              icon={<img src={appdevelopment} width="100" height="100" />}
-              gradientColor="bg-green-box"
-            />
-          </div>
-          <div
-            id="Seo"
-            data-aos="flip-right"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-          >
-            <Card
-              title=" SEARCH ENGINE OPTIMIZATION."
-              id=""
-              description="Mobile app development company, we support our client through mobile app’s provided that are seo friendly and efficient. Our client’s business growth get increased.."
-              icon={<img src={appdevelopment} width="100" height="100" />}
-              gradientColor="bg-white-box"
-            />
-          </div>
-
-          <div
-            id="webdevelopment"
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-          >
-            <Card
-              id="webdevelopment"
-              title="WEB DEVELOPMENT"
-              description="Mobile app development company, we support our client through mobile app’s provided that are seo friendly and efficient. Our client’s business growth get increased..
-            "
-              icon={<img src={appdevelopment} width="100" height="100" />}
-              gradientColor="bg-yellow-box"
-            />
-          </div>
-
-          <div
-            id="DIGITALMARKETING"
-            data-aos="flip-right"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-          >
-            <Card
-              title="DIGITAL MARKETING"
-              description="Mobile app development company, we support our client through mobile app’s provided that are seo friendly and efficient. Our client’s business growth get increased."
-              icon={<img src={appdevelopment} width="100" height="100" />}
-              gradientColor="bg-blue-box"
-            />
-          </div>
-          <div
-            id="CorporateVideo"
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-          >
-            <Card
-              title="Corporate Video"
-              description="Mobile app development company, we support our client through mobile app’s provided that are seo friendly and efficient. Our client’s business growth get increased.."
-              icon={<img src={appdevelopment} width="100" height="100" />}
-              gradientColor="bg-blue-box"
-            />
-          </div>
-          <div
-            id="BUSINESSDEVELOPMENT"
-            data-aos="flip-right"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-          >
-            <Card
-              title="BUSINESS DEVELOPMENT"
-              description="Mobile app development company, we support our client through mobile app’s provided that are seo friendly and efficient. Our client’s business growth get increased."
-              icon={<img src={appdevelopment} width="100" height="100" />}
-              gradientColor="bg-blue-box"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
+    </>
   );
 };
 
-export default Service;
+export default HeroSection;

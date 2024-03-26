@@ -1,27 +1,45 @@
-import React, { useState } from "react";
-import { NavLink, useLocation } from "react-router-dom"; // Import NavLink from react-router-dom instead of Link
+import React, { useState, useEffect } from "react";
+
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import "./Navbar.css";
 import logo from "../asserts/navbar/logo.png";
 
 function Navbar() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
-  const location = useLocation();
+  const [isScrolled, setIsScrolled] = useState(false); // Define isScrolled state variable
 
+  // Function to toggle navbar
   const toggleNavbar = () => {
     setIsNavbarOpen(!isNavbarOpen);
   };
 
+  // Function to close navbar
   const closeNavbar = () => {
     setIsNavbarOpen(false);
   };
 
+  // Function to handle scroll event
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
+      {/* <nav className="navbar navbar-expand-lg" style={{ fontFamily: "Arial, Helvetica, sans-serif", backgroundColor: "black" }}> */}
+      {/* <nav className="navbar navbar-expand-lg fixed-top navbar-scroll" data-mdb-navbar-init> */}
+      {/* <nav className={navbar navbar-expand-lg fixed-top navbar-scroll ${isScrolled ? 'scrolled' : ''}} data-mdb-navbar-init
+      style={{ fontFamily: "Arial, Helvetica, sans-serif",  }}> */}
       <nav
-        className="navbar navbar-expand-lg nav-bar1"
+        className={`navbar navbar-expand-lg ${isScrolled ? "scrolled" : ""}`}
         style={{
           fontFamily: "Arial, Helvetica, sans-serif",
-          backgroundColor: "black",
+          
         }}
       >
         <div className="container-fluid">
@@ -40,42 +58,38 @@ function Navbar() {
             id="navbarSupportedContent"
           >
             <ul className="navbar-nav nav-links ms-auto">
-              <li
-                className={`nav-item mx-3 ${
-                  location.pathname === "/" ? "active" : ""
-                }`}
-              >
-                <NavLink
-                  exact
-                  to="/" // Add exact prop to match only exact paths
-                  className="nav-link"
-                  activeClassName="active" // Apply 'active' class when the link is active
+              <li className="nav-item mx-3">
+                <Link
+                  to="/"
+                  className="nav-link active"
+                  aria-current="page"
                   onClick={closeNavbar}
                 >
                   Wedo
-                </NavLink>
+                </Link>
               </li>
-              <li
-                className={`nav-item mx-3 ${
-                  location.pathname === "/Service" ? "active" : ""
-                }`}
-              >
-                <NavLink
+              <li className="nav-item mx-3">
+                <Link
                   to="/Service"
-                  className="nav-link"
-                  activeClassName="active"
+                  className=" nav-link active"
                   onClick={closeNavbar}
                 >
                   Service
-                </NavLink>
+                </Link>
               </li>
-              <li
-                className={`nav-item dropdown mx-3 ${
-                  location.pathname.startsWith("/Strategy") ? "active" : ""
-                }`}
-              >
+              <li className="nav-item mx-3">
+                <Link
+                  to="/Strategy"
+                  className=" nav-link active"
+                  onClick={closeNavbar}
+                >
+                  Strategy
+                </Link>
+              </li>
+
+              {/* <li className="nav-item dropdown mx-3">
                 <a
-                  className="nav-link dropdown-toggle"
+                  className="nav-link dropdown"
                   href="#"
                   id="navbarDropdown"
                   role="button"
@@ -83,84 +97,60 @@ function Navbar() {
                   aria-expanded="false"
                 >
                   Strategy
-                </a>
-                <ul
-                  className="dropdown-menu nav-links"
-                  aria-labelledby="navbarDropdown"
-                >
-                  <li
-                    className={`nav-item mx-3 ${
-                      location.pathname === "/BS" ? "active" : ""
-                    }`}
-                  >
-                    <NavLink
-                      to="/BS"
-                      className="dropdown-item"
-                      activeClassName="active"
-                      onClick={closeNavbar}
-                    >
+                </a> */}
+              {/* <ul className="dropdown-menu nav-links" aria-labelledby="navbarDropdown">
+                <li>
+                    
+                    <Link to="/Business" className="dropdown-item" onClick={closeNavbar}>
+                      Business 
+                    </Link>
+                  </li>
+                  <li>
+                    
+                    <Link to="/BS" className="dropdown-item" onClick={closeNavbar}>
                       Business Strategy
-                    </NavLink>
+                    </Link>
                   </li>
-                  <li
-                    className={`nav-item mx-3 ${
-                      location.pathname === "/Marketingstrategy" ? "active" : ""
-                    }`}
-                  >
-                    <NavLink
-                      to="/Marketingstrategy"
-                      className="dropdown-item"
-                      activeClassName="active"
-                      onClick={closeNavbar}
-                    >
+                  <li>
+                    <Link to="/Marketingstrategy" className="dropdown-item" onClick={closeNavbar}>
                       Marketing Strategy
-                    </NavLink>
+                    </Link>
                   </li>
-                  <li
-                    className={`nav-item mx-3 ${
-                      location.pathname === "/Operationalstrategy"
-                        ? "active"
-                        : ""
-                    }`}
-                  >
-                    <NavLink
-                      to="/Operationalstrategy"
-                      className="dropdown-item"
-                      activeClassName="active"
-                      onClick={closeNavbar}
-                    >
+                  <li>
+                    <Link to="/Operationalstrategy" className="dropdown-item" onClick={closeNavbar}>
                       Operational Strategy
-                    </NavLink>
+                    </Link>
                   </li>
-                </ul>
-              </li>
-              <li
-                className={`nav-item mx-3 ${
-                  location.pathname === "/Clients" ? "active" : ""
-                }`}
-              >
-                <NavLink
+                </ul> */}
+              {/* </li> */}
+              <li className="nav-item mx-3">
+                <Link
                   to="/Clients"
-                  className="nav-link"
-                  activeClassName="active"
+                  className="nav-link active"
+                  aria-current="page"
                   onClick={closeNavbar}
                 >
                   Clients
-                </NavLink>
+                </Link>
               </li>
-              <li
-                className={`nav-item mx-3 ${
-                  location.pathname === "/Firstpage" ? "active" : ""
-                }`}
-              >
-                <NavLink
+              <li className="nav-item mx-3">
+                <Link
                   to="/Firstpage"
-                  className="nav-link"
-                  activeClassName="active"
+                  className="nav-link active"
+                  aria-disabled="true"
                   onClick={closeNavbar}
                 >
                   Work
-                </NavLink>
+                </Link>
+              </li>
+              <li className="nav-item mx-3">
+                <Link
+                  to="/Contact"
+                  className=" nav-link active"
+                  onClick={closeNavbar}
+                >
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>

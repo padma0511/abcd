@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 
 import ban1 from "../asserts/secondpage/ban1.jpg";
 import ban2 from "../asserts/secondpage/ban2.jpg";
-
+// import Moving from "../moving/Moving";
 const Secondpage = () => {
   const [activeButton, setActiveButton] = useState(null);
   const location = useLocation();
@@ -16,27 +16,45 @@ const Secondpage = () => {
   return (
     <>
       <div className="bggg">
-        <div className="phone ">
+        <div className="phone ui ">
           <ul className="list-unstyled">
             <li>
-              <Link to="/Firstpage" className="gaaayu">
+              <Link
+                to="/Firstpage"
+                className="gaaayu"
+                style={{
+                  fontFamily: "'Raleway', sans-serif",
+                }}
+              >
                 LOGO
               </Link>
             </li>
             <li>
-              <Link to="/Secondpage" className="gaaayu">
+              <Link
+                to="/Secondpage"
+                className="gaaayu"
+                style={{
+                  fontFamily: "'Raleway', sans-serif",
+                }}
+              >
                 BANNERS
               </Link>
             </li>
             <li>
-              <Link to="/Videos" className="gaaayu">
+              <Link
+                to="/Videos"
+                className="gaaayu"
+                style={{
+                  fontFamily: "'Raleway', sans-serif",
+                }}
+              >
                 VIDEOS
               </Link>
             </li>
           </ul>
         </div>
 
-        <div className="work ">
+        <div className="work run">
           <div className="container-fluid ">
             <div className="row">
               <div className="col-lg-2 work1 top2">
@@ -48,6 +66,9 @@ const Secondpage = () => {
                         : "btn-dark glow-on-click"
                     }
                     onClick={() => handleButtonClick(1)}
+                    style={{
+                      fontFamily: "'Raleway', sans-serif",
+                    }}
                   >
                     LOGO
                   </button>
@@ -60,6 +81,9 @@ const Secondpage = () => {
                         : "btn-dark glow-on-click"
                     }
                     onClick={() => handleButtonClick(2)}
+                    style={{
+                      fontFamily: "'Raleway', sans-serif",
+                    }}
                   >
                     BANNERS
                   </button>
@@ -72,6 +96,9 @@ const Secondpage = () => {
                         : "btn-dark glow-on-click"
                     }
                     onClick={() => handleButtonClick(3)}
+                    style={{
+                      fontFamily: "'Raleway', sans-serif",
+                    }}
                   >
                     VIDEOS
                   </button>

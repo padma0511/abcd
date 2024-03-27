@@ -96,18 +96,18 @@ function Wedo() {
           <div className="bgcontainer">
             <div className="overlay">
               <div className="container  container-homepage">
-                <h1>
+                <h1 data-aos="zoom-in">
                   RESEARCH <span className="head-home-sub">AND</span> <br />
                   DEVELOPMENT <span className="head-home-sub">COMPANY</span>
                 </h1>
-                <p>
+                <p data-aos="zoom-in">
                   Our company specializes in providing innovative digital
                   marketing
                   <br />
                   solutions tailored to elevate your brand's online presence and
                   drive business growth.
                 </p>
-                <button class="buttonarrow">
+                <button class="buttonarrow" data-aos="zoom-in">
                   <span class="hover-underline-animation">
                     <Link to="/contact" className="button-home">
                       CONTACT US
@@ -179,8 +179,8 @@ function Wedo() {
       </div>
 
       <div className=" WEDO-SERVICE">
-        <h1 className=" WEDO-SERVICE-heading">
-          OUR <span> SERVICE </span>
+        <h1 className=" WEDO-SERVICE-heading" data-aos="zoom-in">
+          <span> OUR</span> SERVICE
         </h1>
       </div>
 
@@ -1091,8 +1091,8 @@ function Wedo() {
 
       <div className="top3-home-client">
         <div className="client head-home">
-          <h1 className="slider-head ">
-            OUR <span>CLIENTS</span>
+          <h1 className="slider-head " data-aos="zoom-in">
+            <span>OUR </span>CLIENTS
           </h1>
         </div>
         <div className="slider">

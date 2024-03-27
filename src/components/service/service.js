@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faServicestack } from "@fortawesome/free-brands-svg-icons";
 import background from "../asserts/service/service-bg-1.avif";
 import "../service/service.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const HeroSection = () => {
+  useEffect(() => {
+    AOS.init();
+  });
   return (
     <>
       <div className="service">
@@ -22,41 +27,32 @@ const HeroSection = () => {
             </div>
           </div>
         </section>
-        {/* <section
-        style={{
-          backgroundColor: "black",
-        }}
-      >
-        <p className="section2-service">
-          App Development services refer to the professional and specialized
-          offerings provided by software development companies or individual
-          developers to create mobile applications for various platforms, such
-          as Android, iOS, and cross-platform environments. These services
-          encompass the entire process of turning app ideas into fully
-          functional and user-friendly applications that cater to specific
-          business needs or target audiences. App Development services refer to
-          the professional and specialized offerings provided by software
-          development companies or individual developers to create mobile
-          applications for various platforms, such as Android, iOS, and
-          cross-platform environments.
-        </p>
-        <p className="section2-service2">
-          App Development services refer to the professional and specialized
-          offerings provided by software development companies or individual
-          developers to create mobile applications for various platforms, such
-          as Android, iOS, and cross-platform environments. These services
-          encompass the entire process of turning app ideas into fully
-          functional and user-friendly applications that cater to specific
-          business needs or target audiences.
-        </p>
-      </section> */}
+
         <section className="service-section">
           <div class="elementorcontent">
-            <h2 class="elementortitle">
+            <h2
+              class="elementortitle"
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            >
               Service
               <span style={{ color: "rgb(126,217,87)" }}> Benefits</span>{" "}
             </h2>
-            <p class="elementordescription">
+            <p
+              class="elementordescription"
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            >
               This allows us to create a design strategy that not only sets you
               apart from the competition but also drives business results. Our
               design team is adept at using the latest web design technologies
@@ -70,58 +66,103 @@ const HeroSection = () => {
               {" "}
               <div class="elementocontainer">
                 <ul class="elementitems">
-                  <li class="elementoritem">
-                    <span class="elementoricon">
+                  <li
+                    class="elementoritem"
+                    data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                  >
+                    <span class="elementortext">
                       <FontAwesomeIcon
                         icon={faServicestack}
                         aria-hidden="true"
+                        className="service-icon"
                       />{" "}
-                    </span>
-                    <span class="elementortext">
                       A unique website that differentiates you from the
                       competition.
                     </span>
+                    <span class="elementoricon"></span>
                   </li>
-                  <li class="elementoritem">
-                    <span class="elementoricon">
+                  <li
+                    class="elementoritem"
+                    data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                  >
+                    <span class="elementortext">
                       <FontAwesomeIcon
                         icon={faServicestack}
                         aria-hidden="true"
+                        className="service-icon"
                       />{" "}
-                    </span>
-                    <span class="elementortext">
                       Improved user experience leading to higher customer
                       satisfaction.
                     </span>
+                    <span class="elementoricon"></span>
                   </li>
-                  <li class="elementoritem">
-                    <span class="elementoricon">
+                  <li
+                    class="elementoritem"
+                    data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                  >
+                    <span class="elementortext">
                       <FontAwesomeIcon
                         icon={faServicestack}
                         aria-hidden="true"
+                        className="service-icon"
                       />{" "}
-                    </span>
-                    <span class="elementortext">
                       Seamless integration with social media platforms for
                       increased engagement.
                     </span>
+                    <span class="elementoricon"></span>
                   </li>
-                  <li class="elementoritem">
-                    <span class="elementoricon">
+                  <li
+                    class="elementoritem"
+                    data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                  >
+                    <span class="elementortext">
                       <FontAwesomeIcon
                         icon={faServicestack}
                         aria-hidden="true"
+                        className="service-icon"
                       />{" "}
-                    </span>
-                    <span class="elementortext">
                       Seamless integration with social media platforms for
                       increased engagement.
                     </span>
+                    <span class="elementoricon"></span>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="ele1">
+            <div
+              class="ele1 ele-service"
+              data-aos="flip-right"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            >
               {" "}
               <a class="servicelist">
                 <div className="servicelist-head">
@@ -210,7 +251,16 @@ const HeroSection = () => {
           </div>
         </div> */}
         </section>
-        <section className="cardservice-image">
+        <section
+          className="cardservice-image"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+        >
           <div className="container">
             <div class="cardsservice">
               <ul class="cards1">

@@ -216,7 +216,7 @@ textarea.input {
 .information {
   display: flex;
   color: #555;
-  margin: 0.7rem 0;
+  /* margin: 0.7rem 0; */
   align-items: center;
   font-size: 0.95rem;
 }
@@ -230,9 +230,9 @@ textarea.input {
   margin-right: 0.7rem;
 }
 
-.social-media {
+/* .social-media {
   padding: 2rem 0 0 0;
-}
+} */
 
 .social-media p {
   color: #333;
@@ -337,15 +337,15 @@ textarea.input {
     margin: 1rem 0 1.5rem 0;
   }
 
-  .social-media {
+  /* .social-media {
     padding: 1.5rem 0 0 0;
-  }
+  } */
 }
 
 @media (max-width: 480px) {
-  .container {
+  /* .container {
     padding: 1.5rem;
-  }
+  } */
 
   .contact-info:before {
     display: none;

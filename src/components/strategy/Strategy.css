@@ -1,98 +1,88 @@
 /* marketing subheading animation */
 * {
- 
-  font-family: 'SuisseIntl', sans-serif !important;
-    
-  
-  
+}
+.side {
+  margin-right: 40px;
+  color: #e83bff;
 }
 
-
-.is{
-font-weight: 600;
-margin-left: 2%;
-font-size: 28px;
-padding-top: 50px;
-font-family: 'SuisseIntl', sans-serif;
+.is {
+  font-weight: 600;
+  margin-left: 2%;
+  font-size: 28px;
+  padding-top: 50px;
+  font-family: "SuisseIntl", sans-serif;
 }
-.at{
-  
+.at {
   font-size: 25px;
   line-height: 34px;
   max-width: 1000px;
   margin-left: 2%;
   padding-top: 15px;
-  font-family: 'SuisseIntl', sans-serif !important;
+  font-family: "SuisseIntl", sans-serif !important;
 }
-.read{
+.read {
   padding-top: 40px;
   margin-top: 45px;
-  font-family: 'SuisseIntl', sans-serif !important;
+  font-family: "SuisseIntl", sans-serif !important;
 }
-.PARAA1{
-padding-top: 13px;
-font-family: 'SuisseIntl', sans-serif !important;
-
-font-size: 18px;
-
-color: #747272;
-line-height: 1.5;
-    letter-spacing: -.09px;
-    
-
-}
-
-
-.PARAA2{
+.PARAA1 {
   padding-top: 13px;
+  font-family: "SuisseIntl", sans-serif !important;
+
   font-size: 18px;
-font-family: 'SuisseIntl', sans-serif !important;
-color: #747272;
-line-height: 1.5;
-    letter-spacing: -.09px;
-  
-}
-.PARAA3{
-  padding-top: 13px;
-  font-size: 18px;
-  font-family: 'SuisseIntl', sans-serif !important;
+
   color: #747272;
   line-height: 1.5;
-      letter-spacing: -.09px;
-  
+  letter-spacing: -0.09px;
 }
-.sec1{
+
+.PARAA2 {
+  padding-top: 13px;
+  font-size: 18px;
+  font-family: "SuisseIntl", sans-serif !important;
+  color: #747272;
+  line-height: 1.5;
+  letter-spacing: -0.09px;
+}
+.PARAA3 {
+  padding-top: 13px;
+  font-size: 18px;
+  font-family: "SuisseIntl", sans-serif !important;
+  color: #747272;
+  line-height: 1.5;
+  letter-spacing: -0.09px;
+}
+.sec1 {
   margin-left: 5%;
-  font-family: 'SuisseIntl', sans-serif !important;
-  
+  font-family: "SuisseIntl", sans-serif !important;
 }
-.problem1{
+.problem1 {
   font-size: 28px;
   font-weight: 600;
   line-height: 1;
-  letter-spacing: -.05px;
-  font-family: 'SuisseIntl', sans-serif !important;
+  letter-spacing: -0.05px;
+  font-family: "SuisseIntl", sans-serif !important;
 }
-.problem2{
+.problem2 {
   font-size: 28px;
   font-weight: 600;
   line-height: 1;
-  letter-spacing: -.05px;
-  font-family: 'SuisseIntl', sans-serif !important;
+  letter-spacing: -0.05px;
+  font-family: "SuisseIntl", sans-serif !important;
 }
-.problem3{
+.problem3 {
   font-size: 28px;
   font-weight: 600;
   line-height: 1;
-  letter-spacing: -.05px;
-  font-family: 'SuisseIntl', sans-serif !important;
+  letter-spacing: -0.05px;
+  font-family: "SuisseIntl", sans-serif !important;
 }
 
 @media screen and (max-width: 768px) {
   .read {
     padding-top: 6px; /* Adjust as needed for smaller screens */
     margin-top: 15px; /* Adjust as needed for smaller screens */
-    
   }
 
   @media screen and (max-width: 768px) {
@@ -100,7 +90,7 @@ line-height: 1.5;
     .PARAA2,
     .PARAA3 {
       font-size: 19px; /* Adjust font size for smaller screens */
-      font-family: 'SuisseIntl', sans-serif !important;
+      font-family: "SuisseIntl", sans-serif !important;
     }
   }
 
@@ -108,148 +98,126 @@ line-height: 1.5;
     margin-left: 2%; /* Adjust as needed for smaller screens */
     margin-top: 50px;
     font-size: 19px;
-    font-family: 'SuisseIntl', sans-serif !important;
+    font-family: "SuisseIntl", sans-serif !important;
   }
-  .problem1{
+  .problem1 {
     font-size: 18px;
-    font-family: 'SuisseIntl', sans-serif !important;
-   
+    font-family: "SuisseIntl", sans-serif !important;
   }
-  .problem2{
+  .problem2 {
     font-size: 19px;
     font-weight: 600;
-    font-family: 'SuisseIntl', sans-serif !important;
-   
+    font-family: "SuisseIntl", sans-serif !important;
   }
-  .problem3{
+  .problem3 {
     font-size: 19px;
-    font-family: 'SuisseIntl', sans-serif !important;
-   
+    font-family: "SuisseIntl", sans-serif !important;
   }
 }
 
-
-
 .heros {
-    
   height: 100vh;
   position: relative;
   overflow: hidden;
-  
+  /* background-color: black; */
   background-size: cover;
   background-position: center center;
   box-shadow: inset 0 0 0 3000px rgba(0, 0, 0, 0.5);
 }
 
-
-
 .contents {
-   
   max-width: 1200px;
   width: 100%;
   color: white;
   margin-inline: auto;
-  
-  font-family: 'SuisseIntl', sans-serif !important;
-  
+
+  font-family: "SuisseIntl", sans-serif !important;
+
   margin-top: 200px;
- margin-right: 15%;
-  }
+  margin-right: 15%;
+}
 .contents h1 {
   font-size: 80px;
-  
-  color:#ffdb3b ;
- 
-  margin-left: 3%;
+
+  color: #ffdb3b;
+
+  margin-left: 10%;
+  /* margin-left: 3%; */
   font-weight: 600;
-  
-  
-  font-family: 'SuisseIntl', sans-serif !important;
+
+  font-family: "SuisseIntl", sans-serif !important;
   line-height: 1;
   letter-spacing: -2px;
   white-space: pre-line;
+  margin-top: -40px;
 }
 
 .contents p {
   font-size: 24px;
-  margin-left: 3%;
+  margin-left: 10%;
+  /* margin-left: 3%; */
+
   max-width: 700px;
-  
-  /* padding-top: 16px; */
-  margin-top: 24px;
-  font-family: 'SuisseIntl', sans-serif !important;
-  
+
+  padding-top: 23px;
+  margin-top: -20px;
+  font-family: "SuisseIntl", sans-serif !important;
 }
 
+/* @media screen and (max-width: 768px) { */
+@media only screen and (max-width: 769px) and (max-width: 1024px) {
+  .heros {
+    width: 100%;
+    height: 340px;
+    line-height: 25px;
+    font-family: "SuisseIntl", sans-serif !important;
+    margin-top: -27px;
+  }
+  .contents h1 {
+    font-size: 30px;
 
+    color: #ffdb3b;
+    margin-top: -130px;
 
+    /* padding-right: 10px; */
+    padding-right: 40px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-left: 5%;
+    font-family: "SuisseIntl", sans-serif !important;
+  }
+
+  .contents p {
+    font-size: 15px;
+    margin: 15px 0;
+
+    /* padding-top: 16px; */
+
+    font-family: "SuisseIntl", sans-serif !important;
+    margin-top: -20px;
+
+    padding-right: 17px;
+    padding-left: 20px;
+  }
+  .is {
+    margin-left: 2%;
+    font-size: 24px;
+    padding-top: 50px;
+    font-family: "SuisseIntl", sans-serif !important;
+    font-weight: 600;
+  }
+  .at {
+    font-size: 16px;
+    line-height: 23px;
+    font-family: "SuisseIntl", sans-serif !important;
+  }
+}
 @media screen and (max-width: 600px) {
- 
-    
-    
-    .heros {
-     width: 100%;
-      height: 340px;
-      line-height: 25px;
-      font-family: 'SuisseIntl', sans-serif !important;
-       margin-top: -27px; 
-      
-    }
-    .contents h1 {
-      font-size: 30px;
-      
-      color:#ffdb3b ;
-      margin-top: -130px;
-      
-      
-      padding-right: 10px;
-      padding-left: 10px;
-      line-height: 1.1;
-  letter-spacing: -1px; 
-  font-family: 'SuisseIntl', sans-serif !important;
-
-    }
-    
-    .contents p {
-      font-size: 15px;
-      margin: 15px 0;
-      
-      
-      /* padding-top: 16px; */
-      
-      font-family: 'SuisseIntl', sans-serif !important;
-      margin-top: 29px;
-      
-      
-      padding-right: 17px;
-      padding-left: 20px;
-      
-      
-      
-      
-    }
-   .is{
-      
-      margin-left: 2%;
-      font-size: 24px;
-      padding-top: 50px;
-      font-family: 'SuisseIntl', sans-serif !important;
-      font-weight: 600;
-      }
-      .at{
-        
-        font-size: 16px;
-        line-height: 23px;
-        font-family: 'SuisseIntl', sans-serif !important;
-      }
-    
+  section .banner {
+    margin-top: 40px;
+    font-family: "SuisseIntl", sans-serif !important;
   }
-  @media screen and (max-width: 600px) {
-    section .banner{
-      margin-top: 40px;
-      font-family: 'SuisseIntl', sans-serif !important;
-    }
-  }
+}
 
 /* section 2 marketing page */
 .hero1 {
@@ -261,50 +229,46 @@ line-height: 1.5;
   background-position: center center;
   box-shadow: inset 0 0 0 3000px rgba(0, 0, 0, 0.5);
   margin-top: 50px;
-
 }
 
-
-
 .contents1s {
-   
   max-width: 1200px;
   width: 100%;
   color: white;
   margin-inline: auto;
-  
-  font-family: 'SuisseIntl', sans-serif !important;
-  
+
+  font-family: "SuisseIntl", sans-serif !important;
+
   margin-top: 158px;
- margin-right: 15%;
-  }
-  
+  margin-right: 15%;
+}
+
 .contents1s h1 {
   font-size: 80px;
-  
-  color:#ffdb3b ;
- 
-  
+
+  color: #3310bd;
+
   font-weight: 600;
- padding-right: 50px;
- padding-left: 30px;
-  
-  font-family: 'SuisseIntl', sans-serif !important;
+  padding-right: 50px;
+  padding-left: 5px;
+  margin-left: 90px;
+
+  font-family: "SuisseIntl", sans-serif !important;
   line-height: 1;
   letter-spacing: -2px;
   white-space: pre-line;
 }
 .contents2s h1 {
   font-size: 80px;
-  
-  color:#ffffff ;
- 
+
+  color: #ffffff;
+
   margin-left: 41%;
   font-weight: 600;
- padding-right: 50px;
- padding-left: 30px;
-  
-  font-family: 'SuisseIntl', sans-serif !important;
+  padding-right: 50px;
+  padding-left: 30px;
+
+  font-family: "SuisseIntl", sans-serif !important;
   line-height: 1;
   letter-spacing: -2px;
   white-space: pre-line;
@@ -314,38 +278,32 @@ line-height: 1.5;
 .contents23s h1 {
   margin-left: 44%;
   font-size: 80px;
-  
-  color:#ffffff ;
- 
+
+  color: #ffffff;
+
   font-weight: 600;
- padding-right: 50px;
- padding-left: 30px;
-  
-  font-family: 'SuisseIntl', sans-serif !important;
+  padding-right: 50px;
+  padding-left: 30px;
+
+  font-family: "SuisseIntl", sans-serif !important;
   line-height: 1;
   letter-spacing: -2px;
   white-space: pre-line;
   margin-top: -85px;
 }
 
-
-
-  
 @media screen and (max-width: 600px) {
   .contents1 h1 {
-    
     font-size: 30px;
-      
-    color:#08cad8 ;
+
+    color: #08cad8;
     margin-top: -95px;
-    
-    
+
     margin-left: 20%;
     line-height: 1.1;
-letter-spacing: -1px; 
+    letter-spacing: -1px;
 
-margin-left: 90%;
-    
+    margin-left: 90%;
   }
   .hero1 {
     height: 200px;
@@ -355,21 +313,17 @@ margin-left: 90%;
     background-size: cover;
     background-position: center center;
     box-shadow: inset 0 0 0 3000px rgba(0, 0, 0, 0.5);
-    
-
-    
   }
 }
 
 /* yellow banner */
 
-
 @media screen and (max-width: 2000px) {
-  .assist{
+  .assist {
     padding-right: 39px;
     padding-left: 39px;
-   
-    font-family: 'SuisseIntl', sans-serif !important;
+
+    font-family: "SuisseIntl", sans-serif !important;
     font-size: 29px;
     width: 100%;
     margin-left: 10%;
@@ -377,63 +331,51 @@ margin-left: 90%;
     line-height: 39px;
     padding-bottom: 30px;
   }
-  }
+}
 
-
-.yellobanner{
+.yellobanner {
   background-color: #ffdb3b;
   color: black;
 }
 
 @media screen and (max-width: 600px) {
-  .assist{
+  .assist {
     font-size: 18px;
     line-height: 25px;
-   
-   padding-top: 20px;
-  width: 110%;
-   
-   margin-left: -4%;
 
-   
- 
+    padding-top: 20px;
+    width: 110%;
+
+    margin-left: -4%;
   }
-  }
+}
 
+@media screen and (max-width: 600px) {
+  .contents1s h1 {
+    color: #ffdb3b;
 
-
-  @media screen and (max-width: 600px) {
-    .contents1s h1{
-      color: #ffdb3b;
-     
-     font-size: 30px;
-     margin-top: -65px;
-     margin-left: 0%;
-     padding-left: 15px;
-     
-    }
-    .contents2s h1{
-      color: hsl(0, 0%, 100%);
     font-size: 30px;
-    margin-top: -8px;
-    padding-right: 90%;
-    margin-left: 1%;
-
-    
+    margin-top: -65px;
+    margin-left: 0%;
+    padding-left: 15px;
   }
-  .contents23s h1{
+  .contents2s h1 {
     color: hsl(0, 0%, 100%);
     font-size: 30px;
     margin-top: -8px;
     padding-right: 90%;
     margin-left: 1%;
-
   }
-  .side{
-   
+  .contents23s h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    margin-top: -8px;
+    padding-right: 90%;
+    margin-left: 1%;
   }
-  .need{
-    
+  .side {
+  }
+  .need {
   }
 }
 
@@ -443,21 +385,19 @@ margin-left: 90%;
   margin: 10px;
   border: 1px solid black; */
   transition: transform 0.3s ease-in-out;
-  font-family: 'SuisseIntl', sans-serif !important;
+  font-family: "SuisseIntl", sans-serif !important;
   transition: 0.3s ease all;
 }
 
 .text:hover {
   transform: scale(1.1); /* Zoom in by 10% */
   color: #d0ad11;
-  font-family: 'SuisseIntl', sans-serif !important;
+  font-family: "SuisseIntl", sans-serif !important;
   letter-spacing: 0; /* Set letter-spacing to 0 on hover */
 }
 
-
-
-.FONTSS{
-  font-family: 'SuisseIntl', sans-serif !important;
+.FONTSS {
+  font-family: "SuisseIntl", sans-serif !important;
 }
 
 .card * {
@@ -474,10 +414,12 @@ margin-left: 90%;
   line-height: 1.5;
 }
 
-.text:hover .PARAA1, .card:focus-within img {
+.text:hover .PARAA1,
+.card:focus-within img {
   margin-top: -80px;
 }
 
-.text:hover h3, .card:focus-within h3 {
-  padding: 8px 12px 0;
+.text:hover h3,
+.card:focus-within h3 {
+  padding: 8px 12px 0;
 }

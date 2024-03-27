@@ -1,7 +1,7 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import Navbar from "./components/navbar/Navbar";
-// import Footer from "./components/footer/Footer";
+import Footer from "./components/footer/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Move from "../src/components/move/Move";
 import ScrollToTop from "./components/ScroolToTop";
@@ -43,7 +43,7 @@ const App = () => {
           <Route path="/Videos" element={<Videos />} />
         </Routes>
 
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </div>
   );

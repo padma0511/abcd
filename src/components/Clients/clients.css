@@ -56,7 +56,7 @@ body {
   padding-left: 20px;
 
   color: #fff;
-  text-shadow: 2px 2px 4px #ff6a3d;
+  /* text-shadow: 2px 2px 4px #ff6a3d; */
   max-width: 780px;
 
   line-height: 1.2;
@@ -99,13 +99,24 @@ body {
   width: 200px;
   height: 100px;
   margin: 10px;
-  border: 2px solid red;
+   border: 2px solid  ; 
+   border-image:linear-gradient(45deg, #d0ad11, #ff6a3d)1; 
+  
 
   transition-duration: 1s;
+  position: relative;
+  /* background: linear-gradient(to right, red, purple); */
+
+  
 }
 
+
+
+
 .galery-image1:hover {
-  border: 5px solid #fff;
+  border: 5px solid #d0ad11, #ff6a3d;
+  /* background: -webkit-linear-gradient(#d0ad11, #ff6a3d); */
+
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -145,6 +156,25 @@ body {
     opacity: 0;
   }
 }
+
+
+
+
+/* .module-border-wrap {
+  max-width: 250px;
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(to right, red, purple);
+  padding: 3px;
+} */
+
+/* .module {
+  background: #222;
+  color: white;
+  padding: 2rem;
+} */
+
+
 
 .pic-ctn {
   position: relative;
@@ -200,7 +230,7 @@ body {
   padding-left: 20px;
 
   color: #fff;
-  text-shadow: 2px 2px 4px #ff6a3d;
+  /* text-shadow: 2px 2px 4px #ff6a3d; */
   max-width: 780px;
 
   line-height: 1.2;
@@ -219,7 +249,7 @@ body {
   padding-bottom: 50px;
   padding-top: 50px;
   color: #fff;
-  text-shadow: 2px 2px 4px #ff6a3d;
+
   max-width: 780px;
 
   line-height: 1.2;
@@ -230,7 +260,7 @@ body {
   padding-left: 20px;
 
   color: #fff;
-  text-shadow: 2px 2px 4px #ff6a3d;
+
   max-width: 780px;
 
   line-height: 1.2;
@@ -436,7 +466,7 @@ body {
 .client-head2 {
   padding-top: 50px;
   color: #fff;
-  text-shadow: 2px 2px 4px #ff6a3d;
+  /* text-shadow: 2px 2px 4px #ff6a3d; */
   /* max-width: 780px; */
 
   line-height: 1.2;
@@ -454,8 +484,8 @@ body {
   padding-left: 50px;
   padding-bottom: 50px;
   padding-top: 50px;
-  color: #fff;
-  text-shadow: 2px 2px 4px #ff6a3d;
+  
+  /* text-shadow: 2px 2px 4px #ff6a3d; */
   max-width: 780px;
 
   line-height: 1.2;
@@ -503,7 +533,8 @@ div.item {
     #1a171c,
     #080509
   ); /* Set background color to white */
-  border: 2px solid red; /* Add red border */
+  border: 2px solid  ; 
+   border-image:linear-gradient(45deg, #d0ad11, #ff6a3d)1; 
 
   --r: calc(var(--position) - var(--offset));
   --abs: max(calc(var(--r) * -1), var(--r));
@@ -608,11 +639,15 @@ input[type="radio"] {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 2px solid red; /* Set border color to red */
+  border: 2px solid rgb(255, 166, 0); /* Set border color to red */
   outline: none;
   cursor: pointer;
 }
 
 input[type="radio"]:checked {
-  background-color: red; /* Set background color to red when checked */
+  
+    background: linear-gradient(to right, #ff8a00, #da1b60); /* Example gradient */
 }
+
+
+

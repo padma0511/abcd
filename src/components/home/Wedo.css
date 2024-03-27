@@ -18,13 +18,18 @@
 .example-10 h1 {
   padding-left: 30px;
   padding-top: 25%;
-  color: #f7418f;
+  background: -webkit-linear-gradient(#d0ad11, #ff6a3d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
   line-height: 1.2;
 }
 .head-home-sub {
-  color: #fff;
+  background: -webkit-linear-gradient(#f7f7f7, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 .example-10 p {
   color: #ffffff;
   line-height: 1.75;
@@ -54,7 +59,7 @@
 .buttonarrow svg {
   transform: translateX(-8px);
   transition: all 0.3s ease;
-  color: #f7418f;
+  color: #ed7200;
 }
 
 .buttonarrow:hover svg {
@@ -67,7 +72,7 @@
 
 .hover-underline-animation {
   position: relative;
-  color: #f7418f;
+  color:#ff9900;
   padding-bottom: 20px;
 }
 
@@ -79,7 +84,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #f7418f;
+  color:#ff9900;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -101,12 +106,19 @@
 .container-homepage-mobile h1 {
   padding-left: 30px;
 
-  color: #f7418f;
+  /* background: -webkit-linear-gradient(#d0ad11, #ff6a3d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  background: -webkit-linear-gradient(#d0ad11, #ff6a3d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
   line-height: 1.2;
 }
 .head-home-sub {
-  color: #fff;
+  background: -webkit-linear-gradient(#f7f7f7, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .container-homepage-mobile p {
   color: #ffffff;
@@ -137,11 +149,12 @@
 .buttonarrow-mobile svg {
   transform: translateX(-8px);
   transition: all 0.3s ease;
-  color: #f7418f;
+ color:  #ff9900;
 }
 
 .buttonarrow-mobile:hover svg {
   transform: translateX(0);
+  color:#ff9900;
 }
 
 .buttonarrow-mobile:active svg {
@@ -150,7 +163,7 @@
 
 .hover-underline-animation {
   position: relative;
-  color: #f7418f;
+  color:  #ff9900;;
   padding-bottom: 20px;
 }
 
@@ -162,9 +175,12 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #f7418f;
+  background-color: #ff9900;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
+}
+.arrow-horizontal{
+  color:#ff9900;
 }
 
 .buttonarrow-mobile:hover .hover-underline-animation:after {
@@ -514,8 +530,12 @@
 .head-box6:hover,
 .buis-card:hover {
   background-color: white;
-  color: #f7418f;
+  color:#d0ad11 ;
+  /* background: linear-gradient( #d0ad11, #ff6a3d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  */
 }
+
 .buis-card h4:hover {
   color: #f7418f;
 }

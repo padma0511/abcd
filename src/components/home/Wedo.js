@@ -97,8 +97,8 @@ function Wedo() {
             <div className="overlay">
               <div className="container  container-homepage">
                 <h1 data-aos="zoom-in">
-                  RESEARCH <span className="head-home-sub">AND</span> <br />
-                  DEVELOPMENT <span className="head-home-sub">COMPANY</span>
+                 <span className="our">RESEARCH </span> <span className="ser">AND</span> <br />
+                  <span className="our">DEVELOPMENT </span><span className="ser">COMPANY</span>
                 </h1>
                 <p data-aos="zoom-in">
                   Our company specializes in providing innovative digital
@@ -119,7 +119,8 @@ function Wedo() {
                     width="30"
                     height="10"
                     viewBox="0 0 46 16"
-                    fill="#f7418f"
+                    fill="#ff9900"
+                    
                   >
                     <path
                       id="Path_10"
@@ -143,8 +144,8 @@ function Wedo() {
         >
           <div className="container  container-homepage-mobile">
             <h1>
-              RESEARCH <span className="head-mobile-sub">AND</span> <br />
-              DEVELOPMENT <span className="head-mobile-sub">COMPANY</span>
+             <span className="our" >RESEARCH</span> <span className="ser">AND</span> <br />
+             <span className="our" >DEVELOPMENT </span><span className="ser">COMPANY</span>
             </h1>
             <p>
               Our company specializes in providing innovative digital marketing
@@ -164,7 +165,8 @@ function Wedo() {
                 width="30"
                 height="10"
                 viewBox="0 0 46 16"
-                fill="#f7418f"
+                fill="#ff9900"
+                
               >
                 <path
                   id="Path_10"
@@ -180,7 +182,7 @@ function Wedo() {
 
       <div className=" WEDO-SERVICE">
         <h1 className=" WEDO-SERVICE-heading" data-aos="zoom-in">
-          <span> OUR</span> SERVICE
+          <span className="our"> OUR</span> SERVICE
         </h1>
       </div>
 
@@ -211,8 +213,8 @@ function Wedo() {
                 <div className="col-lg-3 ooo">
                   <div className="head-box3">
                     <h1 className="move">01</h1>
-                    <h4 className="move">
-                      Digital<span className="move-span"> Marketing</span>
+                    <h4 className="move our">
+                     <span className="our" >Digital</span><span className="ser"> Marketing</span>
                     </h4>
                   </div>
                   <div className="head-box4">
@@ -251,7 +253,7 @@ function Wedo() {
                   <div className="head-box3">
                     <h1 className="move">02</h1>
                     <h4 className="move" style={{ width: "100%" }}>
-                      App <span className="move-span">Development</span>
+                     <span className="our"> App</span> <span className="ser">Development</span>
                     </h4>
                   </div>
                   <div className="head-box4 head-box1-sub">
@@ -292,8 +294,8 @@ function Wedo() {
                   <div className="head-box3">
                     <h1 className="move">03</h1>
                     <h4 className="move">
-                      Corporate <br />
-                      <span className="move-span">Video</span>
+                      <span className="our">Corporate</span> <br />
+                      <span className="ser">Video</span>
                     </h4>
                   </div>
                   <div className="head-box4">
@@ -335,8 +337,8 @@ function Wedo() {
                   <div className="head-box3">
                     <h1 className="move">04</h1>
                     <h4 className="move">
-                      SearchEngine <br />{" "}
-                      <span className="move-span">Operational</span>
+                      <span className="our">SEO</span> <br />{" "}
+                      <span className="ser"></span>
                     </h4>
                   </div>
                   <div className="head-box4">
@@ -376,7 +378,7 @@ function Wedo() {
                   <div className="head-box3">
                     <h1 className="move">05</h1>
                     <h4 className="move" style={{ width: "100%" }}>
-                      Web <span className="move-span">Development</span>
+                    <span class="our" >Web</span>  <span className="ser">Development</span>
                     </h4>
                   </div>
                   <div className="head-box4 head-box1-sub">
@@ -417,8 +419,8 @@ function Wedo() {
                   <div className="head-box3">
                     <h1 className="move">06</h1>
                     <h4 className="move">
-                      Business <br />
-                      <span className="move-span">Development</span>
+                     <span className="our">Business</span>  <br />
+                      <span className="ser">Development</span>
                     </h4>
                   </div>
                   <div className="head-box4">
@@ -487,8 +489,8 @@ function Wedo() {
                   }}
                 >
                   <h1 class="text-light fw-bold display-1">01</h1>
-                  <h2 class="fw-bold text-light">
-                    <span class="text-warning ">Business</span>
+                  <h2 class="fw-bold ">
+                    <span class="our">Business</span>
                   </h2>
                 </div>
                 <a class="text-decoration-none" href="./strategy.php">
@@ -604,8 +606,8 @@ function Wedo() {
                   }}
                 >
                   <h1 class="text-light fw-bold display-1">02</h1>
-                  <h2 class="fw-bold text-light">
-                    <span class="text-warning ">Marketing</span>
+                  <h2 class="fw-bold">
+                    <span className="our">Marketing</span>
                   </h2>
                 </div>
                 <a class="text-decoration-none" href="./strategy.php#marketing">
@@ -726,8 +728,8 @@ function Wedo() {
                   }}
                 >
                   <h1 class="text-light fw-bold display-1">03</h1>
-                  <h2 class="fw-bold text-light">
-                    <span class="text-warning ">Operational</span>
+                  <h2 class="fw-bold ">
+                    <span class="our ">Operational</span>
                   </h2>
                 </div>
                 <a class="text-decoration-none" href="./strategy.php#operating">
@@ -811,8 +813,8 @@ function Wedo() {
                   }}
                 >
                   <h1 class="text-light fw-bold display-1">01</h1>
-                  <h2 class="fw-bold text-light">
-                    <span class="text-warning ">Business</span>
+                  <h2 class="fw-bold ">
+                    <span class="our ">Business</span>
                   </h2>
                 </div>
                 <a class="text-decoration-none" href="./strategy.php">
@@ -928,8 +930,8 @@ function Wedo() {
                   }}
                 >
                   <h1 class="text-light fw-bold display-1">02</h1>
-                  <h2 class="fw-bold text-light">
-                    <span class="text-warning ">Marketing</span>
+                  <h2 class="fw-bold ">
+                    <span class="our">Marketing</span>
                   </h2>
                 </div>
                 <a class="text-decoration-none" href="./strategy.php#marketing">
@@ -1050,8 +1052,8 @@ function Wedo() {
                   }}
                 >
                   <h1 class="text-light fw-bold display-1">03</h1>
-                  <h2 class="fw-bold text-light">
-                    <span class="text-warning ">Operational</span>
+                  <h2 class="fw-bold ">
+                    <span class="our">Operational</span>
                   </h2>
                 </div>
                 <a class="text-decoration-none" href="./strategy.php#operating">
@@ -1092,7 +1094,7 @@ function Wedo() {
       <div className="top3-home-client">
         <div className="client head-home">
           <h1 className="slider-head " data-aos="zoom-in">
-            <span>OUR </span>CLIENTS
+            <span className="our">OUR </span>CLIENTS
           </h1>
         </div>
         <div className="slider">

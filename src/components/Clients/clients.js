@@ -59,7 +59,7 @@ function ImageGallery() {
         <div className="clientHead">
           <div className="container">
             <h1 className="clientHead1">
-              CONTACT <span className="client-head-sub">US</span>
+             <span className="our">CONTACT</span>  <span className="ser">US</span>
             </h1>
           </div>
         </div>
@@ -68,10 +68,10 @@ function ImageGallery() {
       <div className="container image-galery-1">
         <div className="img-client-head">
           <h1 data-aos="zoom-in" data-aos-duration="1500">
-            TAKE A LOOK AT OUR CLIENTS
+           <span className="our" >TAKE A LOOK AT OUR CLIENTS</span>
           </h1>
         </div>
-        <div className="img-clientpage">
+        <div className="img-clientpage module-border-wrap">
           <img
             src={firstimage}
             alt="Herd of horses"
@@ -314,14 +314,14 @@ function ImageGallery() {
               data-aos="zoom-in-right"
               data-aos-duration="1500"
             >
-              What Our Clients Say
+              <span className="our">What Our Clients Say</span>
             </h1>
             <h3
               className="client-head3"
               data-aos="zoom-in-right"
               data-aos-duration="1500"
             >
-              95.5% of our clients would recommend our services to others.
+              <span className="ser">95.5% of our clients would recommend our services to others.</span>
             </h3>
           </div>
           <div class="grid-item ">

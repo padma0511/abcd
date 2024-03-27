@@ -2,6 +2,12 @@
 :root {
   --headfont: "Be Vietnam Pro";
 }
+.app-head-sub{
+  /* color: #fff; */
+  background: -webkit-linear-gradient(#ffffff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .service {
   background-color: #000000;
@@ -99,13 +105,18 @@
   color: white;
   text-align: center;
   padding-top: 15%;
+  
 }
 .AppHead1 {
-  color: white;
+  /* color: white; */
   text-align: center;
   font-family: var(--headfont);
   font-size: 56px;
   font-weight: 800;
+  background: -webkit-linear-gradient(#d0ad11, #ff6a3d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
 }
 @media (max-width: 522px) {
   .bgimage {
@@ -113,38 +124,49 @@
   }
   .AppHead1 {
     font-size: 36px;
+    background: -webkit-linear-gradient(#d0ad11, #ff6a3d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   }
 }
 @media (max-width: 302px) {
   .app-head-sub {
     padding-right: 50px;
+    color: aliceblue;
   }
 }
 .app-head-sub {
-  color: rgb(126, 217, 87);
+  color: aliceblue;
+
 }
 .service-icon {
-  color: rgb(126, 217, 87);
   font-size: 24px;
+ 
+ 
+  
+  /* Set the text color to transparent */
+  -webkit-text-fill-color: transparent;
 }
+
 
 .service-section {
   background-color: black;
 }
 .section2-service {
-  color: white;
+  /* color: white; */
   font-family: var(--headfont);
   font-weight: 300;
   padding: 30px;
 }
 .section2-service2 {
-  color: white;
+  /* color: white; */
   font-family: var(--headfont);
   font-weight: 300;
   padding: 0 30px;
+
 }
 .elementortitle span {
-  color: white;
+  /* color: white; */
 
   font-family: var(--headfont);
 }
@@ -152,7 +174,8 @@
   padding-top: 30px;
   margin-left: -15px;
   text-align: center;
-  color: white;
+  background: -webkit-linear-gradient(#d0ad11, #ff6a3d);
+  -webkit-background-clip: text;
 }
 .elementordescription {
   color: white;
@@ -172,11 +195,22 @@
   font-family: var(--headfont);
 }
 
-.elementoricon {
-  color: rgb(126, 217, 87);
+
+ 
+  /* background: -webkit-linear-gradient(#d0ad11, #ff6a3d); */
+ /* color: #d0ad11; */
+ .elementoricon {
+  
+  background: linear-gradient(to right, #ff8a00, #da1b60); /* Example gradient */
 }
+
+
 .elementorcontent {
   padding-left: 25px;
+  /* background: -webkit-linear-gradient(#d0ad11, #ff6a3d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  
 }
 
 .elementoritem {
@@ -281,6 +315,7 @@ html {
 .cardsservice {
   margin-top: 40px;
   background-color: #1a1818;
+  
 }
 .cards__item1 :hover {
   /* box-shadow: 0 20px 40px -14px rgba(218, 197, 197, 0.25); */
@@ -295,13 +330,15 @@ html {
 }
 
 .card__title {
-  color: rgb(126, 217, 87);
+  
+ 
   font-size: 16px;
   font-weight: 800;
   padding-bottom: 20px;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-family: var(--headfont);
+ 
 }
 
 .cards__item1:hover .card__text {
@@ -370,7 +407,11 @@ html {
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 5px;
-  border: 1px solid rgb(126, 217, 87);
+  
+  border: 1px solid #d0ad11;
+  background: -webkit-linear-gradient(#d0ad11, #ff6a3d);
+  -webkit-background-clip: text;
+  
 }
 .servicelist-li li {
   font-family: var(--headfont);
@@ -378,8 +419,19 @@ html {
   text-align: center;
 }
 .servicelist-li:hover {
-  color: rgb(126, 217, 87);
+  color:  #f7cc0c;
+
 }
 .servicelist-ul {
   list-style-type: none;
+}
+.ser{
+  background: -webkit-linear-gradient(#ffffff, #ffffff);
+  -webkit-background-clip: text;
+}
+.our{
+  background: linear-gradient(45deg, #d0ad11, #ff6a3d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }

@@ -4,6 +4,9 @@
 .top1-tit {
   overflow: hidden;
 }
+body {
+  background-color: black;
+}
 
 /* ----------------------Backtotopbutton css ---------------------------------------------- */
 .top-button {
@@ -14,7 +17,7 @@
   width: 150px;
   height: 50px;
   border-radius: 50%;
-  background-image: linear-gradient(45deg, #ff0506, #ff0506, #ff0506);
+  background-image: linear-gradient(45deg, #d0ad11, #ff6a3d);
   box-shadow: 0 20px 30px -6px rgba(238, 103, 97, 0.5);
   outline: none;
   border: none;

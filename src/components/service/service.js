@@ -29,9 +29,10 @@ const HeroSection = () => {
         </section>
 
         <section className="service-section">
-          <div class="elementorcontent">
+          <div class="elementorcontent "  >
             <h2
-              class="elementortitle"
+              class="elementortitle "
+              className=""
               data-aos="fade-up"
               data-aos-offset="200"
               data-aos-delay="50"
@@ -39,9 +40,9 @@ const HeroSection = () => {
               data-aos-easing="ease-in-out"
               data-aos-mirror="true"
               data-aos-once="false"
-            >
-              Service
-              <span style={{ color: "rgb(126,217,87)" }}> Benefits</span>{" "}
+                       >
+             <span className="our" >Service</span>
+              <span style={{color:'white'}}> Benefits</span>{" "}
             </h2>
             <p
               class="elementordescription"
@@ -166,7 +167,7 @@ const HeroSection = () => {
               {" "}
               <a class="servicelist">
                 <div className="servicelist-head">
-                  <h1>OUR SERVICES</h1>
+                  <h1 className=""><span className="our">OUR</span> <span  className=""style={{color:'white'}}>SERVICES </span></h1>
                   <ul className="servicelist-ul">
                     <li className="servicelist-li">
                       <span class="elementoricon">
@@ -267,7 +268,11 @@ const HeroSection = () => {
                 <li class="cards__item1">
                   <div class="cardservice">
                     <div class="card__content">
-                      <div class="card__title">Flex</div>
+                      <div class="card__title" style={{
+  background: '-webkit-linear-gradient(#d0ad11, #ff6a3d)',
+  WebkitBackgroundClip: 'text',
+  WebkitTextFillColor: 'transparent'
+}}>Flex</div>
                       <p class="card__text">
                         This is the shorthand for flex-grow, flex-shrink and
                         flex-basis combined. The second and third parameters
@@ -280,7 +285,7 @@ const HeroSection = () => {
                 <li class="cards__item1">
                   <div class="cardservice">
                     <div class="card__content">
-                      <div class="card__title">Flex Grow</div>
+                      <div class="card__title"><span className="our">Flex Shrink </span></div>
                       <p class="card__text">
                         This defines the ability for a flex item to grow if
                         necessary. It accepts a unitless value that serves as a
@@ -294,7 +299,7 @@ const HeroSection = () => {
                 <li class="cards__item1">
                   <div class="cardservice">
                     <div class="card__content">
-                      <div class="card__title">Flex Shrink</div>
+                      <div class="card__title"><span className="our">Flex Shrink </span></div>
                       <p class="card__text">
                         This defines the ability for a flex item to shrink if
                         necessary. Negative numbers are invalid.
@@ -305,7 +310,7 @@ const HeroSection = () => {
                 <li class="cards__item1">
                   <div class="cardservice">
                     <div class="card__content">
-                      <div class="card__title">Flex</div>
+                      <div class="card__title"><span className="our"> Flex</span></div>
                       <p class="card__text">
                         This is the shorthand for flex-grow, flex-shrink and
                         flex-basis combined. The second and third parameters
@@ -318,7 +323,7 @@ const HeroSection = () => {
                 <li class="cards__item1">
                   <div class="cardservice">
                     <div class="card__content">
-                      <div class="card__title">Flex Basis</div>
+                      <div class="card__title"><span className="our"> Flex Basic</span></div>
                       <p class="card__text">
                         This defines the default size of an element before the
                         remaining space is distributed. It can be a length (e.g.
@@ -331,7 +336,7 @@ const HeroSection = () => {
                 <li class="cards__item1">
                   <div class="cardservice">
                     <div class="card__content">
-                      <div class="card__title">Flex Grow</div>
+                      <div class="card__title"> <span className="our"> FlexGrow</span></div>
                       <p class="card__text">
                         This defines the ability for a flex item to grow if
                         necessary. It accepts a unitless value that serves as a

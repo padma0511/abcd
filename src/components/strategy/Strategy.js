@@ -32,9 +32,9 @@ const Strategy = () => {
                     data-aos-duration="1000"
                     data-aos="fade-up "
                   >
-                    Business <span style={{ color: "white" }}>Analysis</span>{" "}
-                    Marketing <span style={{ color: "white" }}>Strategy</span>{" "}
-                    Operational <span style={{ color: "white" }}>Strategy</span>
+                   <span className="our" >Business </span><span className="ser">Analysis</span>{" "}
+                   <span className="our" > Marketing</span> <span className="ser">Strategy</span>{" "}
+                   <span className="our"> Operational </span><span className="ser" >Strategy</span>
                   </h1>
 
                   <p
@@ -57,15 +57,15 @@ const Strategy = () => {
 
       <section className="FONTSS">
         <section className="banner1">
-          <div className="container">
+          <div className="container ">
             <h2
-              className="is"
+              className="is "
               data-aos-delay="800"
               data-aos-duration="1000"
               data-aos="fade-up"
             >
               {" "}
-              Business analysis
+              <span className="our" >Business </span> <span className="ser">analysis</span>
             </h2>
             <h5
               className="at"
@@ -85,16 +85,16 @@ const Strategy = () => {
               <div className="row">
                 <div className="col-lg-4">
                   <div
-                    className="sec1"
+                    className="sec1 "
                     style={{ fontFamily: "'SuisseIntl', sans-serif" }}
                   >
                     <h5
-                      className="problem1"
+                      className="problem1 "
                       data-aos-delay="800"
                       data-aos-duration="1000"
                       data-aos="fade-up"
                     >
-                      PROBLEM IDEFICATION
+                     <span className="our">PROBLEM</span> <span className="ser">IDEFICATION</span> 
                     </h5>
                     <p
                       className="PARAA1 text"
@@ -121,7 +121,7 @@ const Strategy = () => {
                       data-aos-duration="1000"
                       data-aos="fade-up"
                     >
-                      TRENDING ALIGNING
+                     <span className="our"> TRENDING</span> <span className="ser">ALIGNING</span>
                     </h5>
                     <p
                       className="PARAA2  text"
@@ -147,7 +147,7 @@ const Strategy = () => {
                       data-aos-duration="1000"
                       data-aos="fade-up"
                     >
-                      SWOT ANALYSIS
+                     <span className="our" >SWOT </span><span className="ser">ANALYSIS</span>
                     </h5>
                     <p
                       className="PARAA3  text"
@@ -177,14 +177,14 @@ const Strategy = () => {
             fontFamily: '"Roboto", "sans-serif"',
           }}
         >
-          <div className="contents1s">
+          <div className="contents1s ser">
             <div className="side">
               <h1
                 data-aos-delay="800"
                 data-aos-duration="1000"
                 data-aos="fade-up"
               >
-                MARKETING <span style={{ color: "white" }}>STRATEGY</span>{" "}
+               <span className="our"> MARKETING</span> <span className="ser">STRATEGY</span>
               </h1>
             </div>
             <div className="contents2s">
@@ -228,7 +228,7 @@ const Strategy = () => {
               data-aos="fade-up "
             >
               {" "}
-              Marketing strategy
+             <span className="our" >Marketing </span><span  style={{color:'white'}}>strategy</span>
             </h2>
             <h5
               className="at"
@@ -252,12 +252,12 @@ const Strategy = () => {
                     style={{ fontFamily: "'SuisseIntl', sans-serif" }}
                   >
                     <h5
-                      className="problem1"
+                      className="problem1 "
                       data-aos-delay="800"
                       data-aos-duration="1000"
                       data-aos="fade-up"
                     >
-                      SOCIAL MEDIA CONNECTION
+                     <span className="our" >SOCIALMEDIA</span> <span className="ser" > PROMOTION</span>
                     </h5>
                     <p
                       className="PARAA1 text"
@@ -284,7 +284,7 @@ const Strategy = () => {
                       data-aos-duration="1000"
                       data-aos="fade-up"
                     >
-                      TECHNOLOGICAL ADOPTION
+                     <span className="our"> TECHNOLOGICAL</span> <span className="ser">ADOPTION</span>
                     </h5>
                     <p
                       className="PARAA2 text"
@@ -310,7 +310,7 @@ const Strategy = () => {
                       data-aos-duration="1000"
                       data-aos="fade-up"
                     >
-                      FINICIAL MANAGEMENT
+                     <span className="our"> FINICIAL</span> <span className="ser">MANAGEMENT</span> 
                     </h5>
                     <p
                       className="PARAA3 text"
@@ -348,7 +348,7 @@ const Strategy = () => {
                 data-aos-duration="1000"
                 data-aos="fade-up"
               >
-                OPERATIONAL <span style={{ color: "white" }}>STRATEGY</span>{" "}
+               <span className="our"> OPERATIONAL </span><span style={{ color: "white" }}>STRATEGY</span>{" "}
               </h1>
             </div>
 
@@ -392,7 +392,7 @@ const Strategy = () => {
               data-aos="fade-up"
             >
               {" "}
-              Operational strategy
+             <span className="our">Operational</span> <span className="ser"> strategy</span>
             </h2>
             <h5
               className="at "
@@ -423,7 +423,7 @@ const Strategy = () => {
                       data-aos-duration="1000"
                       data-aos="fade-up"
                     >
-                      CUSTOMER RELATIONSHIP{" "}
+                      <span className="our">CUSTOMER </span><span className="ser">RELATIONSHIP{" "}</span>
                     </h5>
                     <p
                       className="PARAA1 text"
@@ -452,7 +452,7 @@ const Strategy = () => {
                       data-aos-duration="1000"
                       data-aos="fade-up"
                     >
-                      TECHNOLOGICAL ADOPTION
+                     <span className="our">TECHNOLOGICAL</span> <span className="ser">ADOPTION</span> 
                     </h5>
                     <p
                       className="PARAA2 text"
@@ -478,7 +478,7 @@ const Strategy = () => {
                       data-aos-duration="1000"
                       data-aos="fade-up"
                     >
-                      FINICIAL MANAGEMENT
+                     <span className="our" >FINICIA</span>L <span className="ser">MANAGEMENT</span>
                     </h5>
                     <p
                       className="PARAA3 text"

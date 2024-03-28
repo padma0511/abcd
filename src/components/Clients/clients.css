@@ -7,6 +7,12 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 580px) {
+  .client-page {
+    margin-top: 40px;
+  }
+}
+
 .clientbg {
   height: 400px;
   position: relative;

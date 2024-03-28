@@ -12,7 +12,7 @@ const HeroSection = () => {
   });
   return (
     <>
-      <div className="service">
+      <div className="service ">
         <section
           className="bgimage"
           style={{
@@ -31,7 +31,7 @@ const HeroSection = () => {
         <section className="service-section">
           <div class="elementorcontent "  >
             <h2
-              class="elementortitle "
+              class="elementortitle  "
               className=""
               data-aos="fade-up"
               data-aos-offset="200"
@@ -41,8 +41,8 @@ const HeroSection = () => {
               data-aos-mirror="true"
               data-aos-once="false"
                        >
-             <span className="our" >Service</span>
-              <span style={{color:'white'}}> Benefits</span>{" "}
+             <span className="our "  >Service</span>
+              <span  className=""style={{color:'white'}}> Benefits</span>{" "}
             </h2>
             <p
               class="elementordescription"

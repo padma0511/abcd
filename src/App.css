@@ -1,12 +1,19 @@
 .app {
   overflow: hidden;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Eirene+Sans&display=swap');
+
+body {
+    font-family: 'Eirene Sans', sans-serif;
+    background-color: black;
+}
 .top1-tit {
   overflow: hidden;
 }
-body {
-  background-color: black;
-}
+
+
+
 
 /* ----------------------Backtotopbutton css ---------------------------------------------- */
 .top-button {

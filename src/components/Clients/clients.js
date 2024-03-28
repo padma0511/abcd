@@ -49,7 +49,7 @@ function ImageGallery() {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="client-page">
+    <div className="client-page ">
       <section
         className="clientbg"
         style={{

@@ -1,4 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Eirene+Sans&display=swap');
+
+body {
+    font-family: 'Eirene Sans', sans-serif;
+    
+}
+@media (max-width: 580px) {
+  .contact{
+    margin-top: 90px;
+  }
+}
 
 * {
   margin: 0;
@@ -9,7 +19,7 @@
 body,
 input,
 textarea {
-  font-family: "Poppins", sans-serif;
+  
 }
 
 .contact-Container {
@@ -388,6 +398,88 @@ textarea.input {
   .btn {
     padding: 0.45rem 1.2rem;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 .contactbg {

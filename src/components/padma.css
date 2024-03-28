@@ -1,338 +1,91 @@
-@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@200;500&family=Protest+Revolution&display=swap");
-
-/* work logo page start  */
-
-.bggg {
-  /* background-image: url("../components/asserts/red.jpg"); */
-  /* background-image: url("../components/asserts/video/IMG_AAA.jpg"); */
-
-  margin-top: -6%;
-  background-color: #000000;
+/* .work {
+  background-color: black;
 }
-@media screen and (max-width: 925px) {
-  .work1 {
-    text-decoration: none;
-  }
+.wrok-head {
+  color: white;
 }
-@media screen and (max-width: 980px) {
-  .work1 {
-    text-decoration: none;
-  }
+.wrok-head-para {
+  color: white;
 }
 
-.gaaayu {
-  text-decoration: none;
-  color: azure;
-  font-size: 13px;
-  font-family: "Urbanist", sans-serif;
+.workbg {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  /* background-color: black; 
+  background-size: cover;
+  background-position: center center;
+  box-shadow: inset 0 0 0 3000px rgba(0, 0, 0, 0.5);
 }
 
-.work {
-  /* background-color: #000000; */
-
-  /* background-color: black; */
-  /* margin-top: -19px;
-  
-  padding: 40px; */
-  /* padding-left: 20px; */
-  padding-bottom: 30px;
-  padding-top: 10px;
-}
-
-.btn-dark {
-  width: 250px;
-  height: 130px;
-
-  color: rgb(0, 0, 0);
-
-  margin-top: 30px;
-  outline: none;
-  border: none;
-  font-family: "Arial", "Helvetica";
-  color: #ffffff;
-  font-size: 17px;
-
-  position: static;
-  font-family: "Urbanist", sans-serif;
-
-  margin-right: 30px;
-
-  background: transparent;
-  cursor: pointer;
-}
-
-.phone {
-  color: #38c39e;
-
-  font-size: 40px;
-  text-decoration: none;
-  font-family: "Arial", "Helvetica";
-  margin-top: 90px;
-  padding-top: 40px;
-}
-
-.phone ul li {
-  display: inline-block;
-  align-items: center;
-  font-size: 13px;
-  /* font-weight: 600; */
-  font-family: "Arial", "Helvetica";
-  padding-top: 130px;
+.container-work {
+  display: flex;
   justify-content: center;
-  padding: 5px;
-  padding-left: 30px;
-  text-decoration: none;
-  color: #ffdb3b;
 }
 
-@media screen and (min-width: 768px) {
-  .phone ul li {
-    display: none;
-    text-decoration: none;
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  line-height: 0;
+
+  li {
+    flex: auto;
+  }
+
+  a {
+    display: block;
+  }
+
+  img {
+    width: 30vmin;
+    height: 20vmin;
+    object-fit: cover;
+    object-position: top;
   }
 }
 
-@media screen and(max-width: 600px) {
-  .phone ul li {
-    display: inline-block;
+.slides {
+  overflow: hidden;
+  width: 75vmin;
+  height: 100vmin;
 
-    align-items: center;
+  li {
+    width: 75vmin;
+    height: 100vmin;
+    position: absolute;
+    z-index: 1;
+  }
 
-    font-size: 17px;
-
-    font-family: "Arial", "Helvetica";
-    justify-content: space-evenly;
-
-    padding-top: 10px;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    margin-top: 750px;
-    /* background-color: black; */
+  img {
+    height: 100vmin;
+    object-fit: cover;
+    object-position: top;
   }
 }
 
-@media screen and(max-width: 767px) {
-  .phone ul li {
-    display: inline-block;
+.slides li:target {
+  z-index: 3;
+  -webkit-animation: slide 1s 1;
+}
 
-    align-items: center;
+.slides li:not(:target) {
+  -webkit-animation: hidden 1s 1;
+}
 
-    font-size: 17px;
-
-    font-family: "Arial", "Helvetica";
-    justify-content: space-evenly;
-
-    padding-top: 10px;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+@keyframes slide {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
   }
 }
 
-@media (max-width: 767px) {
-  .work1 {
+@keyframes hidden {
+  0% {
+    z-index: 2;
   }
-}
-
-.work {
-  /* background-color: black; */
-}
-@media (max-width: 900px) {
-  .work1 {
+  100% {
+    z-index: 2;
   }
-}
-
-@media (max-width: 1500px) {
-  .work1 {
-  }
-}
-
-@media (max-width: 800px) {
-  .work1 {
-  }
-}
-
-@media (max-width: 800px) {
-  .work1 {
-    display: none;
-  }
-}
-
-/* Define the initial styles for .www */
-
-/* Add a media query for screens smaller than 768px (typical tablets and phones) */
-@media (max-width: 767px) {
-  .wwww {
-    width: 100%;
-    height: 23%;
-    padding: 10px;
-  }
-}
-
-/* work page banners end  */
-
-/*  work video css */
-.work {
-  /* background-color: rgb(0, 0, 0); */
-}
-/* .btn-dark {
-  width: 250px;
-  height: 180px;
-  background-color: hsl(0, 0%, 100%);
-  color: rgb(0, 0, 0);
-  margin-top: 30px;
-  outline: none;
-  border: none;
-} */
-
-@media (max-width: 767px) {
-  .work1 {
-  }
-}
-
-/* @media screen and (max-width: 768px) {
-  iframe {
-    width: 50% !important;
-    height: 170px !important;
-  }
-}
-
-
-
-.loading {
-  padding-top: 30px;
-} */
-
-/* banner css */
-
-/* Default styles */
-
-/* Media query for screens smaller than 768px (tablets and mobile phones) */
-
-/* logo page css */
-
-.lll {
-  width: 350px;
-  height: 240px;
-}
-
-.llllw {
-  width: 350px;
-  height: 240px;
-}
-.wwwwl {
-  width: 350px;
-  height: 240px;
-  margin-top: 34px;
-}
-.www {
-  width: 350px;
-  height: 240px;
-}
-.mon {
-  padding-right: 30px;
-}
-.non {
-  margin-top: 40px;
-}
-.top7 {
-  margin-right: -80px;
-  padding-right: 90px;
-}
-/*
- Media queries for responsiveness */
-@media (max-width: 450px) {
-  .lll,
-  .non {
-    margin-left: 0; /* Remove left margin for smaller screens */
-  }
-  .run {
-    margin-left: -5%;
-    margin-top: -40px;
-  }
-  .ui {
-    margin-left: 7%;
-  }
-
-  .lll {
-    width: 250px;
-    height: 200px;
-    margin-left: 4%;
-    margin-top: 34px;
-  }
-
-  .llllw {
-    width: 250px;
-    height: 200px;
-    margin-left: 5%;
-    margin-top: 34px;
-  }
-  .wwwwl {
-    width: 250px;
-    height: 200px;
-    margin-top: 34px;
-    margin-left: 5%;
-  }
-  .www {
-    width: 250px;
-    height: 200px;
-    margin-left: 5%;
-  }
-}
-
-/* banner css */
-
-.ban-home {
-  padding-right: 30px;
-  padding-left: 30px;
-}
-/* Define default margin */
-.ban-image {
-  margin-bottom: 30px;
-}
-.mm {
-  padding-top: 40px;
-  margin-top: -40px;
-}
-
-.bb {
-  margin-top: 40px;
-}
-.top1 {
-  margin-top: 50px;
-}
-.topp1 {
-  padding-top: 90px;
-  padding-bottom: 40px;
-}
-.top2 {
-  margin-top: 60px;
-}
-.topp2 {
-  padding-top: 90px;
-  padding-bottom: 40px;
-}
-
-.top3 {
-  margin-top: 60px;
-}
-.topp3 {
-  padding-bottom: 40px;
-  padding-top: 70px;
-}
-
-/* .glow-on-click:active {
-  /* Styles to apply when the button is clicked (active) */
-/* color: #000; */
-/* background-color: rgb(255, 32, 32); */
-
-/* .btn-dark.glow-on-click.active {
-  background-color:#ffdb3b ;
-  color: #000;
-  font-size: 23px;
-  font-weight: 400;
-} */
-
-/* Define the styles for the inactive buttons */
-/* .btn-dark.glow-on-click {
-  color: #fff;
 } */

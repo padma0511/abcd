@@ -4,6 +4,7 @@ import contact1bg from "../asserts/contact/contact-bg.jpg";
 function Contact() {
   return (
     <>
+    <section className="contact ">
       <section
         className="contactbg"
         style={{
@@ -96,6 +97,7 @@ function Contact() {
           </div>
         </div>
       </div>
+      </section>
     </>
   );
 }

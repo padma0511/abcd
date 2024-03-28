@@ -1,5 +1,11 @@
 /* Footer.css */
 
+@import url('https://fonts.googleapis.com/css2?family=Eirene+Sans&display=swap');
+
+body {
+    font-family: 'Eirene Sans', sans-serif;
+    background-color: black;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -68,8 +74,8 @@ footer {
 
 .col {
   min-width: 250px;
-  color: #9b9b9b;
-  font-family: "Arial", "Helvetica";
+  color: #f3ecec;
+   font-family: 'Eirene Sans', sans-serif;
   padding-left: 30px;
 }
 .col .logo {
@@ -86,7 +92,7 @@ footer {
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "Arial", "Helvetica";
+   font-family: 'Eirene Sans', sans-serif;
 }
 .col h3::after {
   content: "";
@@ -126,7 +132,7 @@ footer {
 .col .links a {
   display: block;
   text-decoration: none;
-  color: #9b9b9b;
+   color: #f3ecec;
   margin-bottom: 5px;
   position: relative;
   transition: 0.3s ease;
@@ -183,11 +189,11 @@ footer {
   background-color: black;
 }
 .Copy {
-  color: #9b9b9b;
+   color: #f3ecec;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 10px;
-  font-family: "Arial", "Helvetica";
+   font-family: 'Eirene Sans', sans-serif;
   font-size: 12px;
 }
 /********** Responsive Design ********/

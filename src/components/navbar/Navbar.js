@@ -36,7 +36,7 @@ function Navbar() {
         className={`navbar navbar-expand-lg ${isScrolled ? "scrolled" : ""}`}
         style={{
           fontFamily: "Arial, Helvetica, sans-serif",
-          backgroundColor: "",
+          backgroundColor: "transparent",
         }}
       >
         <div className="container-fluid">
@@ -49,7 +49,7 @@ function Navbar() {
             onClick={toggleNavbar}
             aria-expanded={isNavbarOpen ? "true" : "false"}
           >
-            {/* <span className="spans box">☰</span> */}
+            <span className="spans box">☰</span> 
           </button>
           <div
             className={`collapse navbar-collapse ${isNavbarOpen ? "show" : ""}`}

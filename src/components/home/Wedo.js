@@ -82,7 +82,7 @@ function Wedo() {
   }, []);
 
   return (
-    <div className="homepage" id="home">
+    <div className="homepage " id="home">
       <div className="top1-tit">
         <div className="example-10 video-background">
           {/* Video element for background */}
@@ -488,8 +488,8 @@ function Wedo() {
                     borderradius: "8px",
                   }}
                 >
-                  <h1 class="text-light fw-bold display-1">01</h1>
-                  <h2 class="fw-bold ">
+                  <h1 class="text-light fw-bold display-1  one" >01</h1>
+                  <h2 class="fw-bold one ">
                     <span class="our">Business</span>
                   </h2>
                 </div>
@@ -605,9 +605,9 @@ function Wedo() {
                     borderradius: "8px",
                   }}
                 >
-                  <h1 class="text-light fw-bold display-1">02</h1>
-                  <h2 class="fw-bold">
-                    <span className="our">Marketing</span>
+                  <h1 class="text-light fw-bold display-1 one">02</h1>
+                  <h2 class="fw-bold one">
+                    <span className="our ">Marketing</span>
                   </h2>
                 </div>
                 <a class="text-decoration-none" href="./strategy.php#marketing">
@@ -727,8 +727,8 @@ function Wedo() {
                     borderradius: "8px",
                   }}
                 >
-                  <h1 class="text-light fw-bold display-1">03</h1>
-                  <h2 class="fw-bold ">
+                  <h1 class="text-light fw-bold display-1 one">03</h1>
+                  <h2 class="fw-bold one ">
                     <span class="our ">Operational</span>
                   </h2>
                 </div>
@@ -812,8 +812,8 @@ function Wedo() {
                     borderradius: "8px",
                   }}
                 >
-                  <h1 class="text-light fw-bold display-1">01</h1>
-                  <h2 class="fw-bold ">
+                  <h1 class="text-light fw-bold display-1 one">01</h1>
+                  <h2 class="fw-bold one ">
                     <span class="our ">Business</span>
                   </h2>
                 </div>
@@ -929,8 +929,8 @@ function Wedo() {
                     borderradius: "8px",
                   }}
                 >
-                  <h1 class="text-light fw-bold display-1">02</h1>
-                  <h2 class="fw-bold ">
+                  <h1 class="text-light fw-bold display-1 one">02</h1>
+                  <h2 class="fw-bold one">
                     <span class="our">Marketing</span>
                   </h2>
                 </div>
@@ -1021,8 +1021,8 @@ function Wedo() {
                       <br />
                       Up-gradation
                     </h4>
-                    <ul style={{ fontsize: "16px" }}>
-                      <li class="fw-regular">Workforce Empowerment </li>
+                    <ul className="two " style={{ fontsize: "16px" }}>
+                      <li class="fw-regular ">Workforce </li>
                       <li>Technology Adaptation</li>
                     </ul>
                   </div>
@@ -1051,9 +1051,9 @@ function Wedo() {
                     borderradius: "8px",
                   }}
                 >
-                  <h1 class="text-light fw-bold display-1">03</h1>
-                  <h2 class="fw-bold ">
-                    <span class="our">Operational</span>
+                  <h1 class="text-light fw-bold display-1 one">03</h1>
+                  <h2 class="fw-bold one">
+                    <span class="our ">Operational</span>
                   </h2>
                 </div>
                 <a class="text-decoration-none" href="./strategy.php#operating">
@@ -1091,7 +1091,7 @@ function Wedo() {
         </div>
       </section>
 
-      <div className="top3-home-client">
+      <div className="top3-home-client ">
         <div className="client head-home">
           <h1 className="slider-head " data-aos="zoom-in">
             <span className="our">OUR </span>CLIENTS

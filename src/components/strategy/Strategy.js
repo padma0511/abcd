@@ -14,6 +14,7 @@ const Strategy = () => {
 
   return (
     <>
+    <section className="strategy">
       <section
         className="heros"
         style={{
@@ -502,6 +503,7 @@ const Strategy = () => {
             </div>
           </section>
         </section>
+      </section>
       </section>
     </>
   );

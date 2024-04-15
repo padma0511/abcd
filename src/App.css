@@ -6,11 +6,28 @@
 
 body {
     font-family: 'Eirene Sans', sans-serif;
-    background-color: black;
+    /* background-color: black; */
+    margin-top: -10px;
+    font-weight: bold !important;
+}
+
+
+.ser{
+  background: -webkit-linear-gradient(#ffffff, #ffffff);
+  -webkit-background-clip: text;
+  color: #ffffff;
+}
+.our{
+  background: linear-gradient(45deg, #d0ad11, #ff6a3d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 .top1-tit {
   overflow: hidden;
 }
+
+
 
 
 

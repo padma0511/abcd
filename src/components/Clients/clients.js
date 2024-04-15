@@ -59,14 +59,14 @@ function ImageGallery() {
         <div className="clientHead">
           <div className="container">
             <h1 className="clientHead1">
-             <span className="our">CONTACT</span>  <span className="ser">US</span>
+             <span className="our">OUR</span>  <span className="ser">CLIENTS</span>
             </h1>
           </div>
         </div>
       </section>
 
       <div className="container image-galery-1">
-        <div className="img-client-head">
+        <div className="img-client-head text1">
           <h1 data-aos="zoom-in" data-aos-duration="1500">
            <span className="our" >TAKE A LOOK AT OUR CLIENTS</span>
           </h1>

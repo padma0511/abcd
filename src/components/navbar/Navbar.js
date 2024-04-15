@@ -36,7 +36,7 @@ function Navbar() {
         className={`navbar navbar-expand-lg ${isScrolled ? "scrolled" : ""}`}
         style={{
           fontFamily: "Arial, Helvetica, sans-serif",
-          backgroundColor: "transparent",
+          backgroundColor: "",
         }}
       >
         <div className="container-fluid">
@@ -49,7 +49,7 @@ function Navbar() {
             onClick={toggleNavbar}
             aria-expanded={isNavbarOpen ? "true" : "false"}
           >
-            <span className="spans box">☰</span> 
+            <span className="spans box our">☰</span>
           </button>
           <div
             className={`collapse navbar-collapse ${isNavbarOpen ? "show" : ""}`}
@@ -65,7 +65,7 @@ function Navbar() {
                   to="/"
                   className="nav-link"
                   onClick={closeNavbar}
-                  style={{ color: location.pathname === "/" ? "red" : "" }}
+                  style={{ color: location.pathname === "/" ? "" : "" }}
                 >
                   Wedo
                 </Link>
@@ -80,7 +80,7 @@ function Navbar() {
                   className="nav-link"
                   onClick={closeNavbar}
                   style={{
-                    color: location.pathname === "/Service" ? "red" : "",
+                    color: location.pathname === "/Service" ? "" : "",
                   }}
                 >
                   Service
@@ -96,7 +96,7 @@ function Navbar() {
                   className="nav-link"
                   onClick={closeNavbar}
                   style={{
-                    color: location.pathname === "/Strategy" ? "red" : "",
+                    color: location.pathname === "/Strategy" ? "" : "",
                   }}
                 >
                   Strategy
@@ -112,7 +112,7 @@ function Navbar() {
                   className="nav-link"
                   onClick={closeNavbar}
                   style={{
-                    color: location.pathname === "/Clients" ? "red" : "",
+                    color: location.pathname === "/Clients" ? "" : "",
                   }}
                 >
                   Clients
@@ -128,26 +128,28 @@ function Navbar() {
                   className="nav-link"
                   onClick={closeNavbar}
                   style={{
-                    color: location.pathname === "/Firstpage" ? "red" : "",
+                    color: location.pathname === "/Firstpage" ? "" : "",
                   }}
                 >
                   Work
                 </Link>
               </li>
+              
               <li
                 className={`nav-item mx-3 ${
-                  location.pathname === "/Contact" ? "active" : ""
+                  location.pathname === "/Secondpage" ? "active" : ""
                 }`}
               >
+               
                 <Link
-                  to="/Contact"
+                  to="/Secondpage"
                   className="nav-link"
                   onClick={closeNavbar}
                   style={{
-                    color: location.pathname === "/Contact" ? "red" : "",
+                    color: location.pathname === "/Secondpage" ? "" : "",
                   }}
                 >
-                  Contact
+              Contact us
                 </Link>
               </li>
             </ul>
@@ -158,4 +160,4 @@ function Navbar() {
   );
 }
 
-export default Navbar; // correct my mistake
+export default Navbar;

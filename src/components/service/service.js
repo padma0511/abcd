@@ -12,27 +12,26 @@ const HeroSection = () => {
   });
   return (
     <>
-      <div className="service ">
+      <div className="service">
         <section
           className="bgimage"
           style={{
-            backgroundImage: `url(${background})`,
+            backgroundImage:` url(${background})`,
           }}
         >
           <div className="AppHead">
             <div className="container">
               <h1 className="AppHead1">
-                APP <span className="app-head-sub">DEVELOPMENT</span>
+              <span class="our"> APP</span>  <span className="app-head-sub ser">DEVELOPMENT</span>
               </h1>
             </div>
           </div>
         </section>
 
         <section className="service-section">
-          <div class="elementorcontent "  >
+          <div class="elementorcontent">
             <h2
-              class="elementortitle  "
-              className=""
+              class="elementortitle"
               data-aos="fade-up"
               data-aos-offset="200"
               data-aos-delay="50"
@@ -40,9 +39,9 @@ const HeroSection = () => {
               data-aos-easing="ease-in-out"
               data-aos-mirror="true"
               data-aos-once="false"
-                       >
-             <span className="our "  >Service</span>
-              <span  className=""style={{color:'white'}}> Benefits</span>{" "}
+            >
+             <span className="our" >Service</span>
+              <span className="ser" > Benefits</span>{" "}
             </h2>
             <p
               class="elementordescription"
@@ -167,7 +166,7 @@ const HeroSection = () => {
               {" "}
               <a class="servicelist">
                 <div className="servicelist-head">
-                  <h1 className=""><span className="our">OUR</span> <span  className=""style={{color:'white'}}>SERVICES </span></h1>
+                  <h1><span className="our">OUR</span> <span className="ser">Service</span> </h1>
                   <ul className="servicelist-ul">
                     <li className="servicelist-li">
                       <span class="elementoricon">
@@ -268,12 +267,8 @@ const HeroSection = () => {
                 <li class="cards__item1">
                   <div class="cardservice">
                     <div class="card__content">
-                      <div class="card__title" style={{
-  background: '-webkit-linear-gradient(#d0ad11, #ff6a3d)',
-  WebkitBackgroundClip: 'text',
-  WebkitTextFillColor: 'transparent'
-}}>Flex</div>
-                      <p class="card__text">
+                      <div class="card__title  "><span className="our">Flex</span></div>
+                      <p class="card__text  ">
                         This is the shorthand for flex-grow, flex-shrink and
                         flex-basis combined. The second and third parameters
                         (flex-shrink and flex-basis) are optional. Default is 0
@@ -285,8 +280,8 @@ const HeroSection = () => {
                 <li class="cards__item1">
                   <div class="cardservice">
                     <div class="card__content">
-                      <div class="card__title"><span className="our">Flex Shrink </span></div>
-                      <p class="card__text">
+                      <div class="card__title"><span className="our">Flex Grow</span></div>
+                      <p class="card__text  ">
                         This defines the ability for a flex item to grow if
                         necessary. It accepts a unitless value that serves as a
                         proportion. It dictates what amount of the available
@@ -299,8 +294,8 @@ const HeroSection = () => {
                 <li class="cards__item1">
                   <div class="cardservice">
                     <div class="card__content">
-                      <div class="card__title"><span className="our">Flex Shrink </span></div>
-                      <p class="card__text">
+                      <div class="card__title"><span className="our">Flex Grow</span></div>
+                      <p class="card__text  ">
                         This defines the ability for a flex item to shrink if
                         necessary. Negative numbers are invalid.
                       </p>
@@ -310,8 +305,8 @@ const HeroSection = () => {
                 <li class="cards__item1">
                   <div class="cardservice">
                     <div class="card__content">
-                      <div class="card__title"><span className="our"> Flex</span></div>
-                      <p class="card__text">
+                      <div class="card__title"><span className="our">Flex Grow</span></div>
+                      <p class="card__text  ">
                         This is the shorthand for flex-grow, flex-shrink and
                         flex-basis combined. The second and third parameters
                         (flex-shrink and flex-basis) are optional. Default is 0
@@ -323,8 +318,8 @@ const HeroSection = () => {
                 <li class="cards__item1">
                   <div class="cardservice">
                     <div class="card__content">
-                      <div class="card__title"><span className="our"> Flex Basic</span></div>
-                      <p class="card__text">
+                      <div class="card__title"><span className="our">Flex Grow</span></div>
+                      <p class="card__text ">
                         This defines the default size of an element before the
                         remaining space is distributed. It can be a length (e.g.
                         20%, 5rem, etc.) or a keyword. The auto keyword means
@@ -336,8 +331,8 @@ const HeroSection = () => {
                 <li class="cards__item1">
                   <div class="cardservice">
                     <div class="card__content">
-                      <div class="card__title"> <span className="our"> FlexGrow</span></div>
-                      <p class="card__text">
+                      <div class="card__title"><span className="our">Flex Grow</span></div>
+                      <p class="card__text ">
                         This defines the ability for a flex item to grow if
                         necessary. It accepts a unitless value that serves as a
                         proportion. It dictates what amount of the available

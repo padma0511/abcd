@@ -1,24 +1,44 @@
-.nav-link {
+
+
+@import url('https://fonts.googleapis.com/css2?family=Eirene+Sans&display=swap');
+
+body {
+    font-family: 'Eirene Sans', sans-serif !important;
+    
+    
+}.nav-link {
   background: none; /* Remove default background for all states */
-   color: white;  
+   color: white; 
+  
  }
 
 
  .nav-link.active { 
-  background: linear-gradient(45deg, #d0ad11, #ff6a3d);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  
 
 
 
 
 
  }
- .element {
-  background: linear-gradient(45deg, #d0ad11, #ff6a3d);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+
+ @media only screen and (min-width: 768px) {
+  /* Styles for desktop screens */
+  .nav-item.active .nav-link {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(#e4bb06, #bc3810);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Other styles for desktop screens */
+  .element {
+    background: linear-gradient(45deg, #d0ad11, #ff6a3d);
+    -webkit-background-clip: text;
+  }
 }
+
 
 
 
@@ -31,7 +51,8 @@
   font-size: 20px;
   font-family: 'Eirene Sans', sans-serif !important;
   color: rgb(255, 255, 255);
-  
+ font-weight: 300;
+ 
 }
 .nav-link {
   color: rgb(248, 248, 255);
@@ -105,6 +126,7 @@
 }
 
 
+
 /* scroll */
 
 .navbar {
@@ -127,6 +149,28 @@
   
 }
 
+@media (min-width: 990px) {
+  .navbar {
+    background-color: transparent !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+   
+    z-index: 2;
+    height: 70px;
+    
+  }
+  
+  
+  .navbar.scrolled {
+      background-color: #000000 !important;
+      background-color: #000000 ; /* Change this to your desired color */
+    
+  }
+}
+
 @media (max-width: 500px) {
   .navbar {
     /* Adjust styles for mobile view as needed */
@@ -138,7 +182,43 @@
     background-color: none /* Change this to your desired color */
     
   }
+  
+  
+  
 }
+@media only screen and (max-width: 508px) {
+  /* CSS styles for phone screens */
+  .nav-item.active .nav-link {
+    color: rgb(255, 255, 255) !important;
+    background-color: #000000 !important;
+  }
+}
+
+
+
+
+@media (max-width: 990px) {
+  .navbar {
+    /* Adjust styles for mobile view as needed */
+    /* For example: */
+    background-color: #000000 !important;
+    
+  }
+  .navbar.scrolled {
+    background-color: none /* Change this to your desired color */
+    
+  }
+  .nav-link {
+    width: 1200px !important;
+margin-left: -7%;
+padding-left: 7%;
+background-color: #000000!important;
+font-family: 'SuisseIntl', sans-serif;
+font-size: 20px;
+margin-top: -4px;
+  }
+}
+
 
 .navbar-nav .nav-link {
   color: white; /* Default color of the links */
@@ -146,7 +226,8 @@
 }
 
 .navbar-nav .nav-link:hover {
-  color: #ffdb3b;
+  
+
 }
 
 
@@ -185,26 +266,50 @@
     }
     
     /* Media query for mobile screens (adjust as needed) */
-    @media (max-width: 768px) {
+    @media (max-width:991px) {
       .nav-link {
         width: 500px;
   margin-left: -7%;
   padding-left: 7%;
-  background-color: #000000;
+  background-color: #000000 !important;
   font-family: 'SuisseIntl', sans-serif;
   font-size: 20px;
+  font-size: bold;
   margin-top: -4px;
       }
     
       /* Hover and Focus Styles (optional) */
       .nav-link:hover,
       .nav-link:focus {
-        color: yellow;
+        /* background: linear-gradient(45deg, #d0ad11, #ff6a3d);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; */
+      
         text-decoration: none;
+      }
+      .nav-link{
+        background-color: #000000;
       }
 
       .navbar.scrolled {
         background-color:none; /* Change this to your desired color */
         
       }
-    }
+      
+      .nav-item.active .nav-link {
+        background-color: #000000 !important; /* Blue background color */
+        color: #ffffff; /* White text color */
+      }
+      
+      /* Example styles for non-active links */
+      .nav-link {
+        color: #000; /* Black text color */
+        text-decoration: none; /* Remove underline */
+      }
+      
+      .nav-link:hover {
+        text-decoration: underline; /* Add underline on hover */
+      }
+      
+      
+  }

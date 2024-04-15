@@ -3,12 +3,9 @@
 .homepage {
   background-color: black;
   font-family: "Eirene Sans", sans-serif;
-}
-
-@media (max-width: 580px) {
-  .homepage {
-    margin-top: 40px;
-  }
+  font-weight: bold !important;
+  
+  
 }
 
 /* @media (max-width: 580px) {
@@ -36,6 +33,7 @@
   -webkit-text-fill-color: transparent;
 
   line-height: 1.2;
+  font-weight: bold;
 }
 .head-home-sub {
   background: -webkit-linear-gradient(#f7f7f7, #ffffff);
@@ -49,6 +47,7 @@
 
   margin-top: 20px;
   padding-left: 30px;
+  font-weight:lighter;
 }
 /* button css
  */
@@ -97,9 +96,11 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  color: #ff9900;
+  
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
+  background: linear-gradient(45deg, #d0ad11, #ff6a3d);
+  -webkit-background-clip: text;
 }
 
 .buttonarrow:hover .hover-underline-animation:after {
@@ -287,7 +288,7 @@
   }
 }
 
-.slider {
+.slider2 {
   background: black;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
   height: 100px;
@@ -428,6 +429,7 @@
 }
 .mobile-strategy {
   background-color: rgb(0, 0, 0);
+  font-size: 16px;
 }
 
 /* CSS for desktop screens */
@@ -500,6 +502,7 @@
   padding-left: 10px;
   padding-top: 9px;
   width: 20%;
+  color: #fff;
 }
 .move-span {
   color: #f7418f;
@@ -544,11 +547,22 @@
 .head-box6:hover,
 .buis-card:hover {
   background-color: white;
-  color: #d0ad11;
+ 
   /* background: linear-gradient( #d0ad11, #ff6a3d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;  */
 }
+.head-box2:hover,
+.head-box4:hover,
+.head-box5:hover,
+.head-box6:hover,
+.buis-card:hover{
+  background: linear-gradient(45deg, #d0ad11, #ff6a3d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 
 .buis-card h4:hover {
   color: #f7418f;
@@ -659,6 +673,7 @@
   color: white;
   text-align: center;
   padding-top: 50px;
+  font-weight: bold;
 }
 .WEDO-SERVICE-heading span {
   color: #f7418f;
@@ -712,4 +727,8 @@
   /* margin-left:-10% !important;
   margin-left: 90% !important; */
   padding-left: 30px !important;
+}
+.mobile-background{
+  margin-top: 50px ! important;
+  padding-top: 30px !important;
 }

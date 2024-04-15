@@ -95,7 +95,7 @@ function Wedo() {
           </video>
           <div className="bgcontainer">
             <div className="overlay">
-              <div className="container  container-homepage">
+              <div className="container  container-homepage ">
                 <h1 data-aos="zoom-in">
                  <span className="our">RESEARCH </span> <span className="ser">AND</span> <br />
                   <span className="our">DEVELOPMENT </span><span className="ser">COMPANY</span>
@@ -135,7 +135,7 @@ function Wedo() {
           </div>
         </div>
       </div>
-      <div className="mobile-background">
+      <div className="mobile-background v">
         <section
           className="homebg"
           style={{
@@ -180,9 +180,9 @@ function Wedo() {
         </section>
       </div>
 
-      <div className=" WEDO-SERVICE">
-        <h1 className=" WEDO-SERVICE-heading" data-aos="zoom-in">
-          <span className="our"> OUR</span> SERVICE
+      <div className=" WEDO-SERVICE ">
+        <h1 className=" WEDO-SERVICE-heading " data-aos="zoom-in">
+          <span className="our "> OUR</span> SERVICE
         </h1>
       </div>
 
@@ -463,15 +463,15 @@ function Wedo() {
                   href="./strategy.php"
                 >
                   <div
-                    class="buis-card p-2 text-light fw-bold d-flex align-items-end
-                          fs-5"
+                    class="buis-card p-2 text-light  d-flex align-items-end
+                          fs-3"
                     style={{
                       width: "10rem",
                       height: "300px",
                       borderradius: "5px",
                     }}
                   >
-                    <h4 class="fw-semibold">
+                    <h4 class="">
                       {" "}
                       Competitor <br /> Analysis{" "}
                     </h4>
@@ -495,14 +495,14 @@ function Wedo() {
                 </div>
                 <a class="text-decoration-none" href="./strategy.php">
                   <div
-                    class="buis-card sensisng text-light fw-bold p-2 fs-5 d-flex align-items-end"
+                    class="buis-card sensisng text-light p-2 fs-5 d-flex align-items-end"
                     style={{
                       borderradius: "5px",
                       width: "10rem",
                       height: "161.233px",
                     }}
                   >
-                    <h4 class="fw-semibold" style={{ fontsize: "22px" }}>
+                    <h4 class="" style={{ fontsize: "16px" }}>
                       {" "}
                       Sensing Trend
                     </h4>
@@ -510,7 +510,7 @@ function Wedo() {
                 </a>
                 <a class="text-decoration-none" href="./strategy.php">
                   <div
-                    class="buis-card text-light fw-bold d-flex align-items-end
+                    class="buis-card text-light  d-flex align-items-end
                          p-2 fs-5"
                     style={{
                       width: "10rem",
@@ -518,7 +518,7 @@ function Wedo() {
                       borderradius: "8px",
                     }}
                   >
-                    <h4 class="fw-semibold" style={{ fontsize: "22px" }}>
+                    <h4 class="" style={{ fontsize: "16px" }}>
                       {" "}
                       Problem
                       <br />
@@ -558,13 +558,13 @@ function Wedo() {
                     }}
                   >
                     <h4
-                      class="fw-semibold"
-                      style={{ fontsize: "22px", color: "white" }}
+                      class=""
+                      style={{ fontsize: "16px", color: "white" }}
                     >
                       Branding
                     </h4>
                     <ul style={{ fontsize: "16px" }}>
-                      <li class="fw" style={{ color: "white" }}>
+                      <li class="" style={{ color: "white" }}>
                         New Branding
                       </li>
                       <li style={{ color: "white" }}>Re-Branding</li>
@@ -580,7 +580,7 @@ function Wedo() {
                       height: "190px",
                     }}
                   >
-                    <h4 style={{ fontsize: "22px" }} class="fw-semibold">
+                    <h4 style={{ fontsize: "16px" }} class="">
                       Brand Collaboration
                     </h4>
                     <ul
@@ -620,8 +620,8 @@ function Wedo() {
                     }}
                   >
                     <h2
-                      style={{ fontsize: "22px", color: "white" }}
-                      class="mb-3 fw-semibold"
+                      style={{ fontsize: "16px", color: "white" }}
+                      class="mb-3 "
                     >
                       Brand Promotion
                     </h2>
@@ -630,7 +630,7 @@ function Wedo() {
                       class=""
                       style={{
                         fontsize: "16px",
-                        fontweight: " 700",
+                        
                         color: "white",
                       }}
                     >
@@ -650,7 +650,7 @@ function Wedo() {
                       class="mobile-servise-digital"
                       style={{
                         fontsize: "16px",
-                        fontweight: " 700",
+                       
                         color: "white",
                       }}
                     >
@@ -692,24 +692,24 @@ function Wedo() {
                     class="buis-card text-light   p-3 fs-5"
                     style={{ width: "10rem", borderradius: "8px" }}
                   >
-                    <h4 style={{ fontsize: "20px" }} class="pb-2 fw-semibold">
+                    <h4 style={{ fontsize: "16px" }} class="pb-2 ">
                       Resource
                       <br />
                       Up-gradation
                     </h4>
                     <ul style={{ fontsize: "16px" }}>
-                      <li class="fw-regular">Workforce Empowerment </li>
+                      <li class="">Workforce Empowerment </li>
                       <li>Technology Adaptation</li>
                     </ul>
                   </div>
                 </a>
                 <a class="text-decoration-none" href="./strategy.php#operating">
                   <div
-                    class="buis-card text-light fw-bold d-flex
+                    class="buis-card text-light  d-flex
                          align-items-end p-4 fs-5"
                     style={{ width: "10rem", borderradius: "8px" }}
                   >
-                    <h4 class="fw-bold" style={{ fontsize: "20px" }}>
+                    <h4 class="text-light" style={{ fontsize: "16px" }}>
                       Financial
                       <br />
                       Management
@@ -727,36 +727,37 @@ function Wedo() {
                     borderradius: "8px",
                   }}
                 >
-                  <h1 class="text-light fw-bold display-1 one">03</h1>
+                  <h1 class="text-light  display-1 one">03</h1>
                   <h2 class="fw-bold one ">
                     <span class="our ">Operational</span>
                   </h2>
                 </div>
                 <a class="text-decoration-none" href="./strategy.php#operating">
                   <div
-                    class="buis-card  text-light fw-bold p-2 fs-5 d-flex align-items-end"
+                    class="buis-card  text-light  p-2 fs-5 d-flex align-items-end"
                     style={{
                       borderradius: "5px",
                       width: "10rem",
                       height: " 172.233px",
                     }}
                   >
-                    <h4 class="fw-bold" style={{ fontsize: "20px" }}>
+                    <h4 class="" style={{ fontsize: "16px" }}>
                       Infrastructure Enhancement
                     </h4>
                   </div>
                 </a>
                 <a class="text-decoration-none" href="./strategy.php#operating">
                   <div
-                    class="buis-card text-light fw-bold d-flex align-items-end
+                    class="buis-card text-light d-flex align-items-end
                          p-2 fs-5"
                     style={{
                       width: "10rem",
                       height: "260px",
                       borderradius: "8px",
+                      color:"white !"
                     }}
                   >
-                    <h4 class="fw-bold" style={{ fontsize: "20px" }}>
+                    <h4 class=" text-light" style={{ fontsize: "16px",color:"white"}}>
                       Customer Relationship Management
                     </h4>
                   </div>
@@ -787,7 +788,7 @@ function Wedo() {
                   href="./strategy.php"
                 >
                   <div
-                    class="buis-card p-2 text-light fw-bold d-flex align-items-end
+                    class="buis-card p-2 text-light d-flex align-items-end
                           fs-5"
                     style={{
                       width: "10rem",
@@ -795,7 +796,7 @@ function Wedo() {
                       borderradius: "5px",
                     }}
                   >
-                    <h4 class="fw-semibold">
+                    <h4 class="">
                       {" "}
                       Competitor <br /> Analysis{" "}
                     </h4>
@@ -819,14 +820,14 @@ function Wedo() {
                 </div>
                 <a class="text-decoration-none" href="./strategy.php">
                   <div
-                    class="buis-card sensisng text-light fw-bold p-2 fs-5 d-flex align-items-end"
+                    class="buis-card sensisng text-light p-2 fs-5 d-flex align-items-end"
                     style={{
                       borderradius: "5px",
                       width: "10rem",
                       height: "161.233px",
                     }}
                   >
-                    <h4 class="fw-semibold" style={{ fontsize: "22px" }}>
+                    <h4 class="" style={{ fontsize: "16px" }}>
                       {" "}
                       Sensing Trend
                     </h4>
@@ -834,7 +835,7 @@ function Wedo() {
                 </a>
                 <a class="text-decoration-none" href="./strategy.php">
                   <div
-                    class="buis-card text-light fw-bold d-flex align-items-end
+                    class="buis-card text-light  d-flex align-items-end
                          p-2 fs-5"
                     style={{
                       width: "10rem",
@@ -842,7 +843,7 @@ function Wedo() {
                       borderradius: "8px",
                     }}
                   >
-                    <h4 class="fw-semibold" style={{ fontsize: "22px" }}>
+                    <h4 class="" style={{ fontsize: "16px" }}>
                       {" "}
                       Problem
                       <br />
@@ -882,8 +883,8 @@ function Wedo() {
                     }}
                   >
                     <h4
-                      class="fw-semibold"
-                      style={{ fontsize: "22px", color: "white" }}
+                      class=""
+                      style={{ fontsize: "16px", color: "white" }}
                     >
                       Branding
                     </h4>
@@ -904,7 +905,7 @@ function Wedo() {
                       height: "190px",
                     }}
                   >
-                    <h4 style={{ fontsize: "22px" }} class="fw-semibold">
+                    <h4 style={{ fontsize: "16px" }} class="">
                       Brand Collaboration
                     </h4>
                     <ul
@@ -944,8 +945,8 @@ function Wedo() {
                     }}
                   >
                     <h2
-                      style={{ fontsize: "22px", color: "white" }}
-                      class="mb-3 fw-semibold"
+                      style={{ fontsize: "16px", color: "white" }}
+                      class="mb-3 "
                     >
                       Brand Promotion
                     </h2>
@@ -954,7 +955,7 @@ function Wedo() {
                       class=""
                       style={{
                         fontsize: "16px",
-                        fontweight: " 700",
+                       
                         color: "white",
                       }}
                     >
@@ -974,7 +975,7 @@ function Wedo() {
                       class="mobile-servise-digital"
                       style={{
                         fontsize: "16px",
-                        fontweight: " 700",
+                        
                         color: "white",
                       }}
                     >
@@ -1016,24 +1017,24 @@ function Wedo() {
                     class="buis-card text-light   p-3 fs-5"
                     style={{ width: "10rem", borderradius: "8px" }}
                   >
-                    <h4 style={{ fontsize: "20px" }} class="pb-2 fw-semibold">
+                    <h4 style={{ fontsize: "16px" }} class="pb-2 ">
                       Resource
                       <br />
                       Up-gradation
                     </h4>
                     <ul className="two " style={{ fontsize: "16px" }}>
-                      <li class="fw-regular ">Workforce </li>
+                      <li class=" ">Workforce </li>
                       <li>Technology Adaptation</li>
                     </ul>
                   </div>
                 </a>
                 <a class="text-decoration-none" href="./strategy.php#operating">
                   <div
-                    class="buis-card text-light fw-bold d-flex
+                    class="buis-card   d-flex
                          align-items-end p-4 fs-5"
                     style={{ width: "10rem", borderradius: "8px" }}
                   >
-                    <h4 class="fw-bold" style={{ fontsize: "20px" }}>
+                    <h4 class="text-light" style={{ fontsize: "16px" }}>
                       Financial
                       <br />
                       Management
@@ -1051,28 +1052,28 @@ function Wedo() {
                     borderradius: "8px",
                   }}
                 >
-                  <h1 class="text-light fw-bold display-1 one">03</h1>
+                  <h1 class=" fw-bold display-1 one text-light">03</h1>
                   <h2 class="fw-bold one">
                     <span class="our ">Operational</span>
                   </h2>
                 </div>
                 <a class="text-decoration-none" href="./strategy.php#operating">
                   <div
-                    class="buis-card  text-light fw-bold p-2 fs-5 d-flex align-items-end"
+                    class="buis-card  p-2 fs-5 d-flex align-items-end"
                     style={{
                       borderradius: "5px",
                       width: "10rem",
                       height: " 172.233px",
                     }}
                   >
-                    <h4 class="fw-bold" style={{ fontsize: "20px" }}>
+                    <h4 class="text-light" style={{ fontsize: "16px" }}>
                       Infrastructure Enhancement
                     </h4>
                   </div>
                 </a>
                 <a class="text-decoration-none" href="./strategy.php#operating">
                   <div
-                    class="buis-card text-light fw-bold d-flex align-items-end
+                    class="buis-card   d-flex align-items-end
                          p-2 fs-5"
                     style={{
                       width: "10rem",
@@ -1080,7 +1081,7 @@ function Wedo() {
                       borderradius: "8px",
                     }}
                   >
-                    <h4 class="fw-bold" style={{ fontsize: "20px" }}>
+                    <h4 class="text-light" style={{ fontsize: "16px" }}>
                       Customer Relationship Management
                     </h4>
                   </div>
@@ -1091,7 +1092,7 @@ function Wedo() {
         </div>
       </section>
 
-      <div className="top3-home-client ">
+       <div className="top3-home-client ">
         <div className="client head-home">
           <h1 className="slider-head " data-aos="zoom-in">
             <span className="our">OUR </span>CLIENTS
@@ -1149,7 +1150,7 @@ function Wedo() {
             </div>
           </div>
         </div>
-      </div>
+      </div> 
       {/* ----------------------------------- */}
     </div>
   );

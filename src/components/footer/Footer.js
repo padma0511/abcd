@@ -50,7 +50,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col">
+            <div className="col lc">
               <h3 className="Links1">Links</h3>
               <div className="links">
                 <Link to="/" className="links-a">
@@ -60,25 +60,23 @@ const Footer = () => {
                   Service
                 </Link>
 
-                <Link to="/BS" className="links-a">
-                  Businessstrategy
+                <Link to="/Strategy" className="links-a">
+                  Strategy
                 </Link>
-                <Link to="/Marketingstrategy" className="links-a">
-                  Marketingstrategy
-                </Link>
-                <Link to="/Operationalstrategy" className="links-a">
-                  Operationalstrategy
-                </Link>
+                
                 <Link to="/Clients" className="links-a">
                   Clients
                 </Link>
                 <Link to="/Firstpage" className="links-a">
                   Works
                 </Link>
+                <Link to="/Secondpage" className="links-a">
+                Contact Us
+                </Link>
               </div>
             </div>
 
-            <div className="col">
+            <div className="col cl">
               <h3 className="Links3">Contact</h3>
               <div className="contact-details">
                 <p>
@@ -93,11 +91,11 @@ const Footer = () => {
               </div>
               <div className="contact-details"></div>
             </div>
-            {/* <div className="col">
-              <h3 className="Links2">Follow Us</h3>
+            <div className="col bbb ">
+              <h3 className="Links2 ">Follow Us</h3>
               <div className="social">
-                <div className="row">
-                  <div className="col icon-col">
+                <div className="">
+                  <div className=" icon-col jik">
                     <a
                       href="https://wa.me/1234567890"
                       target="_blank"
@@ -120,7 +118,7 @@ const Footer = () => {
                       <img src={instagram} className="iconic" />
                     </a>
                   </div>
-                  <div className="col icon-col">
+                  <div className="col icon-col ml-3 kij">
                     <a
                       href="https://www.linkedin.com/in/your_linkedin_profile"
                       target="_blank"
@@ -145,12 +143,12 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-            </div> */}
+            </div> 
           </div>
         </div>
       </footer>
       <div className="copyrights">
-        <p className="Copy">
+        <p className="Copy our">
           Copyright © 2024 PRO GLOBAL SOLUTION | All Rights Reserved
         </p>
       </div>

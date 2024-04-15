@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Eirene+Sans&display=swap');
 
 body {
-    font-family: 'Eirene Sans', sans-serif;
+  font-family: 'Eirene Sans', sans-serif !important;
     
 }
 @media (max-width: 580px) {
@@ -42,7 +42,7 @@ body {
 }
 
 .elementocontainer {
-  margin-top: 10px;
+  
   display: flex;
   justify-content: center;
   padding-top: 20%;
@@ -150,7 +150,7 @@ body {
 
 }
 .service-icon {
-  font-size: 24px;
+  font-size: 20px;
   background: -webkit-linear-gradient(#d0ad11, #ff6a3d);
  
  
@@ -180,6 +180,7 @@ body {
   /* color: white; */
 
  font-family: 'Eirene Sans', sans-serif;
+
  
 }
 .elementortitle {
@@ -194,7 +195,9 @@ body {
   padding-top: 30px;
   padding-left: 50px;
   padding-right: 70px;
+  
  font-family: 'Eirene Sans', sans-serif;
+ font-weight: 500;
 }
 .elementoritem {
   color: white;
@@ -214,6 +217,8 @@ body {
  .elementoricon {
   
   background: -webkit-linear-gradient(#d0ad11, #ff6a3d); /* Example gradient */
+  font-weight: bold !important;
+  
 }
 
 
@@ -223,6 +228,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
   padding-top: 20px;
+  
   
 }
 
@@ -236,7 +242,7 @@ body {
 }
 
 .elementoricon svg {
-  font-size: 24px; /* Adjust icon size as needed */
+  font-size: 20px; /* Adjust icon size as needed */
 }
 
 .elementortext {
@@ -420,10 +426,13 @@ html {
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 5px;
-  
+ 
   border: 1px solid #d0ad11;
   background: -webkit-linear-gradient(#d0ad11, #ff6a3d);
   -webkit-background-clip: text;
+  width: 350px;
+  height: 400px;
+  
   
 }
 .servicelist-li li {
@@ -432,19 +441,64 @@ html {
   text-align: center;
 }
 .servicelist-li:hover {
-  color:  #f7cc0c;
-
-}
-.servicelist-ul {
-  list-style-type: none;
-}
-.ser{
-  background: -webkit-linear-gradient(#ffffff, #ffffff);
-  -webkit-background-clip: text;
-}
-.our{
+ 
   background: linear-gradient(45deg, #d0ad11, #ff6a3d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
 }
+.servicelist-ul {
+  list-style-type: none;
+}
+
+
+
+/* .shadow-span {
+  color: transparent;
+  -webkit-background-clip: text;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 85px;
+  line-height: 1;
+  z-index: 1;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #d0ad11;
+  -webkit-text-fill-color: transparent; */
+  /* opacity: 0.3; */
+  /* position: relative; */
+
+/* .shadow-span:before {
+  position: absolute;
+  content: "";
+  background: #000;
+  filter: blur(15px);
+  width: 100%;
+  height: 45px;
+  bottom: 8px;
+  left: 50%;
+  transform: translate(-50%);
+} */
+.shadowh1 {
+  font-size: clamp(25px, 3.5vw, 40px);
+  line-height: 1.5;
+  color: #fff;
+  text-align: center;
+}
+.shadowPara {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  color: #fff;
+}
+
+
+
+
+
+
+
+/* --------- */
+
